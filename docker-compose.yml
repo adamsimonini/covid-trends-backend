@@ -1,31 +1,49 @@
 version: "3.8"
 services:
-  web:
-    build: ./app
-    image: 087816540020.dkr.ecr.us-east-2.amazonaws.com/workshop2:workshop2_web
-    command: gunicorn nc_tutorials.wsgi:application --bind 0.0.0.0:8000
-    volumes:
-      - ./app/:/usr/src/app/
-      - static_volume:/usr/src/app/static
-    expose:
-      - 8000
+  # web:
+  #   build: .
+  #   command: gunicorn nc_tutorials.wsgi:application --bind 0.0.0.0:8000
+  #   volumes:
+  # ports:
+  #   - "8000:8000"
+  # expose:
+  #   - 8000
+  #   environment:
+  #     - DB_NAME=nc_tutorials_db
+  #     - DB_USER=postgres
+  #     - DB_PASSWORD=admin123
+  #     - DB_HOST=nctutorials.cgscp9ckfghn.us-east-2.rds.amazonaws.com
+  #     - DB_PORT=5432
+  #     - DATABASE=postgres
+  #     - VIRTUAL_HOST=ec2-3-128-61-120.us-east-2.compute.amazonaws.com
+  #     - VIRTUAL_PORT=8000
+  pg:
+    container_name: pg_container
+    image: postgres:13.2-alpine
+    restart: always
     environment:
-      - DB_NAME=nc_tutorials_db
-      - DB_USER=postgres
-      - DB_PASSWORD=admin123
-      - DB_HOST=nctutorials.cgscp9ckfghn.us-east-2.rds.amazonaws.com
-      - DB_PORT=5432
-      - DATABASE=postgres
-      - VIRTUAL_HOST=ec2-3-128-61-120.us-east-2.compute.amazonaws.com
-      - VIRTUAL_PORT=8000
-  nginx:
-    build: ./nginx
-    image: 087816540020.dkr.ecr.us-east-2.amazonaws.com/workshop2:workshop2_nginx
-    volumes:
-      - static_volume:/usr/src/app/static
+      POSTGRES_USER: postgres
+      POSTGRES_HOST_AUTH_METHOD: trust
+      PGUSER: postgres
     ports:
-      - 8000:80
+      - "5432:5432"
+    volumes:
+      - "${PWD}/data/schema/init.sql:/docker-entrypoint-initdb.d/1-init.sql"
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4:5.2
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_LISTEN_PORT: 5433
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+      PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED: "False"
+      PGADMIN_CONFIG_UPGRADE_CHECK_ENABLED: "False"
+    ports:
+      - "5433:5433"
     depends_on:
-      - web
-volumes:
-  static_volume:
+      - pg
+networks:
+  default:
+    name: nunet
