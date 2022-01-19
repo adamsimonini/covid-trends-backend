@@ -53,23 +53,29 @@ CREATE TABLE public.provinces (
     region VARCHAR(25) NOT NULL
 );
 
+ALTER TABLE public.provinces OWNER TO postgres;
+
 CREATE TABLE public.health_regions (
     hr_uid INT NOT NULL PRIMARY KEY,
     province_code INT,
-    FOREIGN KEY (province_code) REFERENCES provinces (province_code),
+    FOREIGN KEY (province_code) REFERENCES public.provinces (province_code),
     name_en VARCHAR(150) NOT NULL,
     name_fr VARCHAR(150) NOT NULL,
     website_en VARCHAR(300),
     website_fr VARCHAR(300)
 );
 
+ALTER TABLE public.health_regions OWNER TO postgres;
+
 CREATE TABLE public.locations(
     forward_sortation_area VARCHAR(3) NOT NULL PRIMARY KEY,
     hr_uid INT,
-    FOREIGN KEY (hr_uid) REFERENCES health_regions (hr_uid),
+    FOREIGN KEY (hr_uid) REFERENCES public.health_regions (hr_uid),
 	province_code INT,
-    FOREIGN KEY (province_code) REFERENCES provinces (province_code)
+    FOREIGN KEY (province_code) REFERENCES public.provinces (province_code)
 );
+
+ALTER TABLE public.locations OWNER TO postgres;
 
 CREATE TABLE public.mobility(
 	id SERIAL NOT NULL PRIMARY KEY,
@@ -104,6 +110,8 @@ CREATE TABLE public.mobility(
     prev_mobility FLOAT
 );
 
+ALTER TABLE public.mobility OWNER TO postgres;
+
 CREATE TABLE public.cases(
 	id SERIAL NOT NULL PRIMARY KEY,
     hr_uid INT,
@@ -121,3 +129,5 @@ CREATE TABLE public.cases(
     avgtotal_last7 FLOAT,
     avgdeaths_last7 FLOAT
 );
+
+ALTER TABLE public.cases OWNER TO postgres;
