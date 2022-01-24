@@ -21,18 +21,18 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 2. **What future improvements are in store, if any?**
    n/a
-   
+
 ## **API Endpoints Reference**
 
 **Dev base_url: localhost:5000**
 
 ### **Endpoint Grouping One**
 
-| METHOD | NAME              	       | PATH                                                              | RESULT                                           |
-| ------ | --------------------------- | ----------------------------------------------------------------- | ------------------------------------------------ |
-| GET    | all health regions          | base_url/health-regions                                           | returns all recrods from the user_account table  |
-| GET    | single health region        | base_url/health-regions/<span style="color:lightgreen">{id}<span> | returns single record based on id parameter      |
-| Get    | health regions by fsa       | base_url/fsa/<span style="color:lightgreen">{id}<span>            | return an array of one or more healthr regions   |
+| METHOD | NAME                  | PATH                                                              | RESULT                                                                      |
+| ------ | --------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| GET    | all health regions    | base_url/health-regions                                           | returns all recrods from the health_regions table                           |
+| GET    | single health region  | base_url/health-regions/<span style="color:lightgreen">{id}<span> | returns single record based on id parameter                                 |
+| Get    | health regions by fsa | base_url/fsa/<span style="color:lightgreen">{id}<span>            | return an array of one or more health regions belonging to the provided fsa |
 
 <!-- Example of a valid get request:
 
@@ -83,10 +83,11 @@ Example of a valid post request:
         "sex":"male",
 	"user_id": 3,
 	"city_id": 3
-} -->
+}
 ```
+-->
 
-<!-- ## **Database Dump**
+## **Database Dump**
 
 A database dump created by pg_dump can be found in `./data` -->
 
@@ -102,11 +103,11 @@ tbd
 
 # **Successes**
 
-*(Dev) denotes work done for the benefit of the development environment
-	
+\*(Dev) denotes work done for the benefit of the development environment
+
 - [✔️] utilized Flask's "blueprint" functionarlity to splitup my API routes into multiple files
 - [✔️] (Dev) Docker Compose yaml now creates 3 containers on a single network: api (backend code), pg (postgres), and pgadmin
 - [✔️] (Dev) Docker Compose yaml now generates the postgres database from raw SQL durion container build
-- [✔️] (Dev) The API ports for the development host machine and the container are correctly mapped to 8000, so the API returns JSON objects 
+- [✔️] (Dev) The API ports for the development host machine and the container are correctly mapped to 8000, so the API returns JSON objects
 
 # **Notes**
