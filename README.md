@@ -20,23 +20,21 @@ This is the backend part of a fullstack application. Ideally this application wi
    I am aiming to use raw SQL within Flask. I hate the limited documentation of ORMs, along with the abstrction that ORMs produce. They prevent me from solidifying my understand of SQL. I would rather struggle with SQL and move slowly, than move quickly but be doomed to reading obscure forum posts on troubleshooting ORM issues.
 
 2. **What future improvements are in store, if any?**
-
-Meetings will be the hardest relationships to implement, because a meeting must belong to both one and only one companion and one and only one user.
-
+   n/a
+   
 ## **API Endpoints Reference**
 
 **Dev base_url: localhost:5000**
 
 ### **Endpoint Grouping One**
 
-| METHOD | NAME               | PATH                                                     | RESULT                                           |
-| ------ | ------------------ | -------------------------------------------------------- | ------------------------------------------------ |
-| GET    | get all users      | base_url/users                                           | returns all recrods from the user_account table  |
-| GET    | get single-user    | base_url/users/<span style="color:lightgreen">{id}<span> | returns single record based on id parameter      |
-| POST   | create single user | base_url/users                                           | creates a new record based on valid JSON request |
-| DELETE | delete single user | base_url/users/<span style="color:lightgreen">{id}<span> | deletes a record based on id parameter           |
+| METHOD | NAME              	       | PATH                                                              | RESULT                                           |
+| ------ | --------------------------- | ----------------------------------------------------------------- | ------------------------------------------------ |
+| GET    | all health regions          | base_url/health-regions                                           | returns all recrods from the user_account table  |
+| GET    | single health region        | base_url/health-regions/<span style="color:lightgreen">{id}<span> | returns single record based on id parameter      |
+| Get    | health regions by fsa       | base_url/fsa/<span style="color:lightgreen">{id}<span>            | return an array of one or more healthr regions   |
 
-Example of a valid post request:
+<!-- Example of a valid get request:
 
 ```
 {
@@ -85,25 +83,30 @@ Example of a valid post request:
         "sex":"male",
 	"user_id": 3,
 	"city_id": 3
-}
+} -->
 ```
 
-## **Database Dump**
+<!-- ## **Database Dump**
 
-A database dump created by pg_dump can be found in `./data`
+A database dump created by pg_dump can be found in `./data` -->
 
 ## **Insomnia API Endpoint Export**
 
-tba../
+tbd
 
 ## **Entity Relationship Diagrams**
 
-tba...
+tbd
 
 # **Limitations & Shortcomings**
 
 # **Successes**
 
+*(Dev) denotes work done for the benefit of the development environment
+	
 - [✔️] utilized Flask's "blueprint" functionarlity to splitup my API routes into multiple files
+- [✔️] (Dev) Docker Compose yaml now creates 3 containers on a single network: api (backend code), pg (postgres), and pgadmin
+- [✔️] (Dev) Docker Compose yaml now generates the postgres database from raw SQL durion container build
+- [✔️] (Dev) The API ports for the development host machine and the container are correctly mapped to 8000, so the API returns JSON objects 
 
 # **Notes**
