@@ -65,11 +65,12 @@ CREATE TABLE public.provinces (
 	province_code INT NOT NULL PRIMARY KEY,
     full_name VARCHAR(35) NOT NULL,
     alpha_code VARCHAR(2) NOT NULL,
-    region_id VARCHAR(25) NOT NULL
+    fk_region_id INT NOT NULL,
+    FOREIGN KEY (fk_region_id) REFERENCES public.regions (id)
 );
 
 -- alphabetically ordered by province name
-INSERT INTO public.provinces (province_code, full_name, alpha_code, region_id) VALUES
+INSERT INTO public.provinces (province_code, full_name, alpha_code, fk_region_id) VALUES
 (48, 'Alberta', 'AB', 4),
 (59, 'British Columbia', 'BC', 2),
 (46, 'Manitoba', 'MB', 4),
@@ -172,7 +173,7 @@ CREATE TABLE public.cases(
 
 ALTER TABLE public.cases OWNER TO postgres;
 
--- TABLE JOIN COMMANDS
--- SELECT * FROM health_regions hr
--- LEFT JOIN provinces p
--- ON p.province_code = hr.fk_province_code;
+/* it might be a good idea to change all "id" fields to "{entity}_id" and all "name" fields to "{entity}_name". 
+This is because when constructing complex SQL queries, there might be namespace issues. Further, the queries will bemore explicit and therefore readable to developers
+/*
+ 
