@@ -99,7 +99,7 @@ CREATE TABLE public.health_regions (
 
 -- we have to make sure the website links are to the landing page of the hr website, and not the covid one
 -- doubling up single quotes is the way to escape them
-INSERT INTO public.health_regions (hr_uid, fk_province_code, name_en, name_fr, website_en, website_fr)VALUES
+INSERT INTO public.health_regions (hr_uid, fk_province_code, name_en, name_fr, website_en, website_fr) VALUES
 (1011, 10, 'Eastern Regional Health Authority', 'Eastern Regional Health Authority', 'https://www.gov.nl.ca/covid-19', 'https://www.gov.nl.ca/covid-19/fr/ressources/'),
 (2418, 24, 'Région des Terres-Cries-de-la-Baie-James', 'Région des Terres-Cries-de-la-Baie-James', 'ttps://eeyouistcheecovid19.org/', 'ttps://eeyouistcheecovid19.org/'),
 (3556, 35, 'Porcupine Health Unit', 'Circonscription sanitaire de Porcupin', 'http://www.porcupinehu.on.ca/', 'https://www.porcupinehu.on.ca/fr/'),
@@ -172,8 +172,3 @@ CREATE TABLE public.cases(
 );
 
 ALTER TABLE public.cases OWNER TO postgres;
-
-/* it might be a good idea to change all "id" fields to "{entity}_id" and all "name" fields to "{entity}_name". 
-This is because when constructing complex SQL queries, there might be namespace issues. Further, the queries will bemore explicit and therefore readable to developers
-/*
- 

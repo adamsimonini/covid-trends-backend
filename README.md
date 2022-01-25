@@ -10,9 +10,24 @@ This is the backend part of a fullstack application. Ideally this application wi
 - Postgres is used as the database. With Postgres our API can make SQL queries on the data.
 - Docker will be used to containerize both the backend application, as well as the database. This will help with development and deployment on Windows Azure.
 
-## **Steps to replicated**
+## **Steps to Replicate Dev Environment**
 
-1. (I haven't solidified anything, so this is TBA...)
+1. Clone this repo
+2. Download Docker Desktop for [Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/) or [Mac](https://docs.docker.com/docker-for-mac/install/)
+
+- **Windows Install**
+
+  ![win install](images/windows-docker-install.png)
+
+- **Mac Install**
+
+  ![mac install](images/mac-docker-install.png)
+
+3. On the root directory (where the docker-compose.yml file resides), type "docker compose up -d" into the terminal. This will take a while the first time, since Docker is downloading all required images from DockerHub. Our docker-compose.yml will start multiple containers and place them on the same network. Once completed, you can input "docker ps" into the terminal to see the running containers:
+
+- ![confirm containers are running](images/docker-ps-example.png)
+
+4. The API, postgres database, and pgAdmin (Postgres GUI) should now be running. Visit pgAdmin by visiting [localhost:5433/browser/](http://localhost:5433/browser/)
 
 ## **Retrospective**
 
