@@ -3,7 +3,7 @@ from routes_pkg.health_region import *
 from routes_pkg.fsa import *
 
 app = Flask(__name__)
-app.register_blueprint(users_blueprint)
+app.register_blueprint(health_region_blueprint)
 app.register_blueprint(fsa_blueprint)
 
 
