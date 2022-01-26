@@ -1,12 +1,12 @@
 from flask import Blueprint
 
-health_region_blueprint = Blueprint('health_region_blueprint', __name__)
+provinces_blueprint = Blueprint('provinces_blueprint', __name__)
 
 
-@health_region_blueprint.route('/health_regions', methods=["GET"])
+@provinces_blueprint.route('/provinces', methods=["GET"])
 def get_all_health_regions():
     return {
-        "health_regions": [
+        "provinces": [
             {
                 "hr_uid": "599",
                 "english_name": "Interior",
@@ -21,6 +21,6 @@ def get_all_health_regions():
     }
 
 
-@health_region_blueprint.route('/health_regions/<hr_id>', methods=["GET"])
+@provinces_blueprint.route('/provinces/<hr_id>', methods=["GET"])
 def get_health_regions_by_id(hr_id):
-    return f"You're looking for the health region with the id {hr_id}"
+    return f"You're looking for the province with the id {hr_id}"

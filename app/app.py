@@ -1,10 +1,12 @@
 from flask import Flask
-from routes_pkg.health_region import *
+from routes_pkg.health_regions import *
 from routes_pkg.fsa import *
+from routes_pkg.provinces import *
 
 app = Flask(__name__)
-app.register_blueprint(health_region_blueprint)
-app.register_blueprint(fsa_blueprint)
+app.register_blueprint(health_regions_blueprint)
+app.register_blueprint(provinces_blueprint)
+# app.register_blueprint(fsa_blueprint)
 
 
 @app.route('/')
