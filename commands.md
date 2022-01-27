@@ -1,7 +1,7 @@
 From ./app, you can run the app without the db or pgAdmin with this command:
 
 ```
-python manage.py runserver 0.0.0.0:8000 // this command needs to be the execution command found in either the ./app/Dockerfile and ./docker-compose.yml
+python manage.py runserver 0.0.0.0:8000 // this command needs to be the execution command found in either the ./app/Dockerfile and ./docker-compose.yml. You can also use it to run the API without docker.
 ```
 
 If you need to build an image for the app specifically, outside of docker compose, you can do so with the Docker CLI form ./app with the following command:

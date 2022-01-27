@@ -1,21 +1,5 @@
 version: "3.8"
 services:
-  web:
-    build: ./app
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - ./app/:/usr/src/app/
-    ports:
-      - 8000:8000
-    environment:
-      - DB_NAME=public_health_trends
-      - DB_USER=postgres
-      - DB_PASSWORD=123
-      - DB_HOST=pg
-      - DB_PORT=5432
-      - DATABASE=postgres
-    depends_on:
-      - pg
   pg:
     container_name: pg_container
     image: postgres:13.2-alpine
@@ -41,6 +25,22 @@ services:
       PGADMIN_CONFIG_UPGRADE_CHECK_ENABLED: "False"
     ports:
       - "5433:5433"
+    depends_on:
+      - pg
+  web:
+    build: ./app
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./app/:/usr/src/app/
+    ports:
+      - 8000:8000
+    environment:
+      - DB_NAME=public_health_trends
+      - DB_USER=postgres
+      - DB_PASSWORD=123
+      - DB_HOST=pg
+      - DB_PORT=5432
+      - DATABASE=postgres
     depends_on:
       - pg
 networks:
