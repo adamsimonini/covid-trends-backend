@@ -16,15 +16,15 @@ SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
 
-DROP DATABASE IF EXISTS covid_trends;
+DROP DATABASE IF EXISTS public_health_trends;
 
--- Name: covid_trends; Type: DATABASE; Schema: -; Owner: postgres
+-- Name: public_health_trends; Type: DATABASE; Schema: -; Owner: postgres
 
-CREATE DATABASE covid_trends WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'en_US.utf8';
+CREATE DATABASE public_health_trends WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'en_US.utf8';
 
-ALTER DATABASE covid_trends OWNER TO postgres;
+ALTER DATABASE public_health_trends OWNER TO postgres;
 
-\connect covid_trends
+\connect public_health_trends
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
