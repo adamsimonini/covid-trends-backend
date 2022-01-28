@@ -35,12 +35,14 @@ services:
     ports:
       - 8000:8000
     environment:
-      - DB_NAME=public_health_trends
-      - DB_USER=postgres
-      - DB_PASSWORD=123
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
       - DB_HOST=pg
-      - DB_PORT=5432
+      - DB_PORT=${DB_PORT}
       - DATABASE=postgres
+      - SECRET_KEY=${SECRET_KEY}
+      - DEBUG=True
     depends_on:
       - pg
 networks:

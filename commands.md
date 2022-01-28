@@ -24,8 +24,10 @@ docker run -d --rm -p 8000:8000 31999f1fdeb8
 
 To run all three - API app, Postgres server, and pgAdmin - containers, run the following command at the root directory:
 
+<!--  -->
+
 ```
-docker compose up -d
+docker compose up -d // must be run from root, as it relies on the .env there
 ```
 
 Remove the docker containers, remove all images, and remove all volumes:
