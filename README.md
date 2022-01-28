@@ -19,6 +19,8 @@ This is the backend part of a fullstack application. Ideally this application wi
 
   ![win install](images/windows-docker-install.png)
 
+  [Download WSL2 msi here](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+
 - **Mac Install**
 
   ![mac install](images/mac-docker-install.png)
