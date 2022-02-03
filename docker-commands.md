@@ -19,7 +19,7 @@ docker images
 How to run the image alone, without docker-compose.ylm:
 
 ```
-docker run -d --rm -p 8000:8000 31999f1fdeb8
+docker run -d --rm -p 8000:8000 {image ID}
 ```
 
 To run all three - API app, Postgres server, and pgAdmin - containers, run the following command at the root directory:
