@@ -45,7 +45,7 @@ services:
     ports:
       - 8000:8000
     volumes:
-      - ./app:/usr/src/app
+      - ./app:/app # this needs to match the dockerfile's WORK/COPY pair
     depends_on:
       - pg
 networks:

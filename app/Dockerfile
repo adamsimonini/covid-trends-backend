@@ -13,6 +13,7 @@ ENV PYTHONUNBUFFERED=1
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
+# these two create the bind mount that enables hot reloading in development
 WORKDIR /app
 COPY . /app
 
