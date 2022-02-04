@@ -2,7 +2,12 @@ from django.http import HttpResponse, JsonResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the api index---hor!")
+    return HttpResponse('''
+        Welcome to the Public Health Trends API. Current endpoints in development:
+        \n 1) health_regions/ (retrieve all health regions)
+        \n 2) forward_sortation_areas/ (retrieve all FSAs)
+        \n 3) single_forward_sortation_area/ (retrieve a single FSA by its 3-character code)
+    ''')
 
 
 def health_regions(request):
@@ -37,5 +42,47 @@ def health_regions(request):
                 'website_fr': 'https://novascotia.ca/coronavirus/'
             }
         ]
+    }
+    return JsonResponse(data)
+
+
+def forward_sortation_areas(request):
+    data = {
+        'forward_sortation_areas': [
+            {
+                'id': '1',
+                'fsa': 'A0A',
+                'health_regions': '1011',
+                'estimated_pop': '8631',
+            },
+            {
+                'id': '2',
+                'fsa': 'A0B',
+                'health_regions': '1011',
+                'estimated_pop': '3066',
+            },
+            {
+                'id': '3',
+                'fsa': 'A0C',
+                'health_regions': '1011',
+                'estimated_pop': '32',
+            },
+            {
+                'id': '4',
+                'fsa': 'A0D',
+                'health_regions': '1011',
+                'estimated_pop': '1242',
+            }
+        ]
+    }
+    return JsonResponse(data)
+
+
+def single_forward_sortation_area(request, fsa):
+    data = {
+        'id': 1,
+        'fsa': fsa,
+        'health_regions': '1011',
+        'estimated_pop': '8631'
     }
     return JsonResponse(data)
