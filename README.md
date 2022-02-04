@@ -1,4 +1,4 @@
-# **COVIDTrends Backend in Python, Postgres, Flask, & Docker**
+# **COVIDTrends Backend in Python, Postgres, Django, & Docker**
 
 ## **What and why**
 
@@ -8,6 +8,7 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 - Python along with Flask are used to communicate with the database and generate an API for the client to query the database.
 - Postgres is used as the database. With Postgres our API can make SQL queries on the data.
+- Django acts as an all-in-one framework for API creation. It includes an ORM, as well as routing.
 - Docker will be used to containerize both the backend application, as well as the database. This will help with development and deployment on Windows Azure.
 
 ## **Steps to Replicate Dev Environment**
@@ -29,12 +30,14 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 - ![confirm containers are running](images/docker-ps-example.png)
 
-4. The API, postgres database, and pgAdmin (Postgres GUI) should now be running. Visit pgAdmin by visiting [localhost:5433/browser/](http://localhost:5433/browser/)
+4. The API, postgres database, and pgAdmin (Postgres GUI) should now be running each in their own containers. Visit pgAdmin by visiting [localhost:5433/browser/](http://localhost:5433/browser/)
 
-## **Retrospective**
+5. Due to Docker bind mounting specified in the docker-compose.yml, there is no need to remake Docker images or restart the server during development. Change to API endpoints and routing within ./app should be reflected automatically.
+
+## **Q&A**
 
 1. **Did you choose to use an ORM or raw SQL? Why?**
-   I am aiming to use raw SQL within Flask. I hate the limited documentation of ORMs, along with the abstrction that ORMs produce. They prevent me from solidifying my understand of SQL. I would rather struggle with SQL and move slowly, than move quickly but be doomed to reading obscure forum posts on troubleshooting ORM issues.
+   Flask was initially chosen as a microserver framework. I also wished to avoid ORMs with Flask. Quickly, after doing some research, it became apparent that avoid ORMs was not going to be possible, and that I would have to embrace them. In order to get better documentation and community support, I decided to change to Django. It's more opinionated than Flask, which means documentation is less fragmented.
 
 2. **What future improvements are in store, if any?**
    n/a
@@ -92,29 +95,15 @@ Example of a valid post request:
 | POST   | create single patron | base_url/patron                                           | creates a new record based on valid JSON request |
 | DELETE | delete single patron | base_url/patron/<span style="color:lightgreen">{id}<span> | deletes a record based on id parameter           |
 
-Example of a valid post request:
-
-```
-{
-	"name":"Adrian",
-        "sex":"male",
-	"user_id": 3,
-	"city_id": 3
-}
-```
 -->
 
-## **Database Dump**
-
-A database dump created by pg_dump can be found in `./data` -->
-
-## **Insomnia API Endpoint Export**
+## **Postman API Endpoint Export**
 
 tbd
 
 ## **Entity Relationship Diagrams**
 
-tbd
+database documentation (including ERDs), queries for development, and database initialize SQL can be found here: ./data/schema
 
 # **Limitations & Shortcomings**
 
@@ -122,9 +111,9 @@ tbd
 
 \*(Dev) denotes work done for the benefit of the development environment
 
-- [✔️] utilized Flask's "blueprint" functionarlity to splitup my API routes into multiple files
-- [✔️] (Dev) Docker Compose yaml now creates 3 containers on a single network: api (backend code), pg (postgres), and pgadmin
-- [✔️] (Dev) Docker Compose yaml now generates the postgres database from raw SQL durion container build
-- [✔️] (Dev) The API ports for the development host machine and the container are correctly mapped to 8000, so the API returns JSON objects
+- ✅ (Dev) Docker Compose yml creates 3 containers on a single network: api (backend code), pg (postgres), and pgadmin
+- ✅ (Dev) Docker Compose yml generates the postgres database from raw SQL durion container build
+- ✅ (Dev) Docker Compose yml has volumes setup correctly to enable hot reloading of server files (i.e., no rebuilding of images required)
+- ✅ (Dev) The API ports for the development host machine and the container are correctly mapped to 8000, so the API returns JSON objects
 
 # **Notes**
