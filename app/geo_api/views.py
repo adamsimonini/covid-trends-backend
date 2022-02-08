@@ -6,15 +6,30 @@ from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from geo_api.models import Health_Region
-from geo_api.serializers import HealthRegionSerializer
+from geo_api.models import Region, Province, Health_Region
+from geo_api.serializers import RegionSerializer, ProvinceSerializer, HealthRegionSerializer
 from rest_framework.decorators import api_view
 
 
-def get_all_health_regions(request):
+@api_view(['GET'])
+def all_health_regions(request):
     health_regions = Health_Region.objects.all()
     health_regions_serializer = HealthRegionSerializer(health_regions, many=True)
     return JsonResponse(health_regions_serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def all_provinces(request):
+    provinces = Province.objects.all()
+    province_serializer = ProvinceSerializer(provinces, many=True)
+    return JsonResponse(province_serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def all_regions(request):
+    regions = Region.objects.all()
+    region_serializer = RegionSerializer(regions, many=True)
+    return JsonResponse(region_serializer.data, safe=False)
 
 
 def index(request):
@@ -26,41 +41,41 @@ def index(request):
     ''')
 
 
-@api_view(['GET'])
-def health_regions(request):
-    data = {
-        'health_regions': [
-            {
-                'id': '1110',
-                'name_en': 'Toronto Health',
-                'name_fr': 'Toronto Health',
-                'website_en': 'https://www.toronto.ca/community-people/health-wellness-care/',
-                'website_fr': 'https://www.toronto.ca/community-people/health-wellness-care/'
-            },
-            {
-                'id': '595',
-                'name_en': 'Laval Health',
-                'name_fr': 'Laval Health',
-                'website_en': 'https://www.lavalensante.com/en/covid19/',
-                'website_fr': 'https://www.lavalensante.com/covid19/'
-            },
-            {
-                'id': '2406',
-                'name_en': 'Vancouver Health',
-                'name_fr': 'Vancouver Health',
-                'website_en': 'http://www.vch.ca/covid-19',
-                'website_fr': 'http://www.vch.ca/covid-19'
-            },
-            {
-                'id': '499',
-                'name_en': 'Halifax Health',
-                'name_fr': 'Halifax Health',
-                'website_en': 'https://novascotia.ca/coronavirus/',
-                'website_fr': 'https://novascotia.ca/coronavirus/'
-            }
-        ]
-    }
-    return JsonResponse(data)
+# @api_view(['GET'])
+# def health_regions(request):
+#     data = {
+#         'health_regions': [
+#             {
+#                 'id': '1110',
+#                 'name_en': 'Toronto Health',
+#                 'name_fr': 'Toronto Health',
+#                 'website_en': 'https://www.toronto.ca/community-people/health-wellness-care/',
+#                 'website_fr': 'https://www.toronto.ca/community-people/health-wellness-care/'
+#             },
+#             {
+#                 'id': '595',
+#                 'name_en': 'Laval Health',
+#                 'name_fr': 'Laval Health',
+#                 'website_en': 'https://www.lavalensante.com/en/covid19/',
+#                 'website_fr': 'https://www.lavalensante.com/covid19/'
+#             },
+#             {
+#                 'id': '2406',
+#                 'name_en': 'Vancouver Health',
+#                 'name_fr': 'Vancouver Health',
+#                 'website_en': 'http://www.vch.ca/covid-19',
+#                 'website_fr': 'http://www.vch.ca/covid-19'
+#             },
+#             {
+#                 'id': '499',
+#                 'name_en': 'Halifax Health',
+#                 'name_fr': 'Halifax Health',
+#                 'website_en': 'https://novascotia.ca/coronavirus/',
+#                 'website_fr': 'https://novascotia.ca/coronavirus/'
+#             }
+#         ]
+#     }
+#     return JsonResponse(data)
 
 
 def forward_sortation_areas(request):

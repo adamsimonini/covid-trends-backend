@@ -42,6 +42,12 @@ Remove all containers and cached images/containers
 docker system prune
 ```
 
+Remove all volumes
+
+```
+docker volume prune
+```
+
 ```
 
 # dev environment
