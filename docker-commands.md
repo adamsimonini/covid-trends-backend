@@ -36,9 +36,14 @@ Remove the docker containers, remove all images, and remove all volumes:
 docker compose down --rmi all --volumes
 ```
 
-Within ./app/public_health_trends you'll need a .env file, which will contain the following:
+Remove all containers and cached images/containers
 
 ```
+docker system prune
+```
+
+```
+
 # dev environment
 DEBUG=True
 

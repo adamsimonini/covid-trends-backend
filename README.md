@@ -30,9 +30,41 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 - ![confirm containers are running](images/docker-ps-example.png)
 
-4. The API, postgres database, and pgAdmin (Postgres GUI) should now be running each in their own containers. Visit pgAdmin by visiting [localhost:5433/browser/](http://localhost:5433/browser/)
+4. On the root directory (where the docker-compose.yml file resides), type "docker compose up -d" into the terminal. This will take a while the first time, since Docker is downloading all required images from DockerHub. Our docker-compose.yml will start multiple containers and place them on the same network. Once completed, you can input "docker ps" into the terminal to see the running containers:
 
-5. Due to Docker bind mounting specified in the docker-compose.yml, there is no need to remake Docker images or restart the server during development. Change to API endpoints and routing within ./app should be reflected automatically.
+5. Ensure you have a .env file on the root directory, which includes the appropriate values for the following keys (you may ask a colleague for their .env file, as the values are not to be shared on github):
+
+```
+# dev environment
+DEBUG=True
+
+# database settings
+DB_NAME=???
+DB_USER=???
+DB_PASSWORD=???
+DB_HOST=???
+DB_PORT=???
+
+SECRET_KEY=???
+
+```
+
+7. All Django apps are dependent on a set of default tables to store users, groups, session information, migrations logs, etc. These default tables are part of the built-in Django framework and are required for a Django website to function properly. To generate these tables, make sure that your Docker Compose containers are all running, then open a bash terminal and run the following two commands:
+
+```
+docker compose exec web python manage.py makemigrations --noinput
+docker compose exec web python manage.py migrate --noinput
+```
+
+7. To seed the database with randomly generated values that will respect the typecasting on the model definitions, we're using a small python package called [django-seed](https://github.com/Brobin/django-seed). After the models have been migrated into the database (see step 7), you can seed each resulting table with 15 records via the following command:
+
+```
+docker compose exec web python manage.py seed api --number=15
+```
+
+8. The API, postgres database, and pgAdmin (Postgres GUI) should now be running each in their own containers. Visit pgAdmin by visiting [localhost:5433/browser/](http://localhost:5433/browser/)
+
+9. Due to Docker bind mounting specified in the docker-compose.yml, there is no need to remake Docker images or restart the server during development. Change to API endpoints and routing within ./app should be reflected automatically.
 
 ## **Q&A**
 
@@ -116,4 +148,8 @@ database documentation (including ERDs), queries for development, and database i
 - ✅ (Dev) Docker Compose yml has volumes setup correctly to enable hot reloading of server files (i.e., no rebuilding of images required)
 - ✅ (Dev) The API ports for the development host machine and the container are correctly mapped to 8000, so the API returns JSON objects
 
-# **Notes**
+# **Troubleshooting**
+
+- migration: if you have problems with migration, use "docker compose down" to destroy all running containers, then delete the migrations within ./app/api/migrations, but leave **init**.py
+
+- unkown issues: before troubleshooting a mysterious issue, it might be 

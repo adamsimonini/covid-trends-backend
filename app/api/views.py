@@ -1,4 +1,20 @@
 from django.http import HttpResponse, JsonResponse
+from django.shortcuts import render
+from rest_framework.parsers import JSONParser
+from rest_framework import status
+from rest_framework.renderers import TemplateHTMLRenderer
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
+from api.models import Health_Region
+from api.serializers import HealthRegionSerializer
+from rest_framework.decorators import api_view
+
+
+def get_all_health_regions(request):
+    health_regions = Health_Region.objects.all()
+    health_regions_serializer = HealthRegionSerializer(health_regions, many=True)
+    return JsonResponse(health_regions_serializer.data, safe=False)
 
 
 def index(request):
@@ -10,6 +26,7 @@ def index(request):
     ''')
 
 
+@api_view(['GET'])
 def health_regions(request):
     data = {
         'health_regions': [

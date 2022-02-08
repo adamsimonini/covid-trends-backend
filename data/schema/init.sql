@@ -11,7 +11,7 @@ SET row_security = off;
 
 DROP DATABASE IF EXISTS public_health_trends;
 
-CREATE DATABASE public_health_trends WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'en_US.utf8';
+CREATE DATABASE public_health_trends WITH TEMPLATE = template0 ENCODING = 'UTF8';
 
 ALTER DATABASE public_health_trends OWNER TO postgres;
 
@@ -30,7 +30,7 @@ SET row_security = off;
 
 SET default_tablespace = '';
 
-SET default_table_access_method = heap;
+-- SET default_table_access_method = heap;
 
 CREATE TABLE public.regions (
 	id SERIAL NOT NULL PRIMARY KEY,
