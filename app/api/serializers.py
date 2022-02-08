@@ -7,7 +7,7 @@ class HealthRegionSerializer(serializers.ModelSerializer):
         model = Health_Region
         fields = (
             'hr_uid',
-            'fk_province_code',
+            'fk_province_id',
             'name_en',
             'name_fr',
             'website_en',
