@@ -57,7 +57,7 @@ docker compose exec web python manage.py migrate --noinput
 6. To seed the database with randomly generated values that will respect the typecasting on the model definitions, we're using a small python package called [django-seed](https://github.com/Brobin/django-seed). After the models have been migrated into the database (see step 7), you can seed each resulting table with 15 records via the following command:
 
 ```
-docker compose exec web python manage.py seed api --number=15
+docker compose exec web python manage.py seed geo_api --number=15
 ```
 
 7. The API, postgres database, and pgAdmin (Postgres GUI) should now be running each in their own containers. Visit pgAdmin by visiting [localhost:5433/browser/](http://localhost:5433/browser/)

@@ -11,6 +11,6 @@ WITH hr_province AS (
 	LEFT JOIN province p
 	ON p.id = hr.fk_province_id
 )
-SELECT * FROM hr_provinces hp
-LEFT JOIN regions r
+SELECT * FROM hr_province hp
+LEFT JOIN region r
 ON hp.fk_region_id = r.id;
