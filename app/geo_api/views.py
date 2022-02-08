@@ -6,8 +6,8 @@ from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from api.models import Health_Region
-from api.serializers import HealthRegionSerializer
+from geo_api.models import Health_Region
+from geo_api.serializers import HealthRegionSerializer
 from rest_framework.decorators import api_view
 
 

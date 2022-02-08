@@ -5,14 +5,24 @@ from django.db import models
 # Model meta options: https://docs.djangoproject.com/en/4.0/ref/models/options/
 
 
+class Region(models.Model):
+    name_en = models.CharField(max_length=150, blank=False)
+    name_fr = models.CharField(max_length=150, blank=False)
+
+    class Meta:
+        app_label = 'geo_api'
+        db_table = 'region'
+
+
 class Province(models.Model):
     province_code = models.PositiveSmallIntegerField(blank=False)
-    full_name = models.CharField(max_length=150, blank=False)
+    name_en = models.CharField(max_length=150, blank=False)
+    name_fr = models.CharField(max_length=150, blank=False)
     alpha_code = models.PositiveSmallIntegerField(blank=False)
     fk_region_id = models.PositiveSmallIntegerField(blank=False)
 
     class Meta:
-        app_label = 'api'
+        app_label = 'geo_api'
         db_table = 'province'
 
 
@@ -28,7 +38,7 @@ class Health_Region(models.Model):
     website_fr = models.CharField(max_length=300, blank=False)
 
     class Meta:
-        app_label = 'api'
+        app_label = 'geo_api'
         db_table = 'health_region'
 
     # class Meta:
