@@ -30,7 +30,7 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 - ![confirm containers are running](images/docker-ps-example.png)
 
-4. Ensure you have a .env file on the root directory, which includes the appropriate values for the following keys (you may ask a colleague for their .env file, as the values are not to be shared on github):
+4. Ensure you have a .env file (you should ask a colleague for their .env file, as the values are not to be shared on github) on the root directory, which includes the appropriate values for the following keys:
 
    ```
    # dev environment
@@ -56,11 +56,10 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 6. There are two options to seed the database:
 
-   1. predefined, manually created records via [fixtures](https://docs.djangoproject.com/en/4.0/howto/initial-data/)
+   1. predefined, manually created records via [fixtures](https://docs.djangoproject.com/en/4.0/howto/initial-data/) located in ./app/geo_api/fixtures. To do so, use the following command:
 
    ```
-   docker compose exec web python manage.py loaddata <fixture's name>
-   example: docker compose exec web python manage.py loaddata regions
+   docker compose exec web python manage.py loaddata <fixture's name> (e.g., regions, province, health_regions)
    ```
 
    2. randomly generated records that will respect the typecasting on the model definitions, as well as table relationships, via a small python package called [django-seed](https://github.com/Brobin/django-seed).
