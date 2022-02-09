@@ -15,10 +15,10 @@ class ProvinceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Province
         fields = (
-            'province_code',
+            'geo_code',
+            'alpha_code',
             'name_en',
             'name_fr',
-            'alpha_code',
             'fk_region_id',
         )
 

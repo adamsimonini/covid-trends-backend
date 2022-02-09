@@ -1,3 +1,5 @@
+# https://docs.djangoproject.com/en/4.0/ref/models/querysets/
+
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from rest_framework.parsers import JSONParser
@@ -10,12 +12,23 @@ from geo_api.models import Region, Province, Health_Region
 from geo_api.serializers import RegionSerializer, ProvinceSerializer, HealthRegionSerializer
 from rest_framework.decorators import api_view
 
+# health region endpoints
+
 
 @api_view(['GET'])
 def all_health_regions(request):
     health_regions = Health_Region.objects.all()
-    health_regions_serializer = HealthRegionSerializer(health_regions, many=True)
-    return JsonResponse(health_regions_serializer.data, safe=False)
+    health_region_serializer = HealthRegionSerializer(health_regions, many=True)
+    return JsonResponse(health_region_serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def single_health_region_by_hr_uid(request, hr_uid):
+    health_region = Health_Region.objects.get(hr_uid=hr_uid)
+    health_region_serializer = HealthRegionSerializer(health_region, many=False)
+    return JsonResponse(health_region_serializer.data, safe=False)
+
+# province endpoints
 
 
 @api_view(['GET'])
@@ -23,6 +36,15 @@ def all_provinces(request):
     provinces = Province.objects.all()
     province_serializer = ProvinceSerializer(provinces, many=True)
     return JsonResponse(province_serializer.data, safe=False)
+
+
+@api_view(['GET'])
+def single_province_by_geo_code(request, geo_code):
+    province = Province.objects.get(geo_code=geo_code)
+    province_serializer = ProvinceSerializer(province, many=False)
+    return JsonResponse(province_serializer.data, safe=False)
+
+# region endpoints
 
 
 @api_view(['GET'])
