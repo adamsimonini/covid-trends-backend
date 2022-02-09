@@ -6,10 +6,10 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 ## **Technology**
 
-- Python along with Flask are used to communicate with the database and generate an API for the client to query the database.
-- Postgres is used as the database. With Postgres our API can make SQL queries on the data.
+- Python along with Django framework are used to communicate with the database and generate an API for the client to query the database.
+- PostgreSQL is used as the database. With Postgres our API can make SQL queries on the data.
 - Django acts as an all-in-one framework for API creation. It includes an ORM, as well as routing.
-- Docker will be used to containerize both the backend application, as well as the database. This will help with development and deployment on Windows Azure.
+- Docker will be used to containerize both the backend application, as well as the database. This will help with development and deployment on Microsoft Azure.
 
 ## **Steps to Replicate Dev Environment**
 
@@ -32,33 +32,42 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 4. Ensure you have a .env file on the root directory, which includes the appropriate values for the following keys (you may ask a colleague for their .env file, as the values are not to be shared on github):
 
-```
-# dev environment
-DEBUG=True
+   ```
+   # dev environment
+   DEBUG=True
 
-# database settings
-DB_NAME=???
-DB_USER=???
-DB_PASSWORD=???
-DB_HOST=???
-DB_PORT=???
+   # database settings
+   DB_NAME=???
+   DB_USER=???
+   DB_PASSWORD=???
+   DB_HOST=???
+   DB_PORT=???
 
-SECRET_KEY=???
+   SECRET_KEY=???
 
-```
+   ```
 
 5. All Django apps are dependent on a set of default tables to store users, groups, session information, migrations logs, etc. These default tables are part of the built-in Django framework and are required for a Django website to function properly. To generate these tables, make sure that your Docker Compose containers are all running, then open a bash terminal and run the following two commands:
 
-```
-docker compose exec web python manage.py makemigrations --noinput
-docker compose exec web python manage.py migrate --noinput
-```
+   ```
+   docker compose exec web python manage.py makemigrations --noinput
+   docker compose exec web python manage.py migrate --noinput
+   ```
 
-6. To seed the database with randomly generated values that will respect the typecasting on the model definitions, we're using a small python package called [django-seed](https://github.com/Brobin/django-seed). After the models have been migrated into the database (see step 7), you can seed each resulting table with 15 records via the following command:
+6. There are two options to seed the database:
 
-```
-docker compose exec web python manage.py seed geo_api --number=15
-```
+   1. predefined, manually created records via [fixtures](https://docs.djangoproject.com/en/4.0/howto/initial-data/)
+
+   ```
+   docker compose exec web python manage.py loaddata <fixture's name>
+   example: docker compose exec web python manage.py loaddata regions
+   ```
+
+   2. randomly generated records that will respect the typecasting on the model definitions, as well as table relationships, via a small python package called [django-seed](https://github.com/Brobin/django-seed).
+
+   ```
+   docker compose exec web python manage.py seed geo_api --number=15
+   ```
 
 7. The API, postgres database, and pgAdmin (Postgres GUI) should now be running each in their own containers. Visit pgAdmin by visiting [localhost:5433/browser/](http://localhost:5433/browser/)
 
@@ -155,11 +164,20 @@ database documentation (including ERDs), queries for development, and database i
 - ✅ (Dev) The API ports for the development host machine and the container are correctly mapped to 8000, so the API returns JSON objects
 - ✅ (Dev) First ORM models produced and first database migrations made
 - ✅ (Dev) First true GET request made to database for health regions
-- ✅ (Dev) Added django-seed library for auto-populating models
+- ✅ (Dev) Added django-seed package for auto-populating models with random data
+- ✅ (Dev) Implemented fixturesy for auto-populating models with predefined data
 
 # **Troubleshooting**
 
 - migration: if you have problems with migration, use "docker compose down" to destroy all running containers, then delete the migrations within ./app/api/migrations, but leave **init**.py
+
+- database is not initializing. messages include "database not shutdown properly", and "PostgreSQL database already exists, skipping initialization. Ensure you're running your docker compose commands from the root directory. Try the following:
+
+```
+docker compose down
+docker volume ls | awk '$1 == "local" { print $2 }' | xargs --no-run-if-empty docker volume rm
+docker compose up -d
+```
 
 - unkown issues: before troubleshooting a mysterious issue, it might be usefull to fully destroy all elements of this app on Docker and re-initialize the containers. While the containers are running, enter the following into terminal:
 

@@ -16,7 +16,7 @@ class Region(models.Model):
 
 class Province(models.Model):
     geo_code = models.PositiveSmallIntegerField(blank=False)  # standard geographical classification code
-    alpha_code = models.PositiveSmallIntegerField(blank=False)
+    alpha_code = models.CharField(max_length=2, blank=False)
     name_en = models.CharField(max_length=150, blank=False)
     name_fr = models.CharField(max_length=150, blank=False)
     fk_region = models.ForeignKey(

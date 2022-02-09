@@ -1,0 +1,18 @@
+[
+	{
+		"model": "geo_api.region",
+		"pk": 1,
+		"fields": {
+			"name_en": "Atlantic ",
+			"name_fr": "L’Atlantique"
+		}
+	},
+	{
+		"model": "geo_api.region",
+		"pk": 2,
+		"fields": {
+			"name_en": "Central Canada",
+			"name_fr": "Le centre du Canada"
+		}
+	}
+]

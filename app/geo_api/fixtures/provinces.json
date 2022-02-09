@@ -1,0 +1,24 @@
+[
+	{
+		"model": "geo_api.province",
+		"pk": 1,
+		"fields": {
+			"geo_code": 48,
+			"alpha_code": "AB",
+			"name_en": "Alberta",
+			"name_fr": "L'Alberta",
+			"fk_region": 1
+		}
+	},
+	{
+		"model": "geo_api.province",
+		"pk": 2,
+		"fields": {
+			"geo_code": 59,
+			"alpha_code": "BC",
+			"name_en": "British Columbia",
+			"name_fr": "La Colombie-Britannique",
+			"fk_region": 2
+		}
+	}
+]
