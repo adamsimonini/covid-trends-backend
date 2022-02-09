@@ -1,15 +1,27 @@
-# **COVIDTrends Backend in Python, Postgres, Django, & Docker**
+# **Public Health Trends Backend**
 
-## **What and why**
+### **What and why**
 
 This is the backend part of a fullstack application. Ideally this application will serve as the database and API for COIVDTrends, a Canadian application dedicated to showing Canadians geographically relevant COVID-19 data.
 
-## **Technology**
+### **Technology**
 
 - Python along with Django framework are used to communicate with the database and generate an API for the client to query the database.
 - PostgreSQL is used as the database. With Postgres our API can make SQL queries on the data.
 - Django acts as an all-in-one framework for API creation. It includes an ORM, as well as routing.
 - Docker will be used to containerize both the backend application, as well as the database. This will help with development and deployment on Microsoft Azure.
+
+## **API Endpoints Reference**
+
+**Dev base url: localhost:8000**
+
+### **Geographical**
+
+| METHOD | NAME                  | PATH                                                                      | RESULT                                                                      |
+| ------ | --------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| GET    | all health regions    | base_url/api/health-regions                                               | returns all recrods from the health_regions table                           |
+| GET    | single health region  | base_url/api/health-regions/<span style="color:lightgreen">{hr_uid}<span> | returns single record based on id parameter                                 |
+| Get    | health regions by fsa | base_url/api/fsa/<span style="color:lightgreen">{fsa}<span>               | return an array of one or more health regions belonging to the provided fsa |
 
 ## **Steps to Replicate Dev Environment**
 
@@ -74,6 +86,14 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 ## **Testing**
 
+### **API Endpoint Testing**
+
+[Join our workspace on Postman](https://app.getpostman.com/join-team?invite_code=e88b15df4602e4abdd93cb66ef04e5e4&target_code=50e347fcc74bdefaeefb6d6a3605fa31)
+
+If the link above doesn't work, have Adam invite you via email.
+
+### **Unit Testing**
+
 From ./app, testing can be done with the pytest unit testing package via the following command:
 
 ```
@@ -87,18 +107,6 @@ pytest -v
 
 2. **What future improvements are in store, if any?**
    n/a
-
-## **API Endpoints Reference**
-
-**Dev base_url: localhost:5000**
-
-### **Endpoint Grouping One**
-
-| METHOD | NAME                  | PATH                                                              | RESULT                                                                      |
-| ------ | --------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| GET    | all health regions    | base_url/health-regions                                           | returns all recrods from the health_regions table                           |
-| GET    | single health region  | base_url/health-regions/<span style="color:lightgreen">{id}<span> | returns single record based on id parameter                                 |
-| Get    | health regions by fsa | base_url/fsa/<span style="color:lightgreen">{id}<span>            | return an array of one or more health regions belonging to the provided fsa |
 
 <!-- Example of a valid get request:
 

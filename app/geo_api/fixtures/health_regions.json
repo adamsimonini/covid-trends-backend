@@ -1,24 +1,26 @@
 [
 	{
-		"model": "geo_api.health_regions",
+		"model": "geo_api.health_region",
 		"pk": 1,
 		"fields": {
-			"geo_code": 48,
-			"alpha_code": "AB",
-			"name_en": "Alberta",
-			"name_fr": "L'Alberta",
-			"fk_region": 1
+			"hr_uid": 549,
+			"name_en": "Northern Health",
+			"name_fr": "Northern Health",
+			"website_en": "https://www.northernhealth.ca/health-topics/covid-19-information#trusted-information#northern-health#trusted-info",
+			"website_fr": "https://www.northernhealth.ca/health-topics/covid-19-information#trusted-information#northern-health#trusted-info",
+			"fk_province": 1
 		}
 	},
 	{
-		"model": "geo_api.health_regions",
+		"model": "geo_api.health_region",
 		"pk": 2,
 		"fields": {
-			"geo_code": 59,
-			"alpha_code": "BC",
-			"name_en": "British Columbia",
-			"name_fr": "La Colombie-Britannique",
-			"fk_region": 2
+			"hr_uid": 2441,
+			"name_en": "Région du Saguenay—Lac-Saint-Jean",
+			"name_fr": "Région du Saguenay—Lac-Saint-Jean",
+			"website_en": "https://santesaglac.gouv.qc.ca/en/english-content/",
+			"website_fr": "https://santesaglac.gouv.qc.ca/coronavirus-covid-19/",
+			"fk_province": 2
 		}
 	}
 ]
