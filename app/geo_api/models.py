@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
 # standard geographical classification code https://en.wikipedia.org/wiki/Standard_Geographical_Classification_code_(Canada)
 # ORM docs: https://docs.djangoproject.com/en/4.0/topics/db/models/
 # fields reference: https://docs.djangoproject.com/en/4.0/ref/models/fields/#model-field-types
@@ -46,3 +47,12 @@ class Health_Region(models.Model):
 
     # class Meta:
     #     app_label = 'derka'
+
+
+class Forward_Sortation_Area(models.Model):
+    code = models.CharField(max_length=3, blank=False)  # first 3 digits of a postal code
+    health_regions = ArrayField(models.PositiveSmallIntegerField(blank=False))  # an fsa can contain multiple health regions (i.e., 1, 2, or even 3)
+
+    class Meta:
+        app_label = 'geo_api'
+        db_table = 'forward_sortation_area'

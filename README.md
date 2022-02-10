@@ -71,7 +71,7 @@ This is the backend part of a fullstack application. Ideally this application wi
    1. predefined, manually created records via [fixtures](https://docs.djangoproject.com/en/4.0/howto/initial-data/) located in ./app/geo_api/fixtures. To do so, use the following command:
 
    ```
-   docker compose exec web python manage.py loaddata <fixture's name> (e.g., regions, province, health_regions)
+    docker compose exec web python manage.py loaddata geo_fixture
    ```
 
    2. randomly generated records that will respect the typecasting on the model definitions, as well as table relationships, via a small python package called [django-seed](https://github.com/Brobin/django-seed).
