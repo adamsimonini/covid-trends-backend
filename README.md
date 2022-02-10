@@ -172,7 +172,8 @@ database documentation (including ERDs), queries for development, and database i
 - ✅ (Dev) First ORM models produced and first database migrations made
 - ✅ (Dev) First true GET request made to database for health regions
 - ✅ (Dev) Added django-seed package for auto-populating models with random data
-- ✅ (Dev) Implemented fixturesy for auto-populating models with predefined data
+- ✅ (Dev) Implemented fixtures for auto-populating models with predefined data
+- ✅ (Dev) Potentially solved a long-standing issues with PostgreSQL and docker compose on db initialization via allocating db creation to initdb.sh as opposed to init.sql
 
 # **Troubleshooting**
 
