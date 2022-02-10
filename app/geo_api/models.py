@@ -45,9 +45,6 @@ class Health_Region(models.Model):
         app_label = 'geo_api'
         db_table = 'health_region'
 
-    # class Meta:
-    #     app_label = 'derka'
-
 
 class Forward_Sortation_Area(models.Model):
     code = models.CharField(max_length=3, blank=False)  # first 3 digits of a postal code
