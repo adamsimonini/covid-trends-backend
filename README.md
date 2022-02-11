@@ -17,11 +17,12 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 ### **Geographical**
 
-| METHOD | NAME                  | PATH                                                                      | RESULT                                                                      |
-| ------ | --------------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| GET    | all health regions    | base_url/api/health-regions                                               | returns all recrods from the health_regions table                           |
-| GET    | single health region  | base_url/api/health-regions/<span style="color:lightgreen">{hr_uid}<span> | returns single record based on id parameter                                 |
-| Get    | health regions by fsa | base_url/api/fsa/<span style="color:lightgreen">{fsa}<span>               | return an array of one or more health regions belonging to the provided fsa |
+| METHOD | NAME                 | PATH                                                                      | RESULT                                            |
+| ------ | -------------------- | ------------------------------------------------------------------------- | ------------------------------------------------- |
+| GET    | all health regions   | base_url/api/health_regions                                               | returns all recrods from the health_regions table |
+| GET    | single health region | base_url/api/health_regions/<span style="color:lightgreen">{hr_uid}<span> | returns single record based on hr_uid parameter   |
+| GET    | all provinces        | base_url/api/provinces/<span style="color:lightgreen">{hr_uid}<span>      | returns all records from province                 |
+| GET    | single province      | base_url/api/provinces/<span style="color:lightgreen">{geo_code}<span>    | returns single record based on geo_code parameter |
 
 ## **Steps to Replicate Dev Environment**
 
