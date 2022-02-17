@@ -69,5 +69,5 @@ ALLOWED_HOSTS=.localhost, .herokuapp.com
 Troubleshooting
 
 ```
-After starting and stopping containers, there seems to be some corruption with Docker and CLI commands and pg_container. Sometimes after starting the pg_container, the database fails to initalize. The logs for thef pg_container will state "PostgreSQL database already found. Skipping initialization". If the database is not initalizing on docker compose up -d, consider exiting the terminal and starting a new one. Sometimes this seems to fix the issue for reasons unknown.
+After starting and stopping containers, there seems to be some corruption with Docker and CLI commands and pg_container. Sometimes after starting the pg_container, the database fails to initalize. The logs for the pg_container will state "PostgreSQL database already found. Skipping initialization". If the database is not initalizing on docker compose up -d, consider exiting the terminal and starting a new one. Sometimes this seems to fix the issue for reasons unknown.
 ```

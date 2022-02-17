@@ -44,7 +44,8 @@ services:
       - DB_PORT=${DB_PORT}
       - DATABASE=postgres
       - SECRET_KEY=${SECRET_KEY}
-      - DEBUG=True
+      - DEBUG=${DEBUG}
+      - ALLOWED_HOSTS=${ALLOWED_HOSTS}
     ports:
       - 8000:8000
     volumes:

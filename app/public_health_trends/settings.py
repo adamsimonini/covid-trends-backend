@@ -28,11 +28,12 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = []
+# TODO: remove 0.0.0.0, which is all hosts, under allowed hosts when moving to production
+# https://docs.djangoproject.com/en/2.2/ref/settings/#allowed-hosts
+ALLOWED_HOSTS = ['*']
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:19006',
-]
+# TODO: set this to false for production, for security reasons
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
