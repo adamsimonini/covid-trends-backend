@@ -72,7 +72,7 @@ This is the backend part of a fullstack application. Ideally this application wi
    1. predefined, manually created records via [fixtures](https://docs.djangoproject.com/en/4.0/howto/initial-data/) located in ./app/geo_api/fixtures. To do so, use the following command:
 
    ```
-    docker compose exec web python manage.py loaddata geo_fixture
+   docker compose exec web python manage.py loaddata geo_fixture
    ```
 
    2. randomly generated records that will respect the typecasting on the model definitions, as well as table relationships, via a small python package called [django-seed](https://github.com/Brobin/django-seed).
@@ -192,4 +192,11 @@ docker compose up -d
 
 ```
 docker compose down --rmi all --volumes
+```
+
+- if pg_container shows 'skipping initialization' and no 'CREATE', try switching the initialization command in docker-compose.yml to the other command
+
+```
+"${PWD}/data/schema/init.sql:/docker-entrypoint-initdb.d/1-init.sql"
+./initdb.sh:/docker-entrypoint-initdb.d/init.sh
 ```
