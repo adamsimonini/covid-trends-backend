@@ -2,14 +2,15 @@
 
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
+from app.geo_api.models import Diseases
 from rest_framework.parsers import JSONParser
 from rest_framework import status
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from geo_api.models import Region, Province, Health_Region
-from geo_api.serializers import RegionSerializer, ProvinceSerializer, HealthRegionSerializer
+from geo_api.models import Region, Province, Health_Region, Weather_Stations, Diseases
+from geo_api.serializers import RegionSerializer, ProvinceSerializer, HealthRegionSerializer, WeatherStationSerializer, DiseasesSerializer
 from rest_framework.decorators import api_view
 
 # health region endpoints
@@ -52,6 +53,18 @@ def all_regions(request):
     regions = Region.objects.all()
     region_serializer = RegionSerializer(regions, many=True)
     return JsonResponse(region_serializer.data, safe=False)
+
+@api_view(['GET'])
+def all_weather_stations(request):
+    weather_stations = Weather_Stations.objects.all()
+    weather_station_serializer = WeatherStationSerializer(weather_stations, many=True)
+    return JsonResponse(weather_station_serializer.data, safe=False)
+
+@api_view(['GET'])
+def all_diseases(request):
+    diseases = Diseases.objects.all()
+    diseases_serializer = DiseasesSerializer(diseases, many=True)
+    return JsonResponse(diseases_serializer.data, safe=False)
 
 
 def index(request):
