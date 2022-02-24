@@ -30,12 +30,7 @@ git commit -m '<message here>'
 
 - Create the remote version of your branch
 ```
-git push --set-upstream origin <local branch name>
-```
-
-- Push your local changes to the remote branch
-```
-git push
+git push --set-upstream origin <branch-name>
 ```
 
 - Revert your local changes to the current remote version for that branch
