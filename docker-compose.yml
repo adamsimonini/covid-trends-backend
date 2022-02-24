@@ -1,6 +1,5 @@
 # docker compose docs: https://docs.docker.com/compose/compose-file/compose-file-v3/
 # docker and Django: https://docs.docker.com/samples/django/
-
 version: "3.8"
 services:
   pg:
@@ -16,8 +15,8 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      # - "${PWD}/data/schema/init.sql:/docker-entrypoint-initdb.d/1-init.sql"
-      - ./initdb.sh:/docker-entrypoint-initdb.d/init.sh
+      - "${PWD}/data/schema/init.sql:/docker-entrypoint-initdb.d/1-init.sql"
+      # - ./initdb.sh:/docker-entrypoint-initdb.d/init.sh
   pgadmin:
     container_name: pgadmin_container
     image: dpage/pgadmin4:5.2

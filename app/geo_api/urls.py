@@ -11,4 +11,6 @@ urlpatterns = [
     path('regions/', views.all_regions, name='get_all_regions'),
     path('forward_sortation_areas/', views.forward_sortation_areas, name='forward_sortation_areas'),
     path('forward_sortation_areas/<str:fsa>', views.single_forward_sortation_area, name='single_forward_sortation_area'),
+    path('weather_stations/', views.all_weather_stations, name='get_all_weather_stations'),
+    path('diseases/', views.all_diseases, name='get_all_diseases')
 ]

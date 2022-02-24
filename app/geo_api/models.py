@@ -53,3 +53,23 @@ class Forward_Sortation_Area(models.Model):
     class Meta:
         app_label = 'geo_api'
         db_table = 'forward_sortation_area'
+
+
+class Weather_Stations(models.Model):
+    code = models.PositiveSmallIntegerField(blank=False)
+    fk_health_region = models.ForeignKey(
+        Health_Region,
+        on_delete=models.CASCADE
+    )
+
+    class Meta:
+        app_label = 'geo_api'
+        db_table = 'weather_station'
+
+class Diseases(models.Model):
+    code = models.PositiveSmallIntegerField(blank=False)
+    name = models.CharField(max_length=150, blank=False)
+
+    class Meta:
+        app_label = 'geo_api'
+        db_table = 'diseases'
