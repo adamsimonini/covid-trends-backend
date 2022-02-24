@@ -2,7 +2,6 @@
 
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
-from app.geo_api.models import Diseases
 from rest_framework.parsers import JSONParser
 from rest_framework import status
 from rest_framework.renderers import TemplateHTMLRenderer

@@ -136,7 +136,7 @@
 		"fields": {
 			"hr_uid": 6001,
 			"name_en": "Yukon",
-			"name_fr": "Yokon",
+			"name_fr": "Yukon",
 			"website_en": "https://yukon.ca/en/COVIDâ€'19-information",
 			"website_fr": "https://yukon.ca/fr/COVIDâ€'19-information",
 			"fk_province": 3
@@ -192,6 +192,30 @@
 		"fields": {
 			"code": 44,
 			"health_regions": [5, 5, 1]
+		}
+	},
+	{
+		"model": "geo_api.diseases",
+		"pk": 1,
+		"fields": {
+			"code": 123,
+			"name": "Common Cold"
+		}
+	},
+	{
+		"model": "geo_api.diseases",
+		"pk": 2,
+		"fields": {
+			"code": 456,
+			"name": "Covid"
+		}
+	},
+	{
+		"model": "geo_api.diseases",
+		"pk": 3,
+		"fields": {
+			"code": 789,
+			"name": "Lack Of Coffee"
 		}
 	}
 ]
