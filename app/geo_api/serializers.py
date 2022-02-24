@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from geo_api.models import Region, Province, Health_Region
+from geo_api.models import Region, Province, Health_Region, Weather_Stations, Diseases
 
 
 class RegionSerializer(serializers.ModelSerializer):
@@ -33,4 +33,20 @@ class HealthRegionSerializer(serializers.ModelSerializer):
             'website_en',
             'website_fr',
             'fk_province_id',
+        )
+
+class WeatherStationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Weather_Stations
+        fields = (
+            'code',
+            'fk_health_region',
+        )
+
+class DiseasesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Diseases
+        fields = (
+            'code',
+            'name',
         )
