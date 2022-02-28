@@ -1,11 +1,16 @@
-- Get the latest file updates from cloud branch
+- Go to the main branch to get the latest updates
+```
+git checkout main
+```
+
+- Get the latest file updates from cloud branch (usually done from main)
 ```
 git pull
 ```
 
-- Create a new local working branch for yourself
+- Create a new local working branch for yourself where branch-name = xx-yyyy (xx = your initials, yyyy = ticket number on DevOps)
 ```
-git checkout <branch-name>
+git checkout -b <branch-name>
 ```
 
 - Add your changes to the commit
@@ -23,17 +28,12 @@ git status
 git commit -m '<message here>'
 ```
 
-- (If not already done:) Create an upstream version of your branch
+- Create the remote version of your branch
 ```
-git push --set-upstream origin <local branch name>
-```
-
-- Push your local changes to the upstream branch
-```
-git push
+git push --set-upstream origin <branch-name>
 ```
 
-- Revert your local changes to the current upstream version for that branch
+- Revert your local changes to the current remote version for that branch
 ```
 git restore .
 ```
