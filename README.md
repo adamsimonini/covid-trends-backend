@@ -19,10 +19,13 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 | METHOD | NAME                 | PATH                                                                      | RESULT                                            |
 | ------ | -------------------- | ------------------------------------------------------------------------- | ------------------------------------------------- |
-| GET    | all health regions   | base_url/api/health_regions                                               | returns all recrods from the health_regions table |
-| GET    | single health region | base_url/api/health_regions/<span style="color:lightgreen">{hr_uid}<span> | returns single record based on hr_uid parameter   |
-| GET    | all provinces        | base_url/api/provinces/<span style="color:lightgreen">{hr_uid}<span>      | returns all records from province                 |
-| GET    | single province      | base_url/api/provinces/<span style="color:lightgreen">{geo_code}<span>    | returns single record based on geo_code parameter |
+| GET    | all health regions   | base_url/api/geo/health_regions                                               | returns all recrods from the health_regions table |
+| GET    | single health region | base_url/api/geo/health_regions/<span style="color:lightgreen">{hr_uid}<span> | returns single record based on hr_uid parameter   |
+| GET    | all provinces        | base_url/api/geo/provinces/                                            | returns all records from province                 |
+| GET    | single province      | base_url/api/geo/provinces/<span style="color:lightgreen">{geo_code}<span>    | returns single record based on geo_code parameter |
+| GET    | all regions        | base_url/api/geo/regions                                                    | returns all records from province                 |
+| GET    | all weather stations        | base_url/api/geo/weather_stations                                              | returns all records from province                 |
+| GET    | all diseases        | base_url/api/geo/diseases                                                    | returns all records from province                 |
 
 ## **Steps to Replicate Dev Environment**
 
