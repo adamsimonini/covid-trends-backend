@@ -18,8 +18,9 @@ urlpatterns = [
 
     path('region/', api.api_views.RegionList.as_view()),
     path('health_region/', api.api_views.HealthRegionList.as_view()),
-    path('diseases/', api.api_views.DiseasesList.as_view()),
-    path('weatherstations/', api.api_views.WeatherStationsList.as_view()),
+    path('disease/', api.api_views.DiseaseList.as_view()),
+    path('weatherstation/', api.api_views.WeatherStationList.as_view()),
     path('province/', api.api_views.ProvinceList.as_view()),
+    # path('vaccination/', api.api_views.VaccinationList.as_view()),
 
 ]

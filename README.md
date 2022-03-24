@@ -42,11 +42,28 @@ This is the backend part of a fullstack application. Ideally this application wi
 
   ![mac install](images/mac-docker-install.png)
 
-3. On the root directory (where the docker-compose.yml file resides), type "docker compose up -d" into the terminal. This will take a while the first time, since Docker is downloading all required images from DockerHub. Our docker-compose.yml will start multiple containers and place them on the same network. Once completed, you can input "docker ps" into the terminal to see the running containers:
+3. On the root directory (where the docker-compose.yml file resides), type "docker compose up -d" into the terminal. The "-d" tells docker to run in 'Detached mode' where it will run the containers in the background. This will take a while the first time, since Docker is downloading all required images from DockerHub. Our docker-compose.yml will start multiple containers and place them on the same network. Once completed, you can input "docker ps" into the terminal to see the running containers:
 
 - ![confirm containers are running](images/docker-ps-example.png)
 
-4. Ensure you have a .env file (you should ask a colleague for their .env file, as the values are not to be shared on github) on the root directory, which includes the appropriate values for the following keys:
+4. Create a virtual environment for Python and other packages. If you're using Python 3.4 or above, you can use the following baked in command to create your venv (will create a directory called venv):
+
+   ```
+   python -m venv venv
+   ```
+   Once the 'venv' directory is created, you can activate it by using the following command (assuming you're using Bash):
+   ```
+   source venv/Scripts/activate
+   ```
+
+5. To get the required dependencies for this project, you can call upon the requirements.txt file found in the ./app directory. First you'll need to get to the /app directory and then you can call on Python to use that file for downloaded required dependencies (assuming you're using Bash).
+
+   ```
+   cd app/
+   pip install -r requirements.txt
+   ```
+
+6. Ensure you have a .env file (you should ask a colleague for their .env file, as the values are not to be shared on github) on the root directory, which includes the appropriate values for the following keys:
 
    ```
    # dev environment
@@ -63,19 +80,19 @@ This is the backend part of a fullstack application. Ideally this application wi
 
    ```
 
-5. All Django apps are dependent on a set of default tables to store users, groups, session information, migrations logs, etc. These default tables are part of the built-in Django framework and are required for a Django website to function properly. To generate these tables, make sure that your Docker Compose containers are all running, then open a bash terminal and run the following two commands:
+7. All Django apps are dependent on a set of default tables to store users, groups, session information, migrations logs, etc. These default tables are part of the built-in Django framework and are required for a Django website to function properly. To generate these tables, make sure that your Docker Compose containers are all running, then open a bash terminal and run the following two commands:
 
    ```
    docker compose exec web python manage.py makemigrations --noinput
    docker compose exec web python manage.py migrate --noinput
    ```
 
-6. There are two options to seed the database:
+8. There are two options to seed the database:
 
    1. predefined, manually created records via [fixtures](https://docs.djangoproject.com/en/4.0/howto/initial-data/) located in ./app/api/fixtures. To do so, use the following command:
 
    ```
-   docker compose exec web python manage.py loaddata geo_fixture
+   docker compose exec web python manage.py loaddata api_fixture
    ```
 
    2. randomly generated records that will respect the typecasting on the model definitions, as well as table relationships, via a small python package called [django-seed](https://github.com/Brobin/django-seed).
@@ -84,11 +101,11 @@ This is the backend part of a fullstack application. Ideally this application wi
    docker compose exec web python manage.py seed api --number=15
    ```
 
-7. The API, postgres database, and pgAdmin (Postgres GUI) should now be running each in their own containers. Visit pgAdmin by visiting [localhost:5433/browser/](http://localhost:5433/browser/)
+9. The API, postgres database, and pgAdmin (Postgres GUI) should now be running each in their own containers. Visit pgAdmin by visiting [localhost:5433/browser/](http://localhost:5433/browser/)
 
-8. Due to Docker bind mounting specified in the docker-compose.yml, there is no need to remake Docker images or restart the server during development. Changes to API endpoints and routing within ./app should be reflected automatically.
+10. Due to Docker bind mounting specified in the docker-compose.yml, there is no need to remake Docker images or restart the server during development. Changes to API endpoints and routing within ./app should be reflected automatically.
 
-9. Give issues with docker-compose and the PostgreSQL container, we're asking developers to switch between two methods of initializing the database within docker-compose.yml. (Please see troubleshooting below for further details). Because of this, we should not track changes to the docker-compose.yml. Please run this command from the root directory of your repo
+11. Give issues with docker-compose and the PostgreSQL container, we're asking developers to switch between two methods of initializing the database within docker-compose.yml. (Please see troubleshooting below for further details). Because of this, we should not track changes to the docker-compose.yml. Please run this command from the root directory of your repo
 
 ```
  git update-index --assume-unchanged docker-compose.yml
@@ -203,9 +220,13 @@ docker compose up -d
 docker compose down --rmi all --volumes
 ```
 
-- if pg_container shows 'skipping initialization' and no 'CREATE', try switching the initialization command in docker-compose.yml to the other command
+- if pg_container shows 'skipping initialization' and no 'CREATE', try one of the following fixes:
 
-```
-"${PWD}/data/schema/init.sql:/docker-entrypoint-initdb.d/1-init.sql"
-./initdb.sh:/docker-entrypoint-initdb.d/init.sh
-```
+   1. Ensure you have a '.env' file in the root directory of the project. 'docker compose down' and 'docker compose down --rmi all --volumes' any existing containers. Try running the 'docker compose up -d' command from the root directory of the project.
+   
+   2. Switching the initialization command in docker-compose.yml to the other command
+
+   ```
+   "${PWD}/data/schema/init.sql:/docker-entrypoint-initdb.d/1-init.sql"
+   ./initdb.sh:/docker-entrypoint-initdb.d/init.sh
+   ```

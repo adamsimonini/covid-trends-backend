@@ -1,8 +1,10 @@
 from rest_framework.generics import ListAPIView
 
 
-from api.serializers import RegionSerializer, ProvinceSerializer, HealthRegionSerializer, WeatherStationSerializer, DiseasesSerializer
-from api.models import Region, Province, Health_Region, Weather_Stations, Diseases
+from api.serializers import CountrySerializer, RegionSerializer, ProvinceSerializer, HealthRegionSerializer, \
+    ForwardSortationArea, WeatherStationSerializer, DiseaseSerializer, VaccinationSerializer
+from api.models import Country, Region, Province, HealthRegion, \
+    ForwardSortationArea, WeatherStation, Disease, Vaccination
 
 class RegionList(ListAPIView):
     queryset = Region.objects.all()
@@ -10,17 +12,21 @@ class RegionList(ListAPIView):
 
 
 class HealthRegionList(ListAPIView):
-    queryset = Health_Region.objects.all()
+    queryset = HealthRegion.objects.all()
     serializer_class = HealthRegionSerializer 
 
 class ProvinceList(ListAPIView):
     queryset = Province.objects.all()
     serializer_class =  ProvinceSerializer  
 
-class WeatherStationsList(ListAPIView):
-    queryset = Weather_Stations.objects.all()
+class WeatherStationList(ListAPIView):
+    queryset = WeatherStation.objects.all()
     serializer_class =  WeatherStationSerializer 
 
-class DiseasesList(ListAPIView):
-    queryset = Diseases.objects.all()
-    serializer_class = DiseasesSerializer      
+class DiseaseList(ListAPIView):
+    queryset = Disease.objects.all()
+    serializer_class = DiseaseSerializer    
+
+# class VaccinationList(ListAPIView):
+#     queryset = Vaccination.objects.all()
+#     serializer_class = VaccinationSerializer    

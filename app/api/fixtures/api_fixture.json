@@ -1,6 +1,8 @@
 [
 	{
+
 		"model": "api.region",
+
 		"pk": 1,
 		"fields": {
 			"name_en": "Atlantic ",
@@ -8,7 +10,9 @@
 		}
 	},
 	{
+
 		"model": "api.region",
+
 		"pk": 2,
 		"fields": {
 			"name_en": "Territories",
@@ -16,7 +20,9 @@
 		}
 	},
 	{
+
 		"model": "api.region",
+
 		"pk": 3,
 		"fields": {
 			"name_en": "Prairies",
@@ -24,7 +30,9 @@
 		}
 	},
 	{
+
 		"model": "api.region",
+
 		"pk": 4,
 		"fields": {
 			"name_en": "British Columbia",
@@ -32,7 +40,9 @@
 		}
 	},
 	{
+
 		"model": "api.region",
+
 		"pk": 5,
 		"fields": {
 			"name_en": "Ontario",
@@ -40,7 +50,9 @@
 		}
 	},	
 	{
+
 		"model": "api.province",
+
 		"pk": 1,
 		"fields": {
 			"geo_code": 48,
@@ -51,7 +63,9 @@
 		}
 	},
 	{
+
 		"model": "api.province",
+
 		"pk": 2,
 		"fields": {
 			"geo_code": 35,
@@ -62,7 +76,9 @@
 		}
 	},
 	{
+
 		"model": "api.province",
+
 		"pk": 3,
 		"fields": {
 			"geo_code": 60,
@@ -73,7 +89,9 @@
 		}
 	},
 	{
+
 		"model": "api.province",
+
 		"pk": 4,
 		"fields": {
 			"geo_code": 59,
@@ -84,7 +102,9 @@
 		}
 	},
 	{
+
 		"model": "api.province",
+
 		"pk": 5,
 		"fields": {
 			"geo_code": 10,
@@ -95,7 +115,9 @@
 		}
 	},
 	{
-		"model": "api.health_region",
+
+		"model": "api.healthregion",
+
 		"pk": 1,
 		"fields": {
 			"hr_uid": 4835,
@@ -107,7 +129,9 @@
 		}
 	},
 	{
-		"model": "api.health_region",
+
+		"model": "api.healthregion",
+
 		"pk": 2,
 		"fields": {
 			"hr_uid": 591,
@@ -119,7 +143,9 @@
 		}
 	},
 	{
-		"model": "api.health_region",
+
+		"model": "api.healthregion",
+
 		"pk": 3,
 		"fields": {
 			"hr_uid": 3551,
@@ -131,7 +157,9 @@
 		}
 	},
 	{
-		"model": "api.health_region",
+
+		"model": "api.healthregion",
+
 		"pk": 4,
 		"fields": {
 			"hr_uid": 6001,
@@ -143,7 +171,9 @@
 		}
 	},
 	{
-		"model": "api.health_region",
+
+		"model": "api.healthregion",
+
 		"pk": 5,
 		"fields": {
 			"hr_uid": 1011,
@@ -155,47 +185,9 @@
 		}
 	},
 	{
-		"model": "api.forward_sortation_area",
-		"pk": 1,
-		"fields": {
-			"code": 22,
-			"health_regions": [1, 1, 3]
-		}
-	},
-	{
-		"model": "api.forward_sortation_area",
-		"pk": 2,
-		"fields": {
-			"code": 44,
-			"health_regions": [2, 4, 1]
-		}
-	},
-	{
-		"model": "api.forward_sortation_area",
-		"pk": 1,
-		"fields": {
-			"code": 22,
-			"health_regions": [3, 2, 5]
-		}
-	},
-	{
-		"model": "api.forward_sortation_area",
-		"pk": 2,
-		"fields": {
-			"code": 44,
-			"health_regions": [4, 3, 2]
-		}
-	},
-	{
-		"model": "api.forward_sortation_area",
-		"pk": 2,
-		"fields": {
-			"code": 44,
-			"health_regions": [5, 5, 1]
-		}
-	},
-	{
-		"model": "api.diseases",
+
+		"model": "api.disease",
+
 		"pk": 1,
 		"fields": {
 			"code": 123,
@@ -203,7 +195,9 @@
 		}
 	},
 	{
-		"model": "api.diseases",
+
+		"model": "api.disease",
+
 		"pk": 2,
 		"fields": {
 			"code": 456,
@@ -211,7 +205,9 @@
 		}
 	},
 	{
-		"model": "api.diseases",
+
+		"model": "api.disease",
+
 		"pk": 3,
 		"fields": {
 			"code": 789,

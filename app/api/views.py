@@ -8,8 +8,10 @@ from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from api.models import Region, Province, Health_Region, Weather_Stations, Diseases
-from api.serializers import RegionSerializer, ProvinceSerializer, HealthRegionSerializer, WeatherStationSerializer, DiseasesSerializer
+from api.models import Country, Region, Province, HealthRegion, \
+    ForwardSortationArea, WeatherStation, Disease, Vaccination
+from api.serializers import CountrySerializer, RegionSerializer, ProvinceSerializer, HealthRegionSerializer, \
+    ForwardSortationArea, WeatherStationSerializer, DiseaseSerializer, VaccinationSerializer
 from rest_framework.decorators import api_view
 
 # health region endpoints
@@ -17,14 +19,14 @@ from rest_framework.decorators import api_view
 
 @api_view(['GET'])
 def all_health_regions(request):
-    health_regions = Health_Region.objects.all()
+    health_regions = HealthRegion.objects.all()
     health_region_serializer = HealthRegionSerializer(health_regions, many=True)
     return JsonResponse(health_region_serializer.data, safe=False)
 
 
 @api_view(['GET'])
 def single_health_region_by_hr_uid(request, hr_uid):
-    health_region = Health_Region.objects.get(hr_uid=hr_uid)
+    health_region = HealthRegion.objects.get(hr_uid=hr_uid)
     health_region_serializer = HealthRegionSerializer(health_region, many=False)
     return JsonResponse(health_region_serializer.data, safe=False)
 
@@ -55,14 +57,14 @@ def all_regions(request):
 
 @api_view(['GET'])
 def all_weather_stations(request):
-    weather_stations = Weather_Stations.objects.all()
+    weather_stations = WeatherStation.objects.all()
     weather_station_serializer = WeatherStationSerializer(weather_stations, many=True)
     return JsonResponse(weather_station_serializer.data, safe=False)
 
 @api_view(['GET'])
 def all_diseases(request):
-    diseases = Diseases.objects.all()
-    diseases_serializer = DiseasesSerializer(diseases, many=True)
+    diseases = Disease.objects.all()
+    diseases_serializer = DiseaseSerializer(diseases, many=True)
     return JsonResponse(diseases_serializer.data, safe=False)
 
 
