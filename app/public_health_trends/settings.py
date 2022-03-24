@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',  # https://github.com/adamchainz/django-cors-headers#configuration
     'django_seed',
+    'rest_framework',
     'geo_api'
 ]
 
