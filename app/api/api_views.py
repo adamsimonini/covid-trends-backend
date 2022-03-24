@@ -1,8 +1,8 @@
 from rest_framework.generics import ListAPIView
 
 
-from geo_api.serializers import RegionSerializer, ProvinceSerializer, HealthRegionSerializer, WeatherStationSerializer, DiseasesSerializer
-from geo_api.models import Region, Province, Health_Region, Weather_Stations, Diseases
+from api.serializers import RegionSerializer, ProvinceSerializer, HealthRegionSerializer, WeatherStationSerializer, DiseasesSerializer
+from api.models import Region, Province, Health_Region, Weather_Stations, Diseases
 
 class RegionList(ListAPIView):
     queryset = Region.objects.all()
