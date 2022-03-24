@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('api/geo/', include('geo_api.urls')),
-    path('api/disease/', include('geo_api.urls')),
+    path('api/geo/', include('backend_api.urls')),
+    path('api/disease/', include('backend_api.urls')),
     path('admin/', admin.site.urls),
     # path('', admin.site.urls),
 ]

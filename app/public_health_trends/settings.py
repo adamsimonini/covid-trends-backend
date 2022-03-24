@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',  # https://github.com/adamchainz/django-cors-headers#configuration
     'django_seed',
-    'geo_api'
+    'backend_api'
 ]
 
 MIDDLEWARE = [
