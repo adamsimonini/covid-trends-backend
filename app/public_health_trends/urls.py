@@ -16,9 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+import geo_api.api_views
+
+
 urlpatterns = [
-    path('api/geo/', include('geo_api.urls')),
+    path('region/', geo_api.api_views.RegionList.as_view()),
+    path('health_region/', geo_api.api_views.HealthRegionList.as_view()),
+    path('diseases/', geo_api.api_views.DiseasesList.as_view()),
+    path('weatherstations/', geo_api.api_views.WeatherStationsList.as_view()),
+    path('province/', geo_api.api_views.ProvinceList.as_view()),
+    path('api/', include('geo_api.urls')),
     path('api/disease/', include('geo_api.urls')),
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls), 
     # path('', admin.site.urls),
 ]
