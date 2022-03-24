@@ -21,6 +21,6 @@ urlpatterns = [
     path('disease/', api.api_views.DiseaseList.as_view()),
     path('weatherstation/', api.api_views.WeatherStationList.as_view()),
     path('province/', api.api_views.ProvinceList.as_view()),
-    # path('vaccination/', api.api_views.VaccinationList.as_view()),
+    path('vaccination/', api.api_views.VaccinationList.as_view()),
 
 ]

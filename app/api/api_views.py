@@ -27,6 +27,6 @@ class DiseaseList(ListAPIView):
     queryset = Disease.objects.all()
     serializer_class = DiseaseSerializer    
 
-# class VaccinationList(ListAPIView):
-#     queryset = Vaccination.objects.all()
-#     serializer_class = VaccinationSerializer    
+class VaccinationList(ListAPIView):
+    queryset = Vaccination.objects.all()
+    serializer_class = VaccinationSerializer    
