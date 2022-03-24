@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from backend_api.models import Country, Region, Province, HealthRegion, \
+from api.models import Country, Region, Province, HealthRegion, \
     ForwardSortationArea, WeatherStation, Disease, Vaccination
 
 
@@ -43,7 +43,7 @@ class HealthRegionSerializer(serializers.ModelSerializer):
             'name_fr',
             'website_en',
             'website_fr',
-            'hr_fk_province',
+            'fk_province',
             'diseases',
         )
 
@@ -53,7 +53,8 @@ class ForwardSortationAreaSerializer(serializers.ModelSerializer):
         model = ForwardSortationArea
         fields = (
             'code',
-            'fsa_fk_province',
+            'fk_province',
+            'diseases',
         )
 
 
@@ -70,9 +71,10 @@ class DiseaseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Disease
         fields = (
-            'disease_code',
-            'disease_name',
-            'disease_class',
+            'code',
+            'name',
+            'classification',
+            'subclassification',
         )
 
 class VaccinationSerializer(serializers.ModelSerializer):

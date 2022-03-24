@@ -8,9 +8,9 @@ from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from backend_api.models import Country, Region, Province, HealthRegion, \
+from api.models import Country, Region, Province, HealthRegion, \
     ForwardSortationArea, WeatherStation, Disease, Vaccination
-from backend_api.serializers import CountrySerializer, RegionSerializer, ProvinceSerializer, HealthRegionSerializer, \
+from api.serializers import CountrySerializer, RegionSerializer, ProvinceSerializer, HealthRegionSerializer, \
     ForwardSortationArea, WeatherStationSerializer, DiseaseSerializer, VaccinationSerializer
 from rest_framework.decorators import api_view
 

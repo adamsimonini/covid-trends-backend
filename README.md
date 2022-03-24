@@ -89,16 +89,16 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 8. There are two options to seed the database:
 
-   1. predefined, manually created records via [fixtures](https://docs.djangoproject.com/en/4.0/howto/initial-data/) located in ./app/backend_api/fixtures. To do so, use the following command:
+   1. predefined, manually created records via [fixtures](https://docs.djangoproject.com/en/4.0/howto/initial-data/) located in ./app/api/fixtures. To do so, use the following command:
 
    ```
-   docker compose exec web python manage.py loaddata geo_fixture
+   docker compose exec web python manage.py loaddata api_fixture
    ```
 
    2. randomly generated records that will respect the typecasting on the model definitions, as well as table relationships, via a small python package called [django-seed](https://github.com/Brobin/django-seed).
 
    ```
-   docker compose exec web python manage.py seed backend_api --number=15
+   docker compose exec web python manage.py seed api --number=15
    ```
 
 9. The API, postgres database, and pgAdmin (Postgres GUI) should now be running each in their own containers. Visit pgAdmin by visiting [localhost:5433/browser/](http://localhost:5433/browser/)

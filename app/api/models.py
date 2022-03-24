@@ -5,6 +5,8 @@ from django.contrib.postgres.fields import ArrayField
 # fields reference: https://docs.djangoproject.com/en/4.0/ref/models/fields/#model-field-types
 # Model meta options: https://docs.djangoproject.com/en/4.0/ref/models/options/
 
+### api_fixture.json model refers to lowercase class name and not db_table variable name
+
 # To control all the geo related choices made
 class GeoChoiceSelection():
 
@@ -41,7 +43,7 @@ class Country(models.Model):
     country_name = models.CharField(max_length=150, blank=False)
 
     class Meta:
-        app_label = 'backend_api'
+        app_label = 'api'
         db_table = 'countries'
 
 
@@ -50,7 +52,7 @@ class Region(models.Model):
     name_fr = models.CharField(max_length=150, blank=False)
 
     class Meta:
-        app_label = 'backend_api'
+        app_label = 'api'
         db_table = 'region'
 
 
@@ -68,7 +70,7 @@ class Province(models.Model):
     diseases = models.ManyToManyField('Disease', blank=True)
 
     class Meta:
-        app_label = 'backend_api'
+        app_label = 'api'
         db_table = 'province'
 
 
@@ -78,14 +80,14 @@ class HealthRegion(models.Model):
     name_fr = models.CharField(max_length=150, blank=False)
     website_en = models.CharField(max_length=300, blank=False)
     website_fr = models.CharField(max_length=300, blank=False)
-    hr_fk_province = models.ForeignKey(
+    fk_province = models.ForeignKey(
         Province,
         on_delete=models.CASCADE
     )
     diseases = models.ManyToManyField('Disease', blank=True)
 
     class Meta:
-        app_label = 'backend_api'
+        app_label = 'api'
         db_table = 'health_region'
 
 
@@ -96,14 +98,14 @@ class ForwardSortationArea(models.Model):
     # Therefore, we will need to simply connect FSA and HR both to Province seperately
     # health_regions = ArrayField(models.PositiveSmallIntegerField(blank=False))  # an fsa can contain multiple health regions (i.e., 1, 2, or even 3)
     
-    fsa_fk_province = models.ForeignKey(
+    fk_province = models.ForeignKey(
         Province,
         on_delete=models.CASCADE
     )
     diseases = models.ManyToManyField('Disease', blank=True)
 
     class Meta:
-        app_label = 'backend_api'
+        app_label = 'api'
         db_table = 'forward_sortation_area'
 
 
@@ -115,21 +117,22 @@ class WeatherStation(models.Model):
     )
 
     class Meta:
-        app_label = 'backend_api'
+        app_label = 'api'
         db_table = 'weather_station'
 
 
 class Disease(models.Model):
-    disease_code = models.PositiveSmallIntegerField(blank=False)
-    disease_name = models.CharField(max_length=150, blank=False)
+    code = models.PositiveSmallIntegerField(blank=False)
+    name = models.CharField(max_length=150, blank=False)
 
     # Will need to implement based on: https://www150.statcan.gc.ca/n1/en/subjects/Health
     # Allowing to be blank as not implemented yet
-    disease_class = models.CharField(max_length=150, blank=True)
+    classification = models.CharField(max_length=150, blank=True)
+    subclassification = models.CharField(max_length=150, blank=True)
 
     class Meta:
-        app_label = 'backend_api'
-        db_table = 'diseases'
+        app_label = 'api'
+        db_table = 'disease'
 
 class Vaccination(models.Model):
     vaccination_name = models.CharField(max_length=150, blank=False)
@@ -141,5 +144,5 @@ class Vaccination(models.Model):
     percent_pop_vaccinated = models.PositiveSmallIntegerField(blank=True)
 
     class Meta:
-        app_label = 'backend_api'
-        db_table = 'vaccinations'
+        app_label = 'api'
+        db_table = 'vaccination'
