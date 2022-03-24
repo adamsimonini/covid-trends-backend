@@ -7,8 +7,8 @@ class CountrySerializer(serializers.ModelSerializer):
     class Meta:
         model = Country
         fields = (
-            'country_code',
-            'country_name',
+            'code',
+            'name',
         )
 
 
@@ -30,7 +30,7 @@ class ProvinceSerializer(serializers.ModelSerializer):
             'name_en',
             'name_fr',
             'fk_region',
-            'diseases',
+            'disease',
         )
 
 
@@ -44,7 +44,7 @@ class HealthRegionSerializer(serializers.ModelSerializer):
             'website_en',
             'website_fr',
             'fk_province',
-            'diseases',
+            'disease',
         )
 
 
@@ -54,7 +54,7 @@ class ForwardSortationAreaSerializer(serializers.ModelSerializer):
         fields = (
             'code',
             'fk_province',
-            'diseases',
+            'disease',
         )
 
 

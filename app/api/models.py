@@ -39,12 +39,12 @@ class GeoChoiceSelection():
 
 
 class Country(models.Model):
-    country_code = models.PositiveSmallIntegerField(blank=False)
-    country_name = models.CharField(max_length=150, blank=False)
+    code = models.PositiveSmallIntegerField(blank=False)
+    name = models.CharField(max_length=150, blank=False)
 
     class Meta:
         app_label = 'api'
-        db_table = 'countries'
+        db_table = 'country'
 
 
 class Region(models.Model):
@@ -67,7 +67,7 @@ class Province(models.Model):
         Region,
         on_delete=models.CASCADE
     )
-    diseases = models.ManyToManyField('Disease', blank=True)
+    disease = models.ManyToManyField('Disease', blank=True)
 
     class Meta:
         app_label = 'api'
@@ -84,7 +84,7 @@ class HealthRegion(models.Model):
         Province,
         on_delete=models.CASCADE
     )
-    diseases = models.ManyToManyField('Disease', blank=True)
+    disease = models.ManyToManyField('Disease', blank=True)
 
     class Meta:
         app_label = 'api'
@@ -102,7 +102,7 @@ class ForwardSortationArea(models.Model):
         Province,
         on_delete=models.CASCADE
     )
-    diseases = models.ManyToManyField('Disease', blank=True)
+    disease = models.ManyToManyField('Disease', blank=True)
 
     class Meta:
         app_label = 'api'
