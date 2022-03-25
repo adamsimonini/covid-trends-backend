@@ -5,6 +5,16 @@ from django.contrib.postgres.fields import ArrayField
 # fields reference: https://docs.djangoproject.com/en/4.0/ref/models/fields/#model-field-types
 # Model meta options: https://docs.djangoproject.com/en/4.0/ref/models/options/
 
+# For abstracting the auth_user
+from django.db import models
+from django.contrib.auth.models import AbstractUser
+
+class CustomUser(AbstractUser):
+    pass # For now we do nothinng
+
+    def __str__(self):
+        return self.username
+
 ### api_fixture.json model refers to lowercase class name and not db_table variable name
 
 # To control all the geo related choices made
@@ -42,18 +52,10 @@ class Country(models.Model):
     code = models.PositiveSmallIntegerField(blank=False)
     name = models.CharField(max_length=150, blank=False)
 
-    class Meta:
-        app_label = 'api'
-        db_table = 'country'
-
 
 class Region(models.Model):
     name_en = models.CharField(max_length=150, blank=False)
     name_fr = models.CharField(max_length=150, blank=False)
-
-    class Meta:
-        app_label = 'api'
-        db_table = 'region'
 
 
 class Province(models.Model):
@@ -69,10 +71,6 @@ class Province(models.Model):
     )
     disease = models.ManyToManyField('Disease', blank=True)
 
-    class Meta:
-        app_label = 'api'
-        db_table = 'province'
-
 
 class HealthRegion(models.Model):
     hr_uid = models.PositiveSmallIntegerField(blank=False)
@@ -85,10 +83,6 @@ class HealthRegion(models.Model):
         on_delete=models.CASCADE
     )
     disease = models.ManyToManyField('Disease', blank=True)
-
-    class Meta:
-        app_label = 'api'
-        db_table = 'health_region'
 
 
 class ForwardSortationArea(models.Model):
@@ -104,10 +98,6 @@ class ForwardSortationArea(models.Model):
     )
     disease = models.ManyToManyField('Disease', blank=True)
 
-    class Meta:
-        app_label = 'api'
-        db_table = 'forward_sortation_area'
-
 
 class WeatherStation(models.Model):
     code = models.PositiveSmallIntegerField(blank=False)
@@ -115,10 +105,6 @@ class WeatherStation(models.Model):
         HealthRegion,
         on_delete=models.CASCADE
     )
-
-    class Meta:
-        app_label = 'api'
-        db_table = 'weather_station'
 
 
 class Disease(models.Model):
@@ -130,9 +116,6 @@ class Disease(models.Model):
     classification = models.CharField(max_length=150, blank=True)
     subclassification = models.CharField(max_length=150, blank=True)
 
-    class Meta:
-        app_label = 'api'
-        db_table = 'disease'
 
 class Vaccination(models.Model):
     vaccination_name = models.CharField(max_length=150, blank=False)
@@ -142,7 +125,3 @@ class Vaccination(models.Model):
     )
     efficacy_rate = models.PositiveSmallIntegerField(blank=True)
     percent_pop_vaccinated = models.PositiveSmallIntegerField(blank=True)
-
-    class Meta:
-        app_label = 'api'
-        db_table = 'vaccination'
