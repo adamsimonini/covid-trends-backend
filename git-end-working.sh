@@ -32,6 +32,8 @@ then
                 echo
                 git push --set-upstream origin "$branch_name"
                 echo "Changes pushed successfully!"
+                echo "Checking out main branch now ..."
+                git checkout main
             fi
         fi
     fi

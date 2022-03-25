@@ -20,13 +20,13 @@ import api.api_views
 
 
 urlpatterns = [
+    path('admin/', admin.site.urls), 
+    path('api/', include('api.urls')),
     # path('region/', api.api_views.RegionList.as_view()),
     # path('health_region/', api.api_views.HealthRegionList.as_view()),
     # path('diseases/', api.api_views.DiseasesList.as_view()),
     # path('weatherstations/', api.api_views.WeatherStationsList.as_view()),
     # path('province/', api.api_views.ProvinceList.as_view()),
-    path('api/', include('api.urls')),
-    path('api/disease/', include('api.urls')),
-    path('admin/', admin.site.urls), 
+    # path('api/disease/', include('api.urls')),
     # path('', admin.site.urls),
 ]

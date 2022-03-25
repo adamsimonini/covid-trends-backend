@@ -5,6 +5,9 @@ from django.contrib.postgres.fields import ArrayField
 # fields reference: https://docs.djangoproject.com/en/4.0/ref/models/fields/#model-field-types
 # Model meta options: https://docs.djangoproject.com/en/4.0/ref/models/options/
 
+
+## api_fixture.json model refers to lowercase class name and not db_table variable name
+
 # For abstracting the auth_user
 from django.db import models
 from django.contrib.auth.models import AbstractUser
@@ -14,8 +17,6 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return self.username
-
-### api_fixture.json model refers to lowercase class name and not db_table variable name
 
 # To control all the geo related choices made
 class GeoChoiceSelection():

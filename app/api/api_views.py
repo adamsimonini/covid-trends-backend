@@ -1,5 +1,7 @@
 # from rest_framework.exceptions import ValidationError
-from rest_framework.generics import ListAPIView #, CreateAPIView, RetrieveUpdateDestroyAPIView
+from xml.dom import ValidationErr
+from django.forms import ValidationError
+from rest_framework.generics import ListAPIView, CreateAPIView, RetrieveUpdateDestroyAPIView
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter
 from rest_framework.pagination import LimitOffsetPagination
@@ -39,27 +41,6 @@ class ProvinceList(ListAPIView):
     search_fields = ('alpha_code', 'name_en', 'name_fr',) 
     pagination_class = ApiPagination
 
-# class ProvinceRetrieveUpdateDestroy(RetrieveUpdateDestroyAPIView):
-#     queryset = Province.objects.all()
-#     lookup_field = 'geo_code'
-#     serializer_class = ProvinceSerializer
-
-#     def delete(self, request, *args, **kwargs):
-#         code = request.data.get('geo_code')
-#         response = super().delete(request, *args, **kwargs)
-#         if response.status_code == 204:
-#             from django.core.cache import cache
-#             cache.delete('province_{}'.format(code))
-#         return response
-
-#     def update(self, request, *args, **kwargs):
-#         response = super().update(request, *args, **kwargs)
-#         if response.status_code == 200:
-#             from django.core.cache import cache
-#             code = response.data
-#             cache.dset('geo_code')
-#         return response
-
 class HealthRegionList(ListAPIView):
     queryset = HealthRegion.objects.all()
     serializer_class = HealthRegionSerializer 
@@ -93,7 +74,42 @@ class DiseaseList(ListAPIView):
     filter_backends = (DjangoFilterBackend, SearchFilter,)
     filter_fields = ('code',)
     search_fields = ('name',) 
-    pagination_class = ApiPagination   
+    pagination_class = ApiPagination 
+
+class DiseaseCreate(CreateAPIView):
+    serializer_class = DiseaseSerializer
+
+    def create(self, request, *args, **kwargs):
+        name = request.data.get('name')
+        if name is None:
+            raise ValidationError({ 'name': 'Must not be empty' })
+        return super().create(request, *args, **kwargs)
+
+
+class DiseaseRetrieveUpdateDestroy(RetrieveUpdateDestroyAPIView):
+    queryset = Disease.objects.all()
+    lookup_field = 'code'
+    serializer_class = DiseaseSerializer
+
+    def delete(self, request, *args, **kwargs):
+        code = request.data.get('code')
+        response = super().delete(request, *args, **kwargs)
+        if response.status_code == 204:
+            from django.core.cache import cache
+            cache.delete('disease_{}'.format(code))
+        return response
+
+    def update(self, request, *args, **kwargs):
+        response = super().update(request, *args, **kwargs)
+        if response.status_code == 200:
+            from django.core.cache import cache
+            disease = response.data
+            cache.set('disease_{}'.format(disease['code']), {
+                'name': disease['name'],
+                'classification': disease['classification'],
+                'subclassification': disease['subclassification'],
+            })
+        return response  
 
 
 class VaccinationList(ListAPIView):

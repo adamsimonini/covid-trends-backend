@@ -15,6 +15,7 @@ urlpatterns = [
     # path('weather_stations/', views.all_weather_stations, name='get_all_weather_stations'),
     # path('diseases/', views.all_diseases, name='get_all_diseases'),
 
+    # List Views
     path('country/', api_views.CountryList.as_view()),
     path('region/', api_views.RegionList.as_view()),
     path('health_region/', api_views.HealthRegionList.as_view()),
@@ -22,5 +23,11 @@ urlpatterns = [
     path('weatherstation/', api_views.WeatherStationList.as_view()),
     path('province/', api_views.ProvinceList.as_view()),
     path('vaccination/', api_views.VaccinationList.as_view()),
+
+    # Create Views
+    path('disease/new', api_views.DiseaseCreate.as_view()),
+
+    # Update / Delete Views
+    path('disease/<int:code>', api_views.DiseaseRetrieveUpdateDestroy.as_view()),
 
 ]
