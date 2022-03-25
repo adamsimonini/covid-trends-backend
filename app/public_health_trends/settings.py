@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'corsheaders',  # https://github.com/adamchainz/django-cors-headers#configuration
     'django_seed',
     'rest_framework',
+    'django_filters',
     'api'
 ]
 

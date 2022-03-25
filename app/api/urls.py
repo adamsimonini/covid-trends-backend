@@ -1,8 +1,7 @@
 from django.urls import path
 # Django URL parameters: https://docs.djangoproject.com/en/4.0/topics/http/urls/
 from . import views
-
-import api.api_views
+from . import api_views
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -16,11 +15,12 @@ urlpatterns = [
     # path('weather_stations/', views.all_weather_stations, name='get_all_weather_stations'),
     # path('diseases/', views.all_diseases, name='get_all_diseases'),
 
-    path('region/', api.api_views.RegionList.as_view()),
-    path('health_region/', api.api_views.HealthRegionList.as_view()),
-    path('disease/', api.api_views.DiseaseList.as_view()),
-    path('weatherstation/', api.api_views.WeatherStationList.as_view()),
-    path('province/', api.api_views.ProvinceList.as_view()),
-    path('vaccination/', api.api_views.VaccinationList.as_view()),
+    path('country/', api_views.CountryList.as_view()),
+    path('region/', api_views.RegionList.as_view()),
+    path('health_region/', api_views.HealthRegionList.as_view()),
+    path('disease/', api_views.DiseaseList.as_view()),
+    path('weatherstation/', api_views.WeatherStationList.as_view()),
+    path('province/', api_views.ProvinceList.as_view()),
+    path('vaccination/', api_views.VaccinationList.as_view()),
 
 ]
