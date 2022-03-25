@@ -1,11 +1,21 @@
 [
 	{
 
+		"model": "api.country",
+
+		"pk": 1,
+		"fields": {
+			"code": 1,
+			"name": "Canada"
+		}
+	},
+	{
+
 		"model": "api.region",
 
 		"pk": 1,
 		"fields": {
-			"name_en": "Atlantic ",
+			"name_en": "Atlantic",
 			"name_fr": "Atlantique"
 		}
 	},
