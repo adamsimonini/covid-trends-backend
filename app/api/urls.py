@@ -16,13 +16,13 @@ urlpatterns = [
     # path('diseases/', views.all_diseases, name='get_all_diseases'),
 
     # List Views
-    path('country/', api_views.CountryList.as_view()),
-    path('region/', api_views.RegionList.as_view()),
-    path('health_region/', api_views.HealthRegionList.as_view()),
-    path('disease/', api_views.DiseaseList.as_view()),
-    path('weatherstation/', api_views.WeatherStationList.as_view()),
-    path('province/', api_views.ProvinceList.as_view()),
-    path('vaccination/', api_views.VaccinationList.as_view()),
+    path('country/', api_views.CountryList.as_view(), name='country'),
+    path('region/', api_views.RegionList.as_view(), name='region'),
+    path('health_region/', api_views.HealthRegionList.as_view(), name='health_region'),
+    path('disease/', api_views.DiseaseList.as_view(), name='disease'),
+    path('weatherstation/', api_views.WeatherStationList.as_view(), name='weatherstation'),
+    path('province/', api_views.ProvinceList.as_view(), name='province'),
+    path('vaccination/', api_views.VaccinationList.as_view(), name='vaccination'),
 
     # Create Views
     path('disease/new', api_views.DiseaseCreate.as_view()),
