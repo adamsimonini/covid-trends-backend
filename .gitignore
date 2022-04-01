@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# for the .env file in app that's only used to build the docker image directly (i.e., without docker-compose.yml)
+.env.old
+
 # Intentional error files for teaching
 error*
 
