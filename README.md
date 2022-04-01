@@ -214,6 +214,11 @@ docker volume ls | awk '$1 == "local" { print $2 }' | xargs --no-run-if-empty do
 docker compose up -d
 ```
 
+Before removing all images, you will likely find success just removing the backend-api image, while leaving the pg and pgAdmin images there. To only remove the backend-api image, run the following:
+
+```
+docker --rmi {image-name} // (e.g., docker --rmi python-backend_web) 
+```
 - unkown issues: before troubleshooting a mysterious issue, it might be usefull to fully destroy all elements of this app on Docker and re-initialize the containers. While the containers are running, enter the following into terminal:
 
 ```

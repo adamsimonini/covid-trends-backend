@@ -98,7 +98,7 @@ DATABASES = {
 
 # User class
 # https://testdriven.io/blog/django-custom-user-model/
-AUTH_USER_MODEL = 'api.CustomUser'
+# AUTH_USER_MODEL = 'api.CustomUser'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

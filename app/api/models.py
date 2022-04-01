@@ -10,13 +10,13 @@ from django.contrib.postgres.fields import ArrayField
 
 # For abstracting the auth_user
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+# from django.contrib.auth.models import AbstractUser
 
-class CustomUser(AbstractUser):
-    pass # For now we do nothinng
+# class CustomUser(AbstractUser):
+#     pass # For now we do nothinng
 
-    def __str__(self):
-        return self.username
+#     def __str__(self):
+#         return self.username
 
 # To control all the geo related choices made
 class GeoChoiceSelection():
