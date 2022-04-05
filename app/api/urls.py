@@ -25,9 +25,13 @@ urlpatterns = [
     path('vaccination/', api_views.VaccinationList.as_view(), name='vaccination'),
 
     # Create Views
+    path('health_region/new', api_views.HealthRegionCreate.as_view()),
     path('disease/new', api_views.DiseaseCreate.as_view()),
+    path('vaccination/new', api_views.VaccinationCreate.as_view()),
 
     # Update / Delete Views
+    path('health_region/<int:hr_uid>', api_views.HealthRegionRetrieveUpdateDestroy.as_view()),
     path('disease/<int:code>', api_views.DiseaseRetrieveUpdateDestroy.as_view()),
+    path('vaccination/<str:vaccination_name>', api_views.VaccinationRetrieveUpdateDestroy.as_view()),
 
 ]

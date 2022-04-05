@@ -37,10 +37,16 @@ class Country(models.Model):
     code = models.PositiveSmallIntegerField(blank=False)
     name = models.CharField(max_length=150, blank=False)
 
+    def __str__(self):
+        return self.name
+
 
 class Region(models.Model):
     name_en = models.CharField(max_length=150, blank=False)
     name_fr = models.CharField(max_length=150, blank=False)
+
+    def __str__(self):
+        return self.name_en
 
 
 class Province(models.Model):
@@ -56,6 +62,9 @@ class Province(models.Model):
     )
     disease = models.ManyToManyField('Disease', blank=True)
 
+    def __str__(self):
+        return self.name_en
+
 
 class HealthRegion(models.Model):
     hr_uid = models.PositiveSmallIntegerField(blank=False)
@@ -68,6 +77,9 @@ class HealthRegion(models.Model):
         on_delete=models.CASCADE
     )
     disease = models.ManyToManyField('Disease', blank=True)
+
+    def __str__(self):
+        return self.hr_uid
 
 
 class ForwardSortationArea(models.Model):
@@ -83,6 +95,9 @@ class ForwardSortationArea(models.Model):
     )
     disease = models.ManyToManyField('Disease', blank=True)
 
+    def __str__(self):
+        return self.code
+
 
 class WeatherStation(models.Model):
     code = models.PositiveSmallIntegerField(blank=False)
@@ -90,3 +105,6 @@ class WeatherStation(models.Model):
         HealthRegion,
         on_delete=models.CASCADE
     )
+
+    def __str__(self):
+        return self.code

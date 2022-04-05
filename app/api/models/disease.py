@@ -10,6 +10,9 @@ class Disease(models.Model):
     classification = models.CharField(max_length=150, blank=True)
     subclassification = models.CharField(max_length=150, blank=True)
 
+    def __str__(self):
+        return self.name
+
 
 class Vaccination(models.Model):
     vaccination_name = models.CharField(max_length=150, blank=False)
@@ -19,3 +22,6 @@ class Vaccination(models.Model):
     )
     efficacy_rate = models.PositiveSmallIntegerField(blank=True)
     percent_pop_vaccinated = models.PositiveSmallIntegerField(blank=True)
+
+    def __str__(self):
+        return self.vaccination_name
