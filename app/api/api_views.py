@@ -41,6 +41,7 @@ class ProvinceList(ListAPIView):
     search_fields = ('alpha_code', 'name_en', 'name_fr',) 
     pagination_class = ApiPagination
 
+
 class HealthRegionList(ListAPIView):
     queryset = HealthRegion.objects.all()
     serializer_class = HealthRegionSerializer 
@@ -49,6 +50,43 @@ class HealthRegionList(ListAPIView):
     search_fields = ('name_en', 'name_fr',) 
     pagination_class = ApiPagination
 
+class HealthRegionCreate(CreateAPIView):
+    serializer_class = HealthRegionSerializer
+
+    def create(self, request, *args, **kwargs):
+        hr_uid = request.data.get('hr_uid')
+        if hr_uid is None:
+            raise ValidationError({ 'hr_uid': 'Must not be empty' })
+        name = request.data.get('name_en')
+        if name is None:
+            raise ValidationError({ 'name_en': 'Must not be empty' })
+        return super().create(request, *args, **kwargs)
+
+
+class HealthRegionRetrieveUpdateDestroy(RetrieveUpdateDestroyAPIView):
+    queryset = HealthRegion.objects.all()
+    lookup_field = 'hr_uid'
+    serializer_class = HealthRegionSerializer
+
+    def delete(self, request, *args, **kwargs):
+        hr_uid = request.data.get('hr_uid')
+        response = super().delete(request, *args, **kwargs)
+        if response.status_code == 204:
+            from django.core.cache import cache
+            cache.delete('HealthRegion_{}'.format(hr_uid))
+        return response
+
+    def update(self, request, *args, **kwargs):
+        response = super().update(request, *args, **kwargs)
+        if response.status_code == 200:
+            from django.core.cache import cache
+            HealthRegion = response.data
+            cache.set('HealthRegion_{}'.format(HealthRegion['hr_uid']), {
+                'name_en': HealthRegion['name_en'],
+                'name_fr': HealthRegion['name_fr'],
+                'fk_province': HealthRegion['fk_province'],
+            })
+        return response  
 
 class ForwardSortationAreanList(ListAPIView):
     queryset = ForwardSortationArea.objects.all()
@@ -119,3 +157,47 @@ class VaccinationList(ListAPIView):
     filter_fields = ('efficacy_rate', 'percent_pop_vaccinated',)
     search_fields = ('vaccination_name', 'treats_disease',)
     pagination_class = ApiPagination
+
+class VaccinationCreate(CreateAPIView):
+    serializer_class = VaccinationSerializer
+
+    def create(self, request, *args, **kwargs):
+        name = request.data.get('vaccination_name')
+        if name is None:
+            raise ValidationError({ 'vaccination_name': 'Must not be empty' })
+
+        treats_disease = request.data.get('treats_disease')
+        if treats_disease is None:
+            raise ValidationError({ 'treats_disease': 'Must not be empty' })
+
+        efficacy_rate = request.data.get('efficacy_rate')
+        if efficacy_rate is None:
+            raise ValidationError({ 'efficacy_rate': 'Must not be empty' })
+
+        return super().create(request, *args, **kwargs)
+
+
+class VaccinationRetrieveUpdateDestroy(RetrieveUpdateDestroyAPIView):
+    queryset = Vaccination.objects.all()
+    lookup_field = 'code'
+    serializer_class = VaccinationSerializer
+
+    def delete(self, request, *args, **kwargs):
+        vaccination_name = request.data.get('vaccination_name')
+        response = super().delete(request, *args, **kwargs)
+        if response.status_code == 204:
+            from django.core.cache import cache
+            cache.delete('Vaccination_{}'.format(vaccination_name))
+        return response
+
+    def update(self, request, *args, **kwargs):
+        response = super().update(request, *args, **kwargs)
+        if response.status_code == 200:
+            from django.core.cache import cache
+            Vaccination = response.data
+            cache.set('Vaccination_{}'.format(Vaccination['vaccination_name']), {
+                'treats_disease': Vaccination['treats_disease'],
+                'efficacy_rate': Vaccination['efficacy_rate'],
+                'percent_pop_vaccinated': Vaccination['percent_pop_vaccinated'],
+            })
+        return response 
