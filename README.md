@@ -17,15 +17,15 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 ### **Geographical**
 
-| METHOD | NAME                 | PATH                                                                      | RESULT                                            |
-| ------ | -------------------- | ------------------------------------------------------------------------- | ------------------------------------------------- |
+| METHOD | NAME                 | PATH                                                                          | RESULT                                            |
+| ------ | -------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------- |
 | GET    | all health regions   | base_url/api/geo/health_regions                                               | returns all recrods from the health_regions table |
 | GET    | single health region | base_url/api/geo/health_regions/<span style="color:lightgreen">{hr_uid}<span> | returns single record based on hr_uid parameter   |
-| GET    | all provinces        | base_url/api/geo/provinces/                                            | returns all records from province                 |
+| GET    | all provinces        | base_url/api/geo/provinces/                                                   | returns all records from province                 |
 | GET    | single province      | base_url/api/geo/provinces/<span style="color:lightgreen">{geo_code}<span>    | returns single record based on geo_code parameter |
-| GET    | all regions        | base_url/api/geo/regions                                                    | returns all records from province                 |
-| GET    | all weather stations        | base_url/api/geo/weather_stations                                              | returns all records from province                 |
-| GET    | all diseases        | base_url/api/geo/diseases                                                    | returns all records from province                 |
+| GET    | all regions          | base_url/api/geo/regions                                                      | returns all records from province                 |
+| GET    | all weather stations | base_url/api/geo/weather_stations                                             | returns all records from province                 |
+| GET    | all diseases         | base_url/api/geo/diseases                                                     | returns all records from province                 |
 
 ## **Steps to Replicate Dev Environment**
 
@@ -51,7 +51,9 @@ This is the backend part of a fullstack application. Ideally this application wi
    ```
    python -m venv venv
    ```
+
    Once the 'venv' directory is created, you can activate it by using the following command (assuming you're using Bash):
+
    ```
    source venv/Scripts/activate
    ```
@@ -92,7 +94,7 @@ This is the backend part of a fullstack application. Ideally this application wi
    1. predefined, manually created records via [fixtures](https://docs.djangoproject.com/en/4.0/howto/initial-data/) located in ./app/api/fixtures. To do so, use the following command:
 
    ```
-   docker compose exec web python manage.py loaddata api_fixture
+   docker compose exec web python manage.py loaddata disease geo
    ```
 
    2. randomly generated records that will respect the typecasting on the model definitions, as well as table relationships, via a small python package called [django-seed](https://github.com/Brobin/django-seed).
@@ -217,8 +219,10 @@ docker compose up -d
 Before removing all images, you will likely find success just removing the backend-api image, while leaving the pg and pgAdmin images there. To only remove the backend-api image, run the following:
 
 ```
-docker --rmi {image-name} // (e.g., docker --rmi python-backend_web) 
+docker images // (to find the image name and id)
+docker image rm {image-name or id} // (e.g., docker image rm python-backend_web)
 ```
+
 - unkown issues: before troubleshooting a mysterious issue, it might be usefull to fully destroy all elements of this app on Docker and re-initialize the containers. While the containers are running, enter the following into terminal:
 
 ```
@@ -227,11 +231,11 @@ docker compose down --rmi all --volumes
 
 - if pg_container shows 'skipping initialization' and no 'CREATE', try one of the following fixes:
 
-   1. Ensure you have a '.env' file in the root directory of the project. 'docker compose down' and 'docker compose down --rmi all --volumes' any existing containers. Try running the 'docker compose up -d' command from the root directory of the project.
-   
-   2. Switching the initialization command in docker-compose.yml to the other command
+  1.  Ensure you have a '.env' file in the root directory of the project. 'docker compose down' and 'docker compose down --rmi all --volumes' any existing containers. Try running the 'docker compose up -d' command from the root directory of the project.
 
-   ```
-   "${PWD}/data/schema/init.sql:/docker-entrypoint-initdb.d/1-init.sql"
-   ./initdb.sh:/docker-entrypoint-initdb.d/init.sh
-   ```
+  2.  Switching the initialization command in docker-compose.yml to the other command
+
+  ```
+  "${PWD}/data/schema/init.sql:/docker-entrypoint-initdb.d/1-init.sql"
+  ./initdb.sh:/docker-entrypoint-initdb.d/init.sh
+  ```

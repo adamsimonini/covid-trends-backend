@@ -1,6 +1,5 @@
 [
 	{
-
 		"model": "api.country",
 
 		"pk": 1,
@@ -10,7 +9,6 @@
 		}
 	},
 	{
-
 		"model": "api.region",
 
 		"pk": 1,
@@ -20,7 +18,6 @@
 		}
 	},
 	{
-
 		"model": "api.region",
 
 		"pk": 2,
@@ -30,7 +27,6 @@
 		}
 	},
 	{
-
 		"model": "api.region",
 
 		"pk": 3,
@@ -40,7 +36,6 @@
 		}
 	},
 	{
-
 		"model": "api.region",
 
 		"pk": 4,
@@ -50,7 +45,6 @@
 		}
 	},
 	{
-
 		"model": "api.region",
 
 		"pk": 5,
@@ -58,9 +52,8 @@
 			"name_en": "Ontario",
 			"name_fr": "Ontario"
 		}
-	},	
+	},
 	{
-
 		"model": "api.province",
 
 		"pk": 1,
@@ -73,7 +66,6 @@
 		}
 	},
 	{
-
 		"model": "api.province",
 
 		"pk": 2,
@@ -86,7 +78,6 @@
 		}
 	},
 	{
-
 		"model": "api.province",
 
 		"pk": 3,
@@ -99,7 +90,6 @@
 		}
 	},
 	{
-
 		"model": "api.province",
 
 		"pk": 4,
@@ -112,7 +102,6 @@
 		}
 	},
 	{
-
 		"model": "api.province",
 
 		"pk": 5,
@@ -125,7 +114,6 @@
 		}
 	},
 	{
-
 		"model": "api.healthregion",
 
 		"pk": 1,
@@ -139,7 +127,6 @@
 		}
 	},
 	{
-
 		"model": "api.healthregion",
 
 		"pk": 2,
@@ -153,7 +140,6 @@
 		}
 	},
 	{
-
 		"model": "api.healthregion",
 
 		"pk": 3,
@@ -167,7 +153,6 @@
 		}
 	},
 	{
-
 		"model": "api.healthregion",
 
 		"pk": 4,
@@ -181,7 +166,6 @@
 		}
 	},
 	{
-
 		"model": "api.healthregion",
 
 		"pk": 5,
@@ -192,75 +176,6 @@
 			"website_en": "https://www.gov.nl.ca/COVIDâ€'19/",
 			"website_fr": "https://www.gov.nl.ca/COVIDâ€'19/fr/ressources/",
 			"fk_province": 5
-		}
-	},
-	{
-
-		"model": "api.disease",
-
-		"pk": 1,
-		"fields": {
-			"code": 123,
-			"name": "Common Cold",
-			"classification": "Diseases and physical health conditions"
-		}
-	},
-	{
-
-		"model": "api.disease",
-
-		"pk": 2,
-		"fields": {
-			"code": 456,
-			"name": "Covid",
-			"classification": "Diseases and physical health conditions",
-			"subclassification": "Cardiovascular diseases"
-		}
-	},
-	{
-
-		"model": "api.disease",
-
-		"pk": 3,
-		"fields": {
-			"code": 789,
-			"name": "Lack Of Coffee"
-		}
-	},
-	{
-
-		"model": "api.vaccination",
-
-		"pk": 1,
-		"fields": {
-			"vaccination_name": "Pfizer",
-            "treats_disease": 2,
-            "efficacy_rate": 95,
-            "percent_pop_vaccinated": 80
-		}
-	},
-	{
-
-		"model": "api.vaccination",
-
-		"pk": 2,
-		"fields": {
-			"vaccination_name": "Moderna",
-            "treats_disease": 2,
-            "efficacy_rate": 90,
-            "percent_pop_vaccinated": 70
-		}
-	},
-	{
-
-		"model": "api.vaccination",
-
-		"pk": 3,
-		"fields": {
-			"vaccination_name": "More Coffee",
-            "treats_disease": 3,
-            "efficacy_rate": 100,
-            "percent_pop_vaccinated": 90
 		}
 	}
 ]

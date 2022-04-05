@@ -1,0 +1,65 @@
+[
+	{
+		"model": "api.disease",
+
+		"pk": 1,
+		"fields": {
+			"code": 123,
+			"name": "Common Cold",
+			"classification": "Diseases and physical health conditions"
+		}
+	},
+	{
+		"model": "api.disease",
+
+		"pk": 2,
+		"fields": {
+			"code": 456,
+			"name": "Covid",
+			"classification": "Diseases and physical health conditions",
+			"subclassification": "Cardiovascular diseases"
+		}
+	},
+	{
+		"model": "api.disease",
+
+		"pk": 3,
+		"fields": {
+			"code": 789,
+			"name": "Lack Of Coffee"
+		}
+	},
+	{
+		"model": "api.vaccination",
+
+		"pk": 1,
+		"fields": {
+			"vaccination_name": "Pfizer",
+			"treats_disease": 2,
+			"efficacy_rate": 95,
+			"percent_pop_vaccinated": 80
+		}
+	},
+	{
+		"model": "api.vaccination",
+
+		"pk": 2,
+		"fields": {
+			"vaccination_name": "Moderna",
+			"treats_disease": 2,
+			"efficacy_rate": 90,
+			"percent_pop_vaccinated": 70
+		}
+	},
+	{
+		"model": "api.vaccination",
+
+		"pk": 3,
+		"fields": {
+			"vaccination_name": "More Coffee",
+			"treats_disease": 3,
+			"efficacy_rate": 100,
+			"percent_pop_vaccinated": 90
+		}
+	}
+]
