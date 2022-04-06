@@ -1,0 +1,1957 @@
+FSA,HR_UID,Prov,ENGNAME,FRENAME,EstimatedPop
+A0A,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,8631
+A0B,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,3066
+A0C,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,32
+A0E,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,1242
+A0G,1012,10,Central Regional Health Authority,Central Regional Health Authority,4366
+A0H,1012,10,Central Regional Health Authority,Central Regional Health Authority,2981
+A0J,1012,10,Central Regional Health Authority,Central Regional Health Authority,2705
+A0K,1012,10,Central Regional Health Authority,Central Regional Health Authority,25
+A0K,1013,10,Western Regional Health Authority,Western Regional Health Authority,221
+A0K,1014,10,Labrador-Grenfell Regional Health Authority,Labrador-Grenfell Regional Health Authority,969
+A0L,1013,10,Western Regional Health Authority,Western Regional Health Authority,3451
+A0M,1013,10,Western Regional Health Authority,Western Regional Health Authority,63
+A0N,1013,10,Western Regional Health Authority,Western Regional Health Authority,1015
+A0P,1014,10,Labrador-Grenfell Regional Health Authority,Labrador-Grenfell Regional Health Authority,242
+A0R,1014,10,Labrador-Grenfell Regional Health Authority,Labrador-Grenfell Regional Health Authority,139
+A1A,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,29964
+A1B,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,19712
+A1C,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,12606
+A1E,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,26688
+A1G,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,5747
+A1H,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,5375
+A1K,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,12134
+A1L,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,21334
+A1M,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,8026
+A1N,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,22905
+A1S,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,6505
+A1V,1012,10,Central Regional Health Authority,Central Regional Health Authority,11683
+A1W,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,10985
+A1X,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,15052
+A1Y,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,4551
+A2A,1012,10,Central Regional Health Authority,Central Regional Health Authority,8261
+A2B,1012,10,Central Regional Health Authority,Central Regional Health Authority,4908
+A2H,1013,10,Western Regional Health Authority,Western Regional Health Authority,23943
+A2N,1013,10,Western Regional Health Authority,Western Regional Health Authority,8379
+A2V,1014,10,Labrador-Grenfell Regional Health Authority,Labrador-Grenfell Regional Health Authority,7205
+A5A,1011,10,Eastern Regional Health Authority,Eastern Regional Health Authority,6226
+A8A,1013,10,Western Regional Health Authority,Western Regional Health Authority,6505
+B0C,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,2311
+B0E,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,16647
+B0H,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,8176
+B0J,1201,12,Zone 1 - Western,Zone 1 - Western,20080
+B0J,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,1157
+B0J,1204,12,Zone 4 - Central,Zone 4 - Central,12503
+B0K,1202,12,Zone 2 - Northern,Zone 2 - Northern,26593
+B0K,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,41
+B0L,1202,12,Zone 2 - Northern,Zone 2 - Northern,1483
+B0M,1202,12,Zone 2 - Northern,Zone 2 - Northern,12390
+B0N,1201,12,Zone 1 - Western,Zone 1 - Western,
+B0N,1202,12,Zone 2 - Northern,Zone 2 - Northern,16580
+B0N,1204,12,Zone 4 - Central,Zone 4 - Central,17349
+B0P,1201,12,Zone 1 - Western,Zone 1 - Western,30854
+B0P,1204,12,Zone 4 - Central,Zone 4 - Central,3722
+B0R,1201,12,Zone 1 - Western,Zone 1 - Western,5413
+B0S,1201,12,Zone 1 - Western,Zone 1 - Western,14284
+B0T,1201,12,Zone 1 - Western,Zone 1 - Western,7953
+B0V,1201,12,Zone 1 - Western,Zone 1 - Western,2558
+B0W,1201,12,Zone 1 - Western,Zone 1 - Western,19773
+B1A,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,15210
+B1B,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,1202
+B1C,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,1741
+B1E,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,1627
+B1G,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,1925
+B1H,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,9509
+B1J,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,1159
+B1K,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,2816
+B1L,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,5359
+B1M,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,1518
+B1N,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,5870
+B1P,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,13656
+B1R,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,3807
+B1S,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,8323
+B1T,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,301
+B1V,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,6245
+B1W,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,3389
+B1X,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,944
+B1Y,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,6230
+B2A,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,7821
+B2C,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,383
+B2E,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,77
+B2G,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,13609
+B2H,1202,12,Zone 2 - Northern,Zone 2 - Northern,14206
+B2J,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,203
+B2N,1202,12,Zone 2 - Northern,Zone 2 - Northern,19179
+B2R,1204,12,Zone 4 - Central,Zone 4 - Central,2117
+B2S,1202,12,Zone 2 - Northern,Zone 2 - Northern,6650
+B2S,1204,12,Zone 4 - Central,Zone 4 - Central,673
+B2T,1202,12,Zone 2 - Northern,Zone 2 - Northern,3872
+B2T,1204,12,Zone 4 - Central,Zone 4 - Central,13207
+B2V,1204,12,Zone 4 - Central,Zone 4 - Central,12222
+B2W,1204,12,Zone 4 - Central,Zone 4 - Central,32225
+B2X,1204,12,Zone 4 - Central,Zone 4 - Central,11089
+B2Y,1204,12,Zone 4 - Central,Zone 4 - Central,14602
+B2Z,1204,12,Zone 4 - Central,Zone 4 - Central,8487
+B3A,1204,12,Zone 4 - Central,Zone 4 - Central,19352
+B3B,1204,12,Zone 4 - Central,Zone 4 - Central,1440
+B3E,1204,12,Zone 4 - Central,Zone 4 - Central,6393
+B3G,1204,12,Zone 4 - Central,Zone 4 - Central,10598
+B3H,1204,12,Zone 4 - Central,Zone 4 - Central,18808
+B3J,1204,12,Zone 4 - Central,Zone 4 - Central,5784
+B3K,1204,12,Zone 4 - Central,Zone 4 - Central,19009
+B3L,1204,12,Zone 4 - Central,Zone 4 - Central,17356
+B3M,1204,12,Zone 4 - Central,Zone 4 - Central,31472
+B3N,1204,12,Zone 4 - Central,Zone 4 - Central,13606
+B3P,1204,12,Zone 4 - Central,Zone 4 - Central,8910
+B3R,1204,12,Zone 4 - Central,Zone 4 - Central,8143
+B3S,1204,12,Zone 4 - Central,Zone 4 - Central,12829
+B3T,1204,12,Zone 4 - Central,Zone 4 - Central,17050
+B3V,1204,12,Zone 4 - Central,Zone 4 - Central,6350
+B3Z,1204,12,Zone 4 - Central,Zone 4 - Central,16283
+B4A,1204,12,Zone 4 - Central,Zone 4 - Central,17656
+B4B,1204,12,Zone 4 - Central,Zone 4 - Central,11911
+B4C,1204,12,Zone 4 - Central,Zone 4 - Central,17984
+B4E,1204,12,Zone 4 - Central,Zone 4 - Central,19345
+B4G,1204,12,Zone 4 - Central,Zone 4 - Central,4329
+B4H,1202,12,Zone 2 - Northern,Zone 2 - Northern,13278
+B4N,1201,12,Zone 1 - Western,Zone 1 - Western,17402
+B4P,1201,12,Zone 1 - Western,Zone 1 - Western,7258
+B4R,1201,12,Zone 1 - Western,Zone 1 - Western,2939
+B4V,1201,12,Zone 1 - Western,Zone 1 - Western,19850
+B5A,1201,12,Zone 1 - Western,Zone 1 - Western,15523
+B6L,1202,12,Zone 2 - Northern,Zone 2 - Northern,12720
+B9A,1203,12,Zone 3 - Eastern,Zone 3 - Eastern,4303
+C0A,1100,11,Prince Edward Island,Île-du-Prince-Édouard,35102
+C0B,1100,11,Prince Edward Island,Île-du-Prince-Édouard,16395
+C1A,1100,11,Prince Edward Island,Île-du-Prince-Édouard,24212
+C1B,1100,11,Prince Edward Island,Île-du-Prince-Édouard,12289
+C1C,1100,11,Prince Edward Island,Île-du-Prince-Édouard,4141
+C1E,1100,11,Prince Edward Island,Île-du-Prince-Édouard,10625
+C1N,1100,11,Prince Edward Island,Île-du-Prince-Édouard,15962
+E1A,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),39669
+E1B,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),19662
+E1C,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),23768
+E1E,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),10986
+E1G,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),21722
+E1H,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),7650
+E1J,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),3003
+E1N,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),32
+E1N,1307,13,Zone 7 (Miramichi area),Zone 7 (région de Miramichi),10834
+E1V,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),0
+E1V,1307,13,Zone 7 (Miramichi area),Zone 7 (région de Miramichi),13036
+E1W,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),6838
+E1X,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),13573
+E1X,1307,13,Zone 7 (Miramichi area),Zone 7 (région de Miramichi),0
+E2A,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),17087
+E2E,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),20315
+E2G,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),4601
+E2H,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),4225
+E2J,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),16220
+E2K,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),16316
+E2L,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),7395
+E2M,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),18394
+E2N,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),4050
+E2P,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),1138
+E2R,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),173
+E2S,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),6389
+E2V,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),13715
+E3A,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),27300
+E3B,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),35860
+E3C,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),11231
+E3E,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),4902
+E3G,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),9118
+E3L,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),8487
+E3N,1305,13,Zone 5 (Campbellton area),Zone 5 (région de Campbellton),12388
+E3V,1304,13,Zone 4 (Edmundston area),Zone 4 (région d'Edmundston),10344
+E3Y,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),
+E3Y,1304,13,Zone 4 (Edmundston area),Zone 4 (région d'Edmundston),6863
+E3Z,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),
+E3Z,1304,13,Zone 4 (Edmundston area),Zone 4 (région d'Edmundston),3489
+E4A,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),2904
+E4B,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),4042
+E4C,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),612
+E4C,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),1434
+E4E,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),8645
+E4G,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),2740
+E4H,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),3792
+E4J,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),4808
+E4K,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),5783
+E4L,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),6493
+E4M,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),1750
+E4N,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),3679
+E4P,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),13809
+E4R,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),5657
+E4S,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),6097
+E4T,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),2050
+E4V,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),4255
+E4W,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),7646
+E4X,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),2835
+E4Y,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),767
+E4Y,1307,13,Zone 7 (Miramichi area),Zone 7 (région de Miramichi),2109
+E4Z,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),4047
+E4Z,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),1336
+E5A,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),1578
+E5B,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),2987
+E5C,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),4106
+E5E,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),862
+E5G,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),2505
+E5H,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),2685
+E5J,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),1689
+E5K,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),7003
+E5L,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),257
+E5L,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),2528
+E5M,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),981
+E5M,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),972
+E5N,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),11549
+E5P,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),2403
+E5R,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),1517
+E5S,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),1623
+E5T,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),2897
+E5V,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),635
+E6A,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),1250
+E6B,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),1365
+E6C,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),2502
+E6E,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),1496
+E6G,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),2358
+E6H,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),1127
+E6J,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),1209
+E6K,1302,13,Zone 2 (Saint John area),Zone 2 (région de Saint John),17
+E6K,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),3713
+E6L,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),4226
+E7A,1304,13,Zone 4 (Edmundston area),Zone 4 (région d'Edmundston),3450
+E7B,1304,13,Zone 4 (Edmundston area),Zone 4 (région d'Edmundston),5529
+E7C,1304,13,Zone 4 (Edmundston area),Zone 4 (région d'Edmundston),5163
+E7E,1304,13,Zone 4 (Edmundston area),Zone 4 (région d'Edmundston),3904
+E7G,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),3624
+E7H,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),5174
+E7J,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),1936
+E7K,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),2595
+E7L,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),4759
+E7M,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),9676
+E7N,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),2868
+E7P,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),3783
+E8A,1304,13,Zone 4 (Edmundston area),Zone 4 (région d'Edmundston),3165
+E8B,1304,13,Zone 4 (Edmundston area),Zone 4 (région d'Edmundston),1784
+E8B,1305,13,Zone 5 (Campbellton area),Zone 5 (région de Campbellton),205
+E8C,1305,13,Zone 5 (Campbellton area),Zone 5 (région de Campbellton),3539
+E8E,1305,13,Zone 5 (Campbellton area),Zone 5 (région de Campbellton),4665
+E8G,1305,13,Zone 5 (Campbellton area),Zone 5 (région de Campbellton),2525
+E8G,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),
+E8J,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),5069
+E8K,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),7934
+E8L,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),2248
+E8M,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),1974
+E8N,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),2520
+E8P,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),3179
+E8R,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),2838
+E8S,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),4572
+E8T,1306,13,Zone 6 (Bathurst area),Zone 6 (région de Bathurst),5651
+E9A,1301,13,Zone 1 (Moncton area),Zone 1 (région de Moncton),489
+E9A,1307,13,Zone 7 (Miramichi area),Zone 7 (région de Miramichi),1599
+E9B,1307,13,Zone 7 (Miramichi area),Zone 7 (région de Miramichi),2130
+E9C,1303,13,Zone 3 (Fredericton area),Zone 3 (région de Fredericton),2117
+E9E,1307,13,Zone 7 (Miramichi area),Zone 7 (région de Miramichi),3776
+E9G,1307,13,Zone 7 (Miramichi area),Zone 7 (région de Miramichi),4869
+E9H,1307,13,Zone 7 (Miramichi area),Zone 7 (région de Miramichi),3142
+G0A,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,81873
+G0A,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,
+G0C,2411,24,Région de la Gaspésie—Îles-de-la-Madeleine,Région de la Gaspésie—Îles-de-la-Madeleine,45035
+G0E,2411,24,Région de la Gaspésie—Îles-de-la-Madeleine,Région de la Gaspésie—Îles-de-la-Madeleine,4599
+G0G,2409,24,Région de la Côte-Nord,Région de la Côte-Nord,13782
+G0H,2409,24,Région de la Côte-Nord,Région de la Côte-Nord,10296
+G0J,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,23492
+G0J,2411,24,Région de la Gaspésie—Îles-de-la-Madeleine,Région de la Gaspésie—Îles-de-la-Madeleine,4456
+G0K,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,11643
+G0L,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,58370
+G0M,2405,24,Région de l'Estrie,Région de l'Estrie,4220
+G0M,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,29089
+G0N,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,1901
+G0N,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,16461
+G0P,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,6354
+G0P,2405,24,Région de l'Estrie,Région de l'Estrie,
+G0P,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,261
+G0R,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,5233
+G0R,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,75967
+G0S,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,7412
+G0S,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,62516
+G0T,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,3894
+G0T,2409,24,Région de la Côte-Nord,Région de la Côte-Nord,9589
+G0V,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,16202
+G0W,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,27653
+G0W,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,67
+G0W,2410,24,Région du Nord-du-Québec,Région du Nord-du-Québec,24
+G0W,2418,24,Région des Terres-Cries-de-la-Baie-James,Région des Terres-Cries-de-la-Baie-James,680
+G0X,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,
+G0X,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,56953
+G0Y,2405,24,Région de l'Estrie,Région de l'Estrie,8024
+G0Y,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,905
+G0Z,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,6866
+G1A,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,51
+G1B,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,15375
+G1C,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,37144
+G1E,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,26575
+G1G,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,25007
+G1H,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,28910
+G1J,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,23321
+G1K,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,18039
+G1L,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,23106
+G1M,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,19410
+G1N,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,8861
+G1P,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,16348
+G1R,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,16563
+G1S,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,25809
+G1T,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,6087
+G1V,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,17457
+G1W,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,20643
+G1X,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,26013
+G1Y,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,12718
+G2A,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,15833
+G2B,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,24194
+G2C,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,11453
+G2E,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,19967
+G2G,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,11304
+G2J,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,2544
+G2K,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,11367
+G2L,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,13896
+G2M,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,4326
+G2N,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,8450
+G3A,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,19235
+G3B,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,7793
+G3C,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,8968
+G3E,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,15639
+G3G,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,10106
+G3H,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,9230
+G3J,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,10362
+G3K,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,18144
+G3L,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,10221
+G3M,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,6895
+G3N,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,9891
+G3Z,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,6717
+G4A,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,3056
+G4R,2409,24,Région de la Côte-Nord,Région de la Côte-Nord,20877
+G4S,2409,24,Région de la Côte-Nord,Région de la Côte-Nord,4148
+G4T,2411,24,Région de la Gaspésie—Îles-de-la-Madeleine,Région de la Gaspésie—Îles-de-la-Madeleine,12435
+G4V,2411,24,Région de la Gaspésie—Îles-de-la-Madeleine,Région de la Gaspésie—Îles-de-la-Madeleine,6438
+G4W,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,14233
+G4X,2411,24,Région de la Gaspésie—Îles-de-la-Madeleine,Région de la Gaspésie—Îles-de-la-Madeleine,14334
+G4Z,2409,24,Région de la Côte-Nord,Région de la Côte-Nord,9458
+G5A,2403,24,Région de la Capitale-Nationale,Région de la Capitale-Nationale,8250
+G5B,2409,24,Région de la Côte-Nord,Région de la Côte-Nord,5919
+G5C,2409,24,Région de la Côte-Nord,Région de la Côte-Nord,11917
+G5H,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,6789
+G5J,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,6173
+G5L,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,28347
+G5M,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,8568
+G5N,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,7615
+G5R,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,19347
+G5T,2401,24,Région du Bas-Saint-Laurent,Région du Bas-Saint-Laurent,2858
+G5V,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,11167
+G5X,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,6271
+G5Y,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,23848
+G5Z,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,81
+G5Z,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,6181
+G6A,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,2217
+G6B,2405,24,Région de l'Estrie,Région de l'Estrie,7879
+G6C,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,6791
+G6E,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,13527
+G6G,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,19208
+G6H,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,7277
+G6J,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,10110
+G6K,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,8237
+G6L,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,15188
+G6P,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,30135
+G6R,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,4243
+G6S,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,4889
+G6T,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,9188
+G6V,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,31008
+G6W,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,23127
+G6X,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,9328
+G6Y,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,5260
+G6Z,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,19603
+G7A,2412,24,Région de la Chaudière-Appalaches,Région de la Chaudière-Appalaches,23017
+G7B,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,17780
+G7G,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,16966
+G7H,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,28352
+G7J,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,14096
+G7K,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,1022
+G7N,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,5901
+G7P,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,7264
+G7S,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,20101
+G7T,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,618
+G7X,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,26349
+G7Y,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,721
+G7Z,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,2428
+G8A,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,5984
+G8B,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,22859
+G8C,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,4115
+G8E,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,3719
+G8G,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,3867
+G8H,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,10346
+G8J,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,4129
+G8K,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,10233
+G8L,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,14543
+G8M,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,5295
+G8N,2402,24,Région du Saguenay—Lac-Saint-Jean,Région du Saguenay—Lac-Saint-Jean,2491
+G8P,2410,24,Région du Nord-du-Québec,Région du Nord-du-Québec,7504
+G8T,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,28411
+G8V,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,8794
+G8W,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,9934
+G8Y,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,32334
+G8Z,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,13596
+G9A,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,20572
+G9B,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,16998
+G9C,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,2203
+G9H,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,13016
+G9N,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,15599
+G9P,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,11125
+G9R,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,2273
+G9T,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,13748
+G9X,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,10599
+H0M,2416,24,Région de la Montérégie,Région de la Montérégie,1202
+H1A,2406,24,Région de Montréal,Région de Montréal,30707
+H1A,2416,24,Région de la Montérégie,Région de la Montérégie,
+H1B,2406,24,Région de Montréal,Région de Montréal,19400
+H1C,2406,24,Région de Montréal,Région de Montréal,14443
+H1E,2406,24,Région de Montréal,Région de Montréal,42178
+H1G,2406,24,Région de Montréal,Région de Montréal,50732
+H1H,2406,24,Région de Montréal,Région de Montréal,36157
+H1J,2406,24,Région de Montréal,Région de Montréal,10097
+H1K,2406,24,Région de Montréal,Région de Montréal,35290
+H1L,2406,24,Région de Montréal,Région de Montréal,30837
+H1M,2406,24,Région de Montréal,Région de Montréal,27110
+H1N,2406,24,Région de Montréal,Région de Montréal,22621
+H1P,2406,24,Région de Montréal,Région de Montréal,18179
+H1R,2406,24,Région de Montréal,Région de Montréal,30843
+H1S,2406,24,Région de Montréal,Région de Montréal,25446
+H1T,2406,24,Région de Montréal,Région de Montréal,25255
+H1V,2406,24,Région de Montréal,Région de Montréal,18812
+H1W,2406,24,Région de Montréal,Région de Montréal,23121
+H1X,2406,24,Région de Montréal,Région de Montréal,28525
+H1Y,2406,24,Région de Montréal,Région de Montréal,17572
+H1Z,2406,24,Région de Montréal,Région de Montréal,34250
+H2A,2406,24,Région de Montréal,Région de Montréal,16607
+H2B,2406,24,Région de Montréal,Région de Montréal,17314
+H2C,2406,24,Région de Montréal,Région de Montréal,17897
+H2E,2406,24,Région de Montréal,Région de Montréal,10929
+H2G,2406,24,Région de Montréal,Région de Montréal,18615
+H2H,2406,24,Région de Montréal,Région de Montréal,14286
+H2J,2406,24,Région de Montréal,Région de Montréal,23224
+H2K,2406,24,Région de Montréal,Région de Montréal,28210
+H2L,2406,24,Région de Montréal,Région de Montréal,21634
+H2M,2406,24,Région de Montréal,Région de Montréal,18505
+H2N,2406,24,Région de Montréal,Région de Montréal,6519
+H2P,2406,24,Région de Montréal,Région de Montréal,13599
+H2R,2406,24,Région de Montréal,Région de Montréal,16767
+H2S,2406,24,Région de Montréal,Région de Montréal,22554
+H2T,2406,24,Région de Montréal,Région de Montréal,16471
+H2V,2406,24,Région de Montréal,Région de Montréal,29989
+H2W,2406,24,Région de Montréal,Région de Montréal,11962
+H2X,2406,24,Région de Montréal,Région de Montréal,16286
+H2Y,2406,24,Région de Montréal,Région de Montréal,2643
+H2Z,2406,24,Région de Montréal,Région de Montréal,2435
+H3A,2406,24,Région de Montréal,Région de Montréal,2415
+H3B,2406,24,Région de Montréal,Région de Montréal,517
+H3C,2406,24,Région de Montréal,Région de Montréal,10753
+H3C,2416,24,Région de la Montérégie,Région de la Montérégie,
+H3E,2406,24,Région de Montréal,Région de Montréal,20461
+H3G,2406,24,Région de Montréal,Région de Montréal,7917
+H3H,2406,24,Région de Montréal,Région de Montréal,18783
+H3J,2406,24,Région de Montréal,Région de Montréal,10542
+H3K,2406,24,Région de Montréal,Région de Montréal,11994
+H3L,2406,24,Région de Montréal,Région de Montréal,18941
+H3M,2406,24,Région de Montréal,Région de Montréal,13904
+H3N,2406,24,Région de Montréal,Région de Montréal,26541
+H3P,2406,24,Région de Montréal,Région de Montréal,9596
+H3R,2406,24,Région de Montréal,Région de Montréal,9410
+H3S,2406,24,Région de Montréal,Région de Montréal,31221
+H3T,2406,24,Région de Montréal,Région de Montréal,8335
+H3V,2406,24,Région de Montréal,Région de Montréal,6301
+H3W,2406,24,Région de Montréal,Région de Montréal,28294
+H3X,2406,24,Région de Montréal,Région de Montréal,22413
+H3Y,2406,24,Région de Montréal,Région de Montréal,9411
+H3Z,2406,24,Région de Montréal,Région de Montréal,11316
+H4A,2406,24,Région de Montréal,Région de Montréal,21595
+H4B,2406,24,Région de Montréal,Région de Montréal,17671
+H4C,2406,24,Région de Montréal,Région de Montréal,15528
+H4E,2406,24,Région de Montréal,Région de Montréal,21323
+H4G,2406,24,Région de Montréal,Région de Montréal,29604
+H4H,2406,24,Région de Montréal,Région de Montréal,18957
+H4J,2406,24,Région de Montréal,Région de Montréal,16299
+H4K,2406,24,Région de Montréal,Région de Montréal,11113
+H4L,2406,24,Région de Montréal,Région de Montréal,35976
+H4M,2406,24,Région de Montréal,Région de Montréal,12161
+H4N,2406,24,Région de Montréal,Région de Montréal,30812
+H4P,2406,24,Région de Montréal,Région de Montréal,7390
+H4R,2406,24,Région de Montréal,Région de Montréal,26148
+H4S,2406,24,Région de Montréal,Région de Montréal,664
+H4T,2406,24,Région de Montréal,Région de Montréal,2
+H4V,2406,24,Région de Montréal,Région de Montréal,17258
+H4W,2406,24,Région de Montréal,Région de Montréal,24636
+H4X,2406,24,Région de Montréal,Région de Montréal,6366
+H4Y,2406,24,Région de Montréal,Région de Montréal,2
+H4Z,2406,24,Région de Montréal,Région de Montréal,462
+H5A,2406,24,Région de Montréal,Région de Montréal,0
+H5B,2406,24,Région de Montréal,Région de Montréal,0
+H7A,2406,24,Région de Montréal,Région de Montréal,
+H7A,2413,24,Région de Laval,Région de Laval,21150
+H7B,2413,24,Région de Laval,Région de Laval,2652
+H7C,2406,24,Région de Montréal,Région de Montréal,
+H7C,2413,24,Région de Laval,Région de Laval,8656
+H7E,2406,24,Région de Montréal,Région de Montréal,
+H7E,2413,24,Région de Laval,Région de Laval,26545
+H7G,2406,24,Région de Montréal,Région de Montréal,
+H7G,2413,24,Région de Laval,Région de Laval,19918
+H7H,2413,24,Région de Laval,Région de Laval,13330
+H7J,2413,24,Région de Laval,Région de Laval,2104
+H7K,2413,24,Région de Laval,Région de Laval,22467
+H7L,2413,24,Région de Laval,Région de Laval,37457
+H7M,2413,24,Région de Laval,Région de Laval,27287
+H7N,2406,24,Région de Montréal,Région de Montréal,
+H7N,2413,24,Région de Laval,Région de Laval,43400
+H7P,2413,24,Région de Laval,Région de Laval,35157
+H7R,2406,24,Région de Montréal,Région de Montréal,
+H7R,2413,24,Région de Laval,Région de Laval,30267
+H7S,2413,24,Région de Laval,Région de Laval,7008
+H7T,2413,24,Région de Laval,Région de Laval,25685
+H7V,2406,24,Région de Montréal,Région de Montréal,
+H7V,2413,24,Région de Laval,Région de Laval,21975
+H7W,2406,24,Région de Montréal,Région de Montréal,
+H7W,2413,24,Région de Laval,Région de Laval,40446
+H7X,2406,24,Région de Montréal,Région de Montréal,
+H7X,2413,24,Région de Laval,Région de Laval,26324
+H7Y,2406,24,Région de Montréal,Région de Montréal,
+H7Y,2413,24,Région de Laval,Région de Laval,9202
+H8N,2406,24,Région de Montréal,Région de Montréal,29231
+H8P,2406,24,Région de Montréal,Région de Montréal,22402
+H8R,2406,24,Région de Montréal,Région de Montréal,29771
+H8S,2406,24,Région de Montréal,Région de Montréal,24293
+H8T,2406,24,Région de Montréal,Région de Montréal,14910
+H8Y,2406,24,Région de Montréal,Région de Montréal,18994
+H8Z,2406,24,Région de Montréal,Région de Montréal,14660
+H9A,2406,24,Région de Montréal,Région de Montréal,15596
+H9B,2406,24,Région de Montréal,Région de Montréal,20639
+H9C,2406,24,Région de Montréal,Région de Montréal,11539
+H9E,2406,24,Région de Montréal,Région de Montréal,3118
+H9G,2406,24,Région de Montréal,Région de Montréal,15255
+H9H,2406,24,Région de Montréal,Région de Montréal,25585
+H9J,2406,24,Région de Montréal,Région de Montréal,21549
+H9K,2406,24,Région de Montréal,Région de Montréal,8690
+H9P,2406,24,Région de Montréal,Région de Montréal,3780
+H9R,2406,24,Région de Montréal,Région de Montréal,23490
+H9S,2406,24,Région de Montréal,Région de Montréal,22402
+H9W,2406,24,Région de Montréal,Région de Montréal,19183
+H9X,2406,24,Région de Montréal,Région de Montréal,9618
+J0A,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,11915
+J0A,2405,24,Région de l'Estrie,Région de l'Estrie,5837
+J0B,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,1410
+J0B,2405,24,Région de l'Estrie,Région de l'Estrie,59244
+J0C,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,21982
+J0C,2405,24,Région de l'Estrie,Région de l'Estrie,
+J0C,2416,24,Région de la Montérégie,Région de la Montérégie,
+J0E,2405,24,Région de l'Estrie,Région de l'Estrie,46843
+J0E,2416,24,Région de la Montérégie,Région de la Montérégie,144
+J0G,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,8064
+J0G,2416,24,Région de la Montérégie,Région de la Montérégie,9782
+J0H,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,1937
+J0H,2405,24,Région de l'Estrie,Région de l'Estrie,22
+J0H,2416,24,Région de la Montérégie,Région de la Montérégie,48135
+J0J,2405,24,Région de l'Estrie,Région de l'Estrie,10220
+J0J,2416,24,Région de la Montérégie,Région de la Montérégie,29094
+J0K,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,11079
+J0K,2414,24,Région de Lanaudière,Région de Lanaudière,122477
+J0L,2405,24,Région de l'Estrie,Région de l'Estrie,
+J0L,2416,24,Région de la Montérégie,Région de la Montérégie,72315
+J0M,2418,24,Région des Terres-Cries-de-la-Baie-James,Région des Terres-Cries-de-la-Baie-James,313
+J0N,2414,24,Région de Lanaudière,Région de Lanaudière,
+J0N,2415,24,Région des Laurentides,Région des Laurentides,48872
+J0P,2415,24,Région des Laurentides,Région des Laurentides,
+J0P,2416,24,Région de la Montérégie,Région de la Montérégie,38753
+J0R,2415,24,Région des Laurentides,Région des Laurentides,34579
+J0S,2416,24,Région de la Montérégie,Région de la Montérégie,32155
+J0T,2407,24,Région de l'Outaouais,Région de l'Outaouais,601
+J0T,2414,24,Région de Lanaudière,Région de Lanaudière,5620
+J0T,2415,24,Région des Laurentides,Région des Laurentides,38840
+J0V,2407,24,Région de l'Outaouais,Région de l'Outaouais,13763
+J0V,2415,24,Région des Laurentides,Région des Laurentides,10717
+J0W,2407,24,Région de l'Outaouais,Région de l'Outaouais,2358
+J0W,2415,24,Région des Laurentides,Région des Laurentides,12993
+J0X,2407,24,Région de l'Outaouais,Région de l'Outaouais,42507
+J0X,2415,24,Région des Laurentides,Région des Laurentides,1294
+J0Y,2408,24,Région de l'Abitibi-Témiscamingue,Région de l'Abitibi-Témiscamingue,19255
+J0Y,2410,24,Région du Nord-du-Québec,Région du Nord-du-Québec,3167
+J0Z,2408,24,Région de l'Abitibi-Témiscamingue,Région de l'Abitibi-Témiscamingue,30983
+J0Z,2410,24,Région du Nord-du-Québec,Région du Nord-du-Québec,623
+J1A,2405,24,Région de l'Estrie,Région de l'Estrie,8800
+J1C,2405,24,Région de l'Estrie,Région de l'Estrie,6468
+J1E,2405,24,Région de l'Estrie,Région de l'Estrie,23266
+J1G,2405,24,Région de l'Estrie,Région de l'Estrie,19942
+J1H,2405,24,Région de l'Estrie,Région de l'Estrie,27593
+J1J,2405,24,Région de l'Estrie,Région de l'Estrie,13853
+J1K,2405,24,Région de l'Estrie,Région de l'Estrie,6887
+J1L,2405,24,Région de l'Estrie,Région de l'Estrie,14417
+J1M,2405,24,Région de l'Estrie,Région de l'Estrie,5641
+J1N,2405,24,Région de l'Estrie,Région de l'Estrie,32133
+J1R,2405,24,Région de l'Estrie,Région de l'Estrie,10498
+J1S,2405,24,Région de l'Estrie,Région de l'Estrie,7944
+J1T,2405,24,Région de l'Estrie,Région de l'Estrie,7643
+J1X,2405,24,Région de l'Estrie,Région de l'Estrie,31432
+J1Z,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,5456
+J2A,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,11495
+J2B,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,28296
+J2C,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,28927
+J2E,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,3954
+J2G,2405,24,Région de l'Estrie,Région de l'Estrie,29110
+J2H,2405,24,Région de l'Estrie,Région de l'Estrie,18930
+J2J,2405,24,Région de l'Estrie,Région de l'Estrie,17664
+J2K,2405,24,Région de l'Estrie,Région de l'Estrie,16510
+J2L,2405,24,Région de l'Estrie,Région de l'Estrie,9031
+J2M,2405,24,Région de l'Estrie,Région de l'Estrie,6947
+J2N,2405,24,Région de l'Estrie,Région de l'Estrie,8878
+J2R,2416,24,Région de la Montérégie,Région de la Montérégie,9746
+J2S,2416,24,Région de la Montérégie,Région de la Montérégie,28569
+J2T,2416,24,Région de la Montérégie,Région de la Montérégie,16486
+J2W,2416,24,Région de la Montérégie,Région de la Montérégie,28253
+J2X,2416,24,Région de la Montérégie,Région de la Montérégie,19635
+J2Y,2416,24,Région de la Montérégie,Région de la Montérégie,5478
+J3A,2416,24,Région de la Montérégie,Région de la Montérégie,8464
+J3B,2416,24,Région de la Montérégie,Région de la Montérégie,32724
+J3E,2416,24,Région de la Montérégie,Région de la Montérégie,29871
+J3G,2416,24,Région de la Montérégie,Région de la Montérégie,32128
+J3H,2416,24,Région de la Montérégie,Région de la Montérégie,25038
+J3L,2416,24,Région de la Montérégie,Région de la Montérégie,48219
+J3M,2416,24,Région de la Montérégie,Région de la Montérégie,10725
+J3N,2416,24,Région de la Montérégie,Région de la Montérégie,17059
+J3P,2416,24,Région de la Montérégie,Région de la Montérégie,24876
+J3R,2416,24,Région de la Montérégie,Région de la Montérégie,13989
+J3T,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,8159
+J3V,2416,24,Région de la Montérégie,Région de la Montérégie,25618
+J3X,2416,24,Région de la Montérégie,Région de la Montérégie,21226
+J3Y,2416,24,Région de la Montérégie,Région de la Montérégie,59005
+J3Z,2416,24,Région de la Montérégie,Région de la Montérégie,5164
+J4B,2416,24,Région de la Montérégie,Région de la Montérégie,41128
+J4G,2416,24,Région de la Montérégie,Région de la Montérégie,9853
+J4H,2416,24,Région de la Montérégie,Région de la Montérégie,15173
+J4J,2416,24,Région de la Montérégie,Région de la Montérégie,30190
+J4K,2416,24,Région de la Montérégie,Région de la Montérégie,24465
+J4L,2416,24,Région de la Montérégie,Région de la Montérégie,29712
+J4M,2416,24,Région de la Montérégie,Région de la Montérégie,11565
+J4N,2416,24,Région de la Montérégie,Région de la Montérégie,8217
+J4P,2416,24,Région de la Montérégie,Région de la Montérégie,10710
+J4R,2416,24,Région de la Montérégie,Région de la Montérégie,9640
+J4S,2416,24,Région de la Montérégie,Région de la Montérégie,6175
+J4T,2416,24,Région de la Montérégie,Région de la Montérégie,17771
+J4V,2416,24,Région de la Montérégie,Région de la Montérégie,16578
+J4W,2416,24,Région de la Montérégie,Région de la Montérégie,18471
+J4X,2416,24,Région de la Montérégie,Région de la Montérégie,17359
+J4Y,2416,24,Région de la Montérégie,Région de la Montérégie,23020
+J4Z,2416,24,Région de la Montérégie,Région de la Montérégie,26325
+J5A,2416,24,Région de la Montérégie,Région de la Montérégie,27136
+J5B,2416,24,Région de la Montérégie,Région de la Montérégie,7452
+J5C,2416,24,Région de la Montérégie,Région de la Montérégie,17015
+J5J,2414,24,Région de Lanaudière,Région de Lanaudière,
+J5J,2415,24,Région des Laurentides,Région des Laurentides,15486
+J5K,2415,24,Région des Laurentides,Région des Laurentides,15898
+J5L,2415,24,Région des Laurentides,Région des Laurentides,18774
+J5M,2414,24,Région de Lanaudière,Région de Lanaudière,20158
+J5M,2415,24,Région des Laurentides,Région des Laurentides,
+J5R,2416,24,Région de la Montérégie,Région de la Montérégie,44779
+J5T,2414,24,Région de Lanaudière,Région de Lanaudière,13532
+J5V,2404,24,Région de la Mauricie et du Centre-du-Québec,Région de la Mauricie et du Centre-du-Québec,7114
+J5W,2414,24,Région de Lanaudière,Région de Lanaudière,25181
+J5X,2414,24,Région de Lanaudière,Région de Lanaudière,8693
+J5Y,2414,24,Région de Lanaudière,Région de Lanaudière,27805
+J5Z,2414,24,Région de Lanaudière,Région de Lanaudière,27173
+J6A,2414,24,Région de Lanaudière,Région de Lanaudière,35040
+J6E,2414,24,Région de Lanaudière,Région de Lanaudière,42686
+J6J,2416,24,Région de la Montérégie,Région de la Montérégie,23424
+J6K,2416,24,Région de la Montérégie,Région de la Montérégie,24279
+J6N,2416,24,Région de la Montérégie,Région de la Montérégie,13525
+J6R,2416,24,Région de la Montérégie,Région de la Montérégie,13105
+J6S,2416,24,Région de la Montérégie,Région de la Montérégie,23129
+J6T,2416,24,Région de la Montérégie,Région de la Montérégie,17174
+J6V,2413,24,Région de Laval,Région de Laval,
+J6V,2414,24,Région de Lanaudière,Région de Lanaudière,12344
+J6W,2413,24,Région de Laval,Région de Laval,
+J6W,2414,24,Région de Lanaudière,Région de Lanaudière,31542
+J6X,2413,24,Région de Laval,Région de Laval,
+J6X,2414,24,Région de Lanaudière,Région de Lanaudière,24597
+J6X,2415,24,Région des Laurentides,Région des Laurentides,
+J6Y,2413,24,Région de Laval,Région de Laval,
+J6Y,2414,24,Région de Lanaudière,Région de Lanaudière,18597
+J6Y,2415,24,Région des Laurentides,Région des Laurentides,
+J6Z,2413,24,Région de Laval,Région de Laval,
+J6Z,2414,24,Région de Lanaudière,Région de Lanaudière,
+J6Z,2415,24,Région des Laurentides,Région des Laurentides,18304
+J7A,2413,24,Région de Laval,Région de Laval,
+J7A,2415,24,Région des Laurentides,Région des Laurentides,13990
+J7B,2415,24,Région des Laurentides,Région des Laurentides,14349
+J7C,2414,24,Région de Lanaudière,Région de Lanaudière,
+J7C,2415,24,Région des Laurentides,Région des Laurentides,42799
+J7E,2415,24,Région des Laurentides,Région des Laurentides,28587
+J7G,2413,24,Région de Laval,Région de Laval,
+J7G,2415,24,Région des Laurentides,Région des Laurentides,17048
+J7H,2415,24,Région des Laurentides,Région des Laurentides,7002
+J7J,2415,24,Région des Laurentides,Région des Laurentides,22523
+J7K,2414,24,Région de Lanaudière,Région de Lanaudière,34460
+J7L,2414,24,Région de Lanaudière,Région de Lanaudière,12051
+J7M,2414,24,Région de Lanaudière,Région de Lanaudière,24089
+J7M,2415,24,Région des Laurentides,Région des Laurentides,
+J7N,2415,24,Région des Laurentides,Région des Laurentides,27754
+J7P,2413,24,Région de Laval,Région de Laval,
+J7P,2415,24,Région des Laurentides,Région des Laurentides,24800
+J7R,2413,24,Région de Laval,Région de Laval,
+J7R,2415,24,Région des Laurentides,Région des Laurentides,36554
+J7T,2416,24,Région de la Montérégie,Région de la Montérégie,26959
+J7V,2416,24,Région de la Montérégie,Région de la Montérégie,62448
+J7W,2416,24,Région de la Montérégie,Région de la Montérégie,14558
+J7X,2416,24,Région de la Montérégie,Région de la Montérégie,5343
+J7Y,2415,24,Région des Laurentides,Région des Laurentides,26419
+J7Z,2415,24,Région des Laurentides,Région des Laurentides,29001
+J8A,2414,24,Région de Lanaudière,Région de Lanaudière,
+J8A,2415,24,Région des Laurentides,Région des Laurentides,9081
+J8B,2415,24,Région des Laurentides,Région des Laurentides,12819
+J8C,2415,24,Région des Laurentides,Région des Laurentides,10478
+J8E,2415,24,Région des Laurentides,Région des Laurentides,9643
+J8G,2415,24,Région des Laurentides,Région des Laurentides,7767
+J8H,2415,24,Région des Laurentides,Région des Laurentides,13265
+J8L,2407,24,Région de l'Outaouais,Région de l'Outaouais,18633
+J8M,2407,24,Région de l'Outaouais,Région de l'Outaouais,12732
+J8N,2407,24,Région de l'Outaouais,Région de l'Outaouais,11897
+J8P,2407,24,Région de l'Outaouais,Région de l'Outaouais,32885
+J8R,2407,24,Région de l'Outaouais,Région de l'Outaouais,29451
+J8T,2407,24,Région de l'Outaouais,Région de l'Outaouais,39015
+J8V,2407,24,Région de l'Outaouais,Région de l'Outaouais,25478
+J8X,2407,24,Région de l'Outaouais,Région de l'Outaouais,9594
+J8Y,2407,24,Région de l'Outaouais,Région de l'Outaouais,23449
+J8Z,2407,24,Région de l'Outaouais,Région de l'Outaouais,14409
+J9A,2407,24,Région de l'Outaouais,Région de l'Outaouais,20841
+J9B,2407,24,Région de l'Outaouais,Région de l'Outaouais,6864
+J9E,2407,24,Région de l'Outaouais,Région de l'Outaouais,7822
+J9H,2407,24,Région de l'Outaouais,Région de l'Outaouais,30865
+J9J,2407,24,Région de l'Outaouais,Région de l'Outaouais,33175
+J9L,2415,24,Région des Laurentides,Région des Laurentides,14063
+J9P,2408,24,Région de l'Abitibi-Témiscamingue,Région de l'Abitibi-Témiscamingue,32367
+J9T,2408,24,Région de l'Abitibi-Témiscamingue,Région de l'Abitibi-Témiscamingue,13332
+J9V,2408,24,Région de l'Abitibi-Témiscamingue,Région de l'Abitibi-Témiscamingue,3276
+J9X,2408,24,Région de l'Abitibi-Témiscamingue,Région de l'Abitibi-Témiscamingue,23682
+J9Y,2408,24,Région de l'Abitibi-Témiscamingue,Région de l'Abitibi-Témiscamingue,9800
+J9Z,2408,24,Région de l'Abitibi-Témiscamingue,Région de l'Abitibi-Témiscamingue,7232
+K0A,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",12581
+K0A,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,45880
+K0A,3557,35,Renfrew County and District Health Unit,Circonscription sanitaire du comté et du district de Renfrew,2730
+K0A,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,28417
+K0B,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,12678
+K0C,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,370
+K0C,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,37790
+K0E,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",24517
+K0E,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,5747
+K0G,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",245
+K0G,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",31611
+K0G,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,742
+K0G,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,207
+K0H,3538,35,Hastings and Prince Edward Counties Health Unit,Circonscription sanitaire des comtés de Hastings et Prince Edward,102
+K0H,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",37498
+K0H,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",1786
+K0J,3538,35,Hastings and Prince Edward Counties Health Unit,Circonscription sanitaire des comtés de Hastings et Prince Edward,426
+K0J,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",
+K0J,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",
+K0J,3557,35,Renfrew County and District Health Unit,Circonscription sanitaire du comté et du district de Renfrew,23360
+K0K,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",26755
+K0K,3538,35,Hastings and Prince Edward Counties Health Unit,Circonscription sanitaire des comtés de Hastings et Prince Edward,61446
+K0K,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",8157
+K0K,3555,35,Peterborough County–City Health Unit,Circonscription sanitaire du comté et de la cité de Peterborough,
+K0L,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",16851
+K0L,3538,35,Hastings and Prince Edward Counties Health Unit,Circonscription sanitaire des comtés de Hastings et Prince Edward,10048
+K0L,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",105
+K0L,3555,35,Peterborough County–City Health Unit,Circonscription sanitaire du comté et de la cité de Peterborough,32295
+K0L,3557,35,Renfrew County and District Health Unit,Circonscription sanitaire du comté et du district de Renfrew,106
+K0M,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,
+K0M,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",41641
+K0M,3555,35,Peterborough County–City Health Unit,Circonscription sanitaire du comté et de la cité de Peterborough,1984
+K1A,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,3756
+K1B,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,16661
+K1C,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,38940
+K1E,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,14882
+K1G,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,32562
+K1H,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,15746
+K1J,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,24964
+K1K,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,27935
+K1L,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,17025
+K1M,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,6459
+K1N,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,21386
+K1P,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,390
+K1R,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,15268
+K1S,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,26060
+K1T,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,35435
+K1V,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,53515
+K1W,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,9043
+K1X,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,563
+K1Y,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,19566
+K1Z,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,18993
+K2A,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,17170
+K2B,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,30711
+K2C,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,27056
+K2E,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,18948
+K2G,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,48100
+K2H,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,27845
+K2J,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,67365
+K2K,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,24524
+K2L,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,18699
+K2M,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,26723
+K2P,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,13387
+K2R,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,1193
+K2S,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,32157
+K2T,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,9450
+K2V,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,2635
+K2W,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,8630
+K4A,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,54089
+K4B,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,4508
+K4B,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,
+K4C,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,4499
+K4K,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,
+K4K,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,14306
+K4M,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,10506
+K4P,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,9959
+K4R,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,119
+K4R,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,6854
+K6A,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,12584
+K6H,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,30809
+K6J,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,17235
+K6K,3558,35,The Eastern Ontario Health Unit,Circonscription sanitaire de l'Est de l'Ontario,2786
+K6T,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",982
+K6V,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",26887
+K7A,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",15702
+K7A,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,129
+K7C,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",17353
+K7G,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",803
+K7G,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",6628
+K7H,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",15075
+K7K,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",31295
+K7L,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",17126
+K7L,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",
+K7M,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",47402
+K7N,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",7917
+K7P,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",21698
+K7R,3538,35,Hastings and Prince Edward Counties Health Unit,Circonscription sanitaire des comtés de Hastings et Prince Edward,
+K7R,3541,35,"Kingston, Frontenac and Lennox and Addington Health Unit","Circonscription sanitaire de Kingston, Frontenac et Lennox et Addington",12602
+K7S,3543,35,"Leeds, Grenville and Lanark District Health Unit","Circonscription sanitaire du district de Leeds, Grenville et Lanark",
+K7S,3551,35,City of Ottawa Health Unit,Circonscription sanitaire de la ville d'Ottawa,
+K7S,3557,35,Renfrew County and District Health Unit,Circonscription sanitaire du comté et du district de Renfrew,12402
+K7V,3557,35,Renfrew County and District Health Unit,Circonscription sanitaire du comté et du district de Renfrew,13197
+K8A,3557,35,Renfrew County and District Health Unit,Circonscription sanitaire du comté et du district de Renfrew,25150
+K8B,3557,35,Renfrew County and District Health Unit,Circonscription sanitaire du comté et du district de Renfrew,677
+K8H,3557,35,Renfrew County and District Health Unit,Circonscription sanitaire du comté et du district de Renfrew,13714
+K8N,3538,35,Hastings and Prince Edward Counties Health Unit,Circonscription sanitaire des comtés de Hastings et Prince Edward,26140
+K8P,3538,35,Hastings and Prince Edward Counties Health Unit,Circonscription sanitaire des comtés de Hastings et Prince Edward,21098
+K8R,3538,35,Hastings and Prince Edward Counties Health Unit,Circonscription sanitaire des comtés de Hastings et Prince Edward,1428
+K8V,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",
+K8V,3538,35,Hastings and Prince Edward Counties Health Unit,Circonscription sanitaire des comtés de Hastings et Prince Edward,26711
+K9A,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",25291
+K9H,3555,35,Peterborough County–City Health Unit,Circonscription sanitaire du comté et de la cité de Peterborough,27713
+K9J,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",243
+K9J,3555,35,Peterborough County–City Health Unit,Circonscription sanitaire du comté et de la cité de Peterborough,41913
+K9K,3555,35,Peterborough County–City Health Unit,Circonscription sanitaire du comté et de la cité de Peterborough,12575
+K9L,3555,35,Peterborough County–City Health Unit,Circonscription sanitaire du comté et de la cité de Peterborough,6583
+K9V,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",27199
+L0A,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,1498
+L0A,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",4641
+L0A,3555,35,Peterborough County–City Health Unit,Circonscription sanitaire du comté et de la cité de Peterborough,5478
+L0B,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,12178
+L0B,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",1598
+L0C,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,6835
+L0C,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",803
+L0C,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,59
+L0E,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,3066
+L0E,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",10
+L0E,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,13820
+L0G,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,279
+L0G,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,
+L0G,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,12751
+L0G,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,21867
+L0H,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,971
+L0H,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,626
+L0J,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,
+L0J,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,5497
+L0K,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,3765
+L0K,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",253
+L0K,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,25574
+L0L,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,37677
+L0M,3533,35,Grey Bruce Health Unit,Circonscription sanitaire de Grey Bruce,47
+L0M,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,27764
+L0M,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,641
+L0N,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,161
+L0N,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,995
+L0N,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,6885
+L0P,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,5504
+L0P,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,746
+L0P,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,2
+L0P,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,
+L0R,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,
+L0R,3534,35,Haldimand-Norfolk Health Unit,Circonscription sanitaire de Haldimand-Norfolk,
+L0R,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L0R,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,45885
+L0R,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,35832
+L0S,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,44710
+L1A,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,27
+L1A,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",15325
+L1B,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,11762
+L1B,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",58
+L1C,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,43745
+L1E,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,26530
+L1G,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,41206
+L1H,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,32562
+L1J,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,41422
+L1K,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,38418
+L1L,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,5846
+L1M,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,22372
+L1N,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,48124
+L1P,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,17195
+L1R,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,39018
+L1S,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,40631
+L1T,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,50475
+L1V,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,52848
+L1V,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L1W,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,17302
+L1W,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L1X,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,18251
+L1Y,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,1981
+L1Z,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,28374
+L2A,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,16129
+L2E,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,18697
+L2G,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,25986
+L2H,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,26253
+L2J,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,15124
+L2M,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,31955
+L2N,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,31213
+L2P,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,13825
+L2R,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,24658
+L2S,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,18993
+L2T,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,10685
+L2V,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,16213
+L2W,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,2073
+L3B,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,22283
+L3C,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,30484
+L3K,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,17947
+L3M,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,27036
+L3P,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,37880
+L3R,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,60872
+L3R,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L3S,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,52852
+L3S,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L3T,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,50497
+L3T,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L3V,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",26
+L3V,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,43728
+L3X,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,39593
+L3Y,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,45042
+L3Z,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,31971
+L3Z,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,109
+L4A,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,480
+L4A,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,43976
+L4B,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,34071
+L4C,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,72671
+L4E,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,52219
+L4G,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,55394
+L4H,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,64102
+L4H,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L4J,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,77213
+L4J,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L4K,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,14903
+L4K,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L4L,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,55275
+L4L,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L4M,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,46117
+L4N,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,98115
+L4P,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,
+L4P,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,29089
+L4R,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,18249
+L4S,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,35745
+L4T,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,37835
+L4T,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L4V,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,630
+L4V,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L4W,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,20856
+L4W,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L4X,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,18080
+L4X,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L4Y,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,24435
+L4Z,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,38113
+L5A,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,46683
+L5B,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,63231
+L5C,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,29557
+L5E,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,12768
+L5E,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L5G,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,20166
+L5H,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,18025
+L5J,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L5J,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,27610
+L5K,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L5K,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,14011
+L5L,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L5L,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,43204
+L5M,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L5M,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,104038
+L5N,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L5N,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,84039
+L5P,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,0
+L5R,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,37123
+L5S,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,4
+L5T,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,9
+L5V,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,50849
+L5W,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,24865
+L6A,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,86270
+L6B,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,30048
+L6B,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L6C,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,49582
+L6E,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,37007
+L6E,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L6G,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,6691
+L6H,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,60924
+L6H,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,
+L6J,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,24550
+L6J,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,
+L6K,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,12821
+L6L,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,29843
+L6M,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,65084
+L6P,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,82137
+L6P,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,
+L6R,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,88009
+L6S,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,52234
+L6T,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,38219
+L6T,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,
+L6T,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,
+L6V,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,41411
+L6W,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,21783
+L6X,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L6X,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,67239
+L6Y,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,87193
+L6Z,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,32064
+L7A,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L7A,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,80259
+L7B,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,12765
+L7C,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L7C,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,23413
+L7E,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,32836
+L7E,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,186
+L7G,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,44895
+L7G,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,
+L7J,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,11747
+L7J,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,614
+L7K,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,8324
+L7K,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,
+L7L,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,46992
+L7M,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,47716
+L7N,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,12848
+L7P,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,30354
+L7P,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,
+L7R,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,15685
+L7S,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,12209
+L7T,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,17153
+L7T,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,
+L8B,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L8B,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,14637
+L8E,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,39485
+L8E,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,
+L8G,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,20299
+L8H,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,25018
+L8J,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,23340
+L8J,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,
+L8K,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,30436
+L8L,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,28958
+L8M,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,14810
+L8N,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,12403
+L8P,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,19976
+L8R,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,9552
+L8S,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,13401
+L8T,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,18260
+L8V,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,18279
+L8W,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,25662
+L9A,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,24113
+L9B,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,24014
+L9C,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,39205
+L9E,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,12369
+L9E,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,
+L9G,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,
+L9G,3534,35,Haldimand-Norfolk Health Unit,Circonscription sanitaire de Haldimand-Norfolk,
+L9G,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,23566
+L9H,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,
+L9H,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,29674
+L9J,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,739
+L9K,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,13710
+L9L,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,13582
+L9M,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,14834
+L9N,3570,35,York Regional Health Unit,Circonscription sanitaire régionale de York,11661
+L9P,3530,35,Durham Regional Health Unit,Circonscription sanitaire régionale de Durham,16154
+L9R,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,20668
+L9R,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,197
+L9S,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,28600
+L9T,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,92567
+L9V,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,
+L9V,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,5875
+L9W,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,
+L9W,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,211
+L9W,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,42562
+L9X,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,5140
+L9Y,3533,35,Grey Bruce Health Unit,Circonscription sanitaire de Grey Bruce,1790
+L9Y,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,22042
+L9Z,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,20600
+M1B,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,60543
+M1C,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,34834
+M1E,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,41601
+M1G,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,29876
+M1H,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,26183
+M1J,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,33733
+M1K,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,45438
+M1L,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,33445
+M1M,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,21796
+M1N,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,21473
+M1P,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,41512
+M1R,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,27555
+M1S,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,37283
+M1T,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,29148
+M1V,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,50999
+M1W,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,46533
+M1X,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,15138
+M2H,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,22910
+M2J,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,56742
+M2K,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,23152
+M2L,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,12409
+M2M,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,32737
+M2N,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,70438
+M2P,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,7729
+M2R,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,39123
+M3A,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,30455
+M3B,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,11339
+M3C,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,32492
+M3H,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,36394
+M3J,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,23885
+M3K,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,6242
+M3L,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,17439
+M3M,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,23519
+M3N,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,36326
+M4A,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,14990
+M4B,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,18426
+M4C,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,46785
+M4E,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,24198
+M4G,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,17903
+M4H,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,20095
+M4J,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,36310
+M4K,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,30792
+M4L,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,33434
+M4M,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,23957
+M4N,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,14887
+M4P,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,22908
+M4R,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,11223
+M4S,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,24857
+M4T,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,11087
+M4V,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,16904
+M4W,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,12801
+M4X,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,20342
+M4Y,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,29876
+M5A,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,40351
+M5B,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,12014
+M5C,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,3050
+M5E,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,7493
+M5G,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,6162
+M5H,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,866
+M5J,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,16007
+M5K,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,2
+M5L,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,0
+M5M,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,25499
+M5N,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,16361
+M5P,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,18926
+M5R,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,28455
+M5S,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,13035
+M5T,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,17302
+M5V,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,48426
+M5X,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,0
+M6A,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,20348
+M6B,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,27978
+M6C,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,23086
+M6E,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,38137
+M6G,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,32268
+M6H,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,45169
+M6J,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,32829
+M6K,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,41566
+M6L,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,22044
+M6M,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,41235
+M6N,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,40292
+M6P,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,40072
+M6R,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,19432
+M6S,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,34173
+M7A,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,8126
+M7R,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,0
+M7Y,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,0
+M8V,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,35713
+M8W,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,
+M8W,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,20742
+M8X,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,9924
+M8Y,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,21887
+M8Z,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,18644
+M9A,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,35295
+M9B,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,31062
+M9C,3553,35,Peel Regional Health Unit,Circonscription sanitaire régionale de Peel,
+M9C,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,37109
+M9L,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,12090
+M9M,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,20007
+M9N,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,23433
+M9P,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,20780
+M9R,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,33722
+M9V,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,55935
+M9W,3595,35,City of Toronto Health Unit,Circonscription sanitaire de la cité de Toronto,40630
+N0A,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,740
+N0A,3534,35,Haldimand-Norfolk Health Unit,Circonscription sanitaire de Haldimand-Norfolk,24863
+N0A,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,38
+N0A,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,358
+N0B,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,1438
+N0B,3536,35,Halton Regional Health Unit,Circonscription sanitaire régionale de Halton,506
+N0B,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,1001
+N0B,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,923
+N0B,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,32341
+N0B,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,29786
+N0B,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,3700
+N0C,3533,35,Grey Bruce Health Unit,Circonscription sanitaire de Grey Bruce,9458
+N0C,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,131
+N0C,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,143
+N0E,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,9080
+N0E,3534,35,Haldimand-Norfolk Health Unit,Circonscription sanitaire de Haldimand-Norfolk,18950
+N0E,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,
+N0E,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,154
+N0G,3533,35,Grey Bruce Health Unit,Circonscription sanitaire de Grey Bruce,19623
+N0G,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,10568
+N0G,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,
+N0G,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,16832
+N0H,3533,35,Grey Bruce Health Unit,Circonscription sanitaire de Grey Bruce,39276
+N0J,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,930
+N0J,3534,35,Haldimand-Norfolk Health Unit,Circonscription sanitaire de Haldimand-Norfolk,2215
+N0J,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,85
+N0J,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,76
+N0J,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,24165
+N0K,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,14376
+N0K,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,413
+N0K,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,
+N0L,3540,35,Chatham-Kent Health Unit,Circonscription sanitaire de Chatham-Kent,422
+N0L,3542,35,Lambton Health Unit,Circonscription sanitaire de Lambton,55
+N0L,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,26561
+N0L,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,16329
+N0M,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,20012
+N0M,3542,35,Lambton Health Unit,Circonscription sanitaire de Lambton,7251
+N0M,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,20297
+N0M,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,3322
+N0N,3542,35,Lambton Health Unit,Circonscription sanitaire de Lambton,37685
+N0N,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,69
+N0P,3540,35,Chatham-Kent Health Unit,Circonscription sanitaire de Chatham-Kent,26670
+N0P,3542,35,Lambton Health Unit,Circonscription sanitaire de Lambton,3904
+N0P,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,5820
+N0R,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,40352
+N1A,3534,35,Haldimand-Norfolk Health Unit,Circonscription sanitaire de Haldimand-Norfolk,11456
+N1A,3546,35,Niagara Regional Area Health Unit,Circonscription sanitaire régionale de Niagara,63
+N1C,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,3839
+N1E,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,41140
+N1G,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,27139
+N1H,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,22
+N1H,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,40298
+N1K,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,9208
+N1L,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,14305
+N1M,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,14732
+N1P,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,6770
+N1R,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,
+N1R,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,461
+N1R,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,40957
+N1S,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,19366
+N1T,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,18005
+N1T,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,
+N2A,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,29371
+N2B,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,16766
+N2C,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,16290
+N2E,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,39906
+N2G,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,13453
+N2H,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,20649
+N2J,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,19243
+N2K,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,26329
+N2L,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,28202
+N2M,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,32952
+N2N,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,26422
+N2P,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,19582
+N2R,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,11784
+N2T,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,19202
+N2V,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,16427
+N2Z,3533,35,Grey Bruce Health Unit,Circonscription sanitaire de Grey Bruce,10481
+N2Z,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,60
+N3A,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,
+N3A,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,15490
+N3A,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,
+N3B,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,11752
+N3C,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,25393
+N3C,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,691
+N3E,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,295
+N3H,3565,35,Waterloo Health Unit,Circonscription sanitaire de Waterloo,21484
+N3L,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,13312
+N3L,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,112
+N3P,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,8650
+N3R,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,35938
+N3S,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,26718
+N3T,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,30829
+N3T,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,17
+N3V,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,1793
+N3W,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,913
+N3W,3534,35,Haldimand-Norfolk Health Unit,Circonscription sanitaire de Haldimand-Norfolk,12074
+N3W,3537,35,City of Hamilton Health Unit,Circonscription sanitaire de la cité de Hamilton,102
+N3Y,3534,35,Haldimand-Norfolk Health Unit,Circonscription sanitaire de Haldimand-Norfolk,20537
+N4B,3534,35,Haldimand-Norfolk Health Unit,Circonscription sanitaire de Haldimand-Norfolk,6793
+N4G,3534,35,Haldimand-Norfolk Health Unit,Circonscription sanitaire de Haldimand-Norfolk,423
+N4G,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,17395
+N4K,3533,35,Grey Bruce Health Unit,Circonscription sanitaire de Grey Bruce,27329
+N4L,3533,35,Grey Bruce Health Unit,Circonscription sanitaire de Grey Bruce,7399
+N4N,3533,35,Grey Bruce Health Unit,Circonscription sanitaire de Grey Bruce,8876
+N4S,3527,35,Brant County Health Unit,Circonscription sanitaire du comté de Brant,
+N4S,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,31023
+N4T,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,10593
+N4V,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,3028
+N4W,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,8393
+N4W,3566,35,Wellington-Dufferin-Guelph Health Unit,Circonscription sanitaire de Wellington-Dufferin-Guelph,184
+N4X,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,4114
+N4X,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,333
+N4X,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,100
+N4Z,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,3018
+N5A,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,29291
+N5C,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,
+N5C,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,14700
+N5H,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,14578
+N5L,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,2750
+N5P,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,19760
+N5R,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,26955
+N5V,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,30513
+N5W,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,23772
+N5X,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,32482
+N5Y,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,33751
+N5Z,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,23534
+N6A,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,11423
+N6B,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,9651
+N6C,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,30274
+N6E,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,27297
+N6G,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,38675
+N6H,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,42363
+N6J,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,28094
+N6K,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,33677
+N6L,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,2888
+N6L,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,
+N6M,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,5725
+N6N,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,661
+N6N,3575,35,Southwestern Health Unit,Circonscription sanitaire du sud-ouest,
+N6P,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,9217
+N7A,3533,35,Grey Bruce Health Unit,Circonscription sanitaire de Grey Bruce,
+N7A,3539,35,Huron Perth Public Health Unit,Circonscription sanitaire du comté de Huron Perth,11482
+N7G,3544,35,Middlesex-London Health Unit,Circonscription sanitaire de Middlesex-London,17269
+N7L,3540,35,Chatham-Kent Health Unit,Circonscription sanitaire de Chatham-Kent,23895
+N7M,3540,35,Chatham-Kent Health Unit,Circonscription sanitaire de Chatham-Kent,22242
+N7S,3542,35,Lambton Health Unit,Circonscription sanitaire de Lambton,27936
+N7T,3542,35,Lambton Health Unit,Circonscription sanitaire de Lambton,25582
+N7V,3542,35,Lambton Health Unit,Circonscription sanitaire de Lambton,11640
+N7W,3542,35,Lambton Health Unit,Circonscription sanitaire de Lambton,2257
+N7X,3542,35,Lambton Health Unit,Circonscription sanitaire de Lambton,1043
+N8A,3540,35,Chatham-Kent Health Unit,Circonscription sanitaire de Chatham-Kent,12119
+N8A,3542,35,Lambton Health Unit,Circonscription sanitaire de Lambton,336
+N8H,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,24626
+N8M,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,10118
+N8N,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,24461
+N8P,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,12006
+N8R,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,12068
+N8S,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,20852
+N8T,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,17043
+N8V,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,0
+N8W,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,23380
+N8X,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,15582
+N8Y,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,18214
+N9A,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,26508
+N9B,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,17210
+N9C,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,11650
+N9E,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,20267
+N9G,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,17830
+N9H,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,11997
+N9J,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,18344
+N9K,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,2578
+N9V,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,19494
+N9Y,3568,35,Windsor-Essex County Health Unit,Circonscription sanitaire de Windsor-comté d'Essex,14127
+P0A,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",157
+P0A,3547,35,North Bay Parry Sound District Health Unit,Circonscription sanitaire du district de North Bay Parry Sound,10788
+P0A,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,892
+P0B,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,8497
+P0C,3547,35,North Bay Parry Sound District Health Unit,Circonscription sanitaire du district de North Bay Parry Sound,784
+P0C,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,1411
+P0E,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,3343
+P0G,3547,35,North Bay Parry Sound District Health Unit,Circonscription sanitaire du district de North Bay Parry Sound,2391
+P0H,3547,35,North Bay Parry Sound District Health Unit,Circonscription sanitaire du district de North Bay Parry Sound,23351
+P0H,3557,35,Renfrew County and District Health Unit,Circonscription sanitaire du comté et du district de Renfrew,
+P0H,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,596
+P0H,3563,35,Timiskaming Health Unit,Circonscription sanitaire de Timiskaming,578
+P0J,3563,35,Timiskaming Health Unit,Circonscription sanitaire de Timiskaming,7609
+P0K,3556,35,Porcupine Health Unit,Circonscription sanitaire de Porcupine,1846
+P0K,3563,35,Timiskaming Health Unit,Circonscription sanitaire de Timiskaming,1575
+P0L,3556,35,Porcupine Health Unit,Circonscription sanitaire de Porcupine,4392
+P0M,3526,35,The District of Algoma Health Unit,Circonscription sanitaire du district d'Algoma,10
+P0M,3547,35,North Bay Parry Sound District Health Unit,Circonscription sanitaire du district de North Bay Parry Sound,519
+P0M,3556,35,Porcupine Health Unit,Circonscription sanitaire de Porcupine,30
+P0M,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,40379
+P0N,3556,35,Porcupine Health Unit,Circonscription sanitaire de Porcupine,7722
+P0P,3526,35,The District of Algoma Health Unit,Circonscription sanitaire du district d'Algoma,581
+P0P,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,11661
+P0R,3526,35,The District of Algoma Health Unit,Circonscription sanitaire du district d'Algoma,5783
+P0S,3526,35,The District of Algoma Health Unit,Circonscription sanitaire du district d'Algoma,5502
+P0T,3549,35,Northwestern Health Unit,Circonscription sanitaire du Nord-Ouest,89
+P0T,3562,35,Thunder Bay District Health Unit,Circonscription sanitaire du district de Thunder Bay,8697
+P0V,3549,35,Northwestern Health Unit,Circonscription sanitaire du Nord-Ouest,1887
+P0V,3562,35,Thunder Bay District Health Unit,Circonscription sanitaire du district de Thunder Bay,349
+P0W,3549,35,Northwestern Health Unit,Circonscription sanitaire du Nord-Ouest,3017
+P0X,3549,35,Northwestern Health Unit,Circonscription sanitaire du Nord-Ouest,1253
+P1A,3547,35,North Bay Parry Sound District Health Unit,Circonscription sanitaire du district de North Bay Parry Sound,15971
+P1B,3547,35,North Bay Parry Sound District Health Unit,Circonscription sanitaire du district de North Bay Parry Sound,31915
+P1C,3547,35,North Bay Parry Sound District Health Unit,Circonscription sanitaire du district de North Bay Parry Sound,3586
+P1H,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,15949
+P1L,3535,35,"Haliburton, Kawartha, Pine Ridge District Health Unit","Circonscription sanitaire du district de Haliburton, Kawartha et Pine Ridge",
+P1L,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,16258
+P1P,3560,35,Simcoe Muskoka District Health Unit,Circonscription sanitaire du district de Simcoe Muskoka,9770
+P2A,3547,35,North Bay Parry Sound District Health Unit,Circonscription sanitaire du district de North Bay Parry Sound,12574
+P2B,3547,35,North Bay Parry Sound District Health Unit,Circonscription sanitaire du district de North Bay Parry Sound,9892
+P2N,3563,35,Timiskaming Health Unit,Circonscription sanitaire de Timiskaming,6898
+P3A,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,24410
+P3B,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,14679
+P3C,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,15743
+P3E,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,27409
+P3G,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,3996
+P3L,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,8047
+P3N,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,7975
+P3P,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,15164
+P3Y,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,7298
+P4N,3556,35,Porcupine Health Unit,Circonscription sanitaire de Porcupine,25039
+P4P,3556,35,Porcupine Health Unit,Circonscription sanitaire de Porcupine,2772
+P4R,3556,35,Porcupine Health Unit,Circonscription sanitaire de Porcupine,4441
+P5A,3526,35,The District of Algoma Health Unit,Circonscription sanitaire du district d'Algoma,10741
+P5E,3561,35,Sudbury and District Health Unit,Circonscription sanitaire de Sudbury et son district,5348
+P5N,3556,35,Porcupine Health Unit,Circonscription sanitaire de Porcupine,8387
+P6A,3526,35,The District of Algoma Health Unit,Circonscription sanitaire du district d'Algoma,33652
+P6B,3526,35,The District of Algoma Health Unit,Circonscription sanitaire du district d'Algoma,22785
+P6C,3526,35,The District of Algoma Health Unit,Circonscription sanitaire du district d'Algoma,19299
+P7A,3562,35,Thunder Bay District Health Unit,Circonscription sanitaire du district de Thunder Bay,27829
+P7B,3562,35,Thunder Bay District Health Unit,Circonscription sanitaire du district de Thunder Bay,21407
+P7C,3562,35,Thunder Bay District Health Unit,Circonscription sanitaire du district de Thunder Bay,20927
+P7E,3562,35,Thunder Bay District Health Unit,Circonscription sanitaire du district de Thunder Bay,21371
+P7G,3562,35,Thunder Bay District Health Unit,Circonscription sanitaire du district de Thunder Bay,12861
+P7J,3562,35,Thunder Bay District Health Unit,Circonscription sanitaire du district de Thunder Bay,4986
+P7K,3562,35,Thunder Bay District Health Unit,Circonscription sanitaire du district de Thunder Bay,5718
+P7L,3562,35,Thunder Bay District Health Unit,Circonscription sanitaire du district de Thunder Bay,2050
+P8N,3549,35,Northwestern Health Unit,Circonscription sanitaire du Nord-Ouest,6162
+P8T,3549,35,Northwestern Health Unit,Circonscription sanitaire du Nord-Ouest,3448
+P9A,3549,35,Northwestern Health Unit,Circonscription sanitaire du Nord-Ouest,8215
+P9N,3549,35,Northwestern Health Unit,Circonscription sanitaire du Nord-Ouest,11617
+R0A,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,15456
+R0B,4604,46,Northern Regional Health Authority,Office régional de la santé du Nord,65
+R0C,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,1078
+R0E,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,6384
+R0G,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,6899
+R0H,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,394
+R0J,4602,46,Prairie Mountain Health,Santé de Prairie Mountain,473
+R0J,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,86
+R0K,4602,46,Prairie Mountain Health,Santé de Prairie Mountain,309
+R0L,4602,46,Prairie Mountain Health,Santé de Prairie Mountain,623
+R0M,4602,46,Prairie Mountain Health,Santé de Prairie Mountain,175
+R1A,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,
+R1A,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,18437
+R1B,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,269
+R1C,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,
+R1C,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,3537
+R1N,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,14249
+R2C,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,31913
+R2C,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,137
+R2E,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,9367
+R2E,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,73
+R2G,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,32080
+R2G,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,
+R2H,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,15865
+R2J,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,26612
+R2J,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,120
+R2K,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,33102
+R2L,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,14637
+R2M,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,37844
+R2N,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,29919
+R2N,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,
+R2P,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,32815
+R2R,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,21485
+R2V,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,34654
+R2W,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,29321
+R2X,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,18960
+R2Y,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,20355
+R3A,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,4951
+R3B,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,12174
+R3C,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,13529
+R3E,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,19679
+R3G,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,25606
+R3H,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,147
+R3J,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,27508
+R3K,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,11815
+R3K,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,
+R3L,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,20055
+R3M,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,22113
+R3N,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,16538
+R3P,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,19730
+R3P,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,
+R3R,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,24680
+R3S,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,538
+R3S,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,
+R3T,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,51750
+R3V,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,6405
+R3V,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,
+R3W,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,9699
+R3W,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,
+R3X,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,18090
+R3X,4603,46,Interlake-Eastern Regional Health Authority,Office régional de la santé d'Entre-les-Lacs et de l'Est,238
+R3X,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,
+R3Y,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,17211
+R4A,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,4215
+R4G,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,1079
+R4H,4601,46,Winnipeg Regional Health Authority,Office régional de la santé de Winnipeg,
+R4H,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,2377
+R4J,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,1039
+R4K,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,594
+R4L,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,1100
+R5A,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,3103
+R5G,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,21091
+R5H,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,2904
+R6M,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,8730
+R6W,4605,46,Southern Health—Santé Sud,Southern Health—Santé Sud,15896
+R7A,4602,46,Prairie Mountain Health,Santé de Prairie Mountain,24742
+R7B,4602,46,Prairie Mountain Health,Santé de Prairie Mountain,20476
+R7C,4602,46,Prairie Mountain Health,Santé de Prairie Mountain,2171
+R7N,4602,46,Prairie Mountain Health,Santé de Prairie Mountain,8320
+R8A,4604,46,Northern Regional Health Authority,Office régional de la santé du Nord,4898
+R8N,4604,46,Northern Regional Health Authority,Office régional de la santé du Nord,13460
+R9A,4604,46,Northern Regional Health Authority,Office régional de la santé du Nord,1368
+S0A,472,47,North,North,19
+S0A,473,47,Central,Central,243
+S0A,475,47,Regina,Regina,19
+S0C,476,47,South,South,53
+S0E,472,47,North,North,20
+S0G,474,47,Saskatoon,Saskatoon,30
+S0G,475,47,Regina,Regina,229
+S0G,476,47,South,South,297
+S0H,476,47,South,South,111
+S0J,471,47,Far North,Far North,17
+S0J,472,47,North,North,591
+S0K,473,47,Central,Central,0
+S0K,474,47,Saskatoon,Saskatoon,17038
+S0L,473,47,Central,Central,2002
+S0M,472,47,North,North,545
+S0N,476,47,South,South,162
+S0P,471,47,Far North,Far North,38
+S2V,475,47,Regina,Regina,870
+S3N,473,47,Central,Central,16286
+S4A,476,47,South,South,11422
+S4H,476,47,South,South,10860
+S4L,475,47,Regina,Regina,4004
+S4N,475,47,Regina,Regina,30108
+S4P,475,47,Regina,Regina,11247
+S4R,475,47,Regina,Regina,34972
+S4S,475,47,Regina,Regina,34798
+S4T,475,47,Regina,Regina,31821
+S4V,475,47,Regina,Regina,26471
+S4W,475,47,Regina,Regina,8279
+S4X,475,47,Regina,Regina,26564
+S4Y,475,47,Regina,Regina,4538
+S4Z,475,47,Regina,Regina,1272
+S6H,476,47,South,South,27301
+S6J,476,47,South,South,4963
+S6K,476,47,South,South,1051
+S6V,472,47,North,North,31513
+S6W,472,47,North,North,840
+S6X,472,47,North,North,3072
+S7H,474,47,Saskatoon,Saskatoon,35241
+S7J,474,47,Saskatoon,Saskatoon,30201
+S7K,474,47,Saskatoon,Saskatoon,31919
+S7L,474,47,Saskatoon,Saskatoon,38927
+S7M,474,47,Saskatoon,Saskatoon,30969
+S7N,474,47,Saskatoon,Saskatoon,27003
+S7P,474,47,Saskatoon,Saskatoon,523
+S7R,474,47,Saskatoon,Saskatoon,7923
+S7S,474,47,Saskatoon,Saskatoon,6178
+S7T,474,47,Saskatoon,Saskatoon,13537
+S7V,474,47,Saskatoon,Saskatoon,10802
+S7W,474,47,Saskatoon,Saskatoon,13299
+S9A,472,47,North,North,14260
+S9H,476,47,South,South,16456
+S9V,472,47,North,North,11750
+S9X,472,47,North,North,5324
+T0A,4834,48,Edmonton Zone,Edmonton Zone,495
+T0A,4835,48,North Zone,North Zone,5451
+T0B,4833,48,Central Zone,Central Zone,2923
+T0B,4834,48,Edmonton Zone,Edmonton Zone,1962
+T0C,4833,48,Central Zone,Central Zone,5187
+T0C,4834,48,Edmonton Zone,Edmonton Zone,15
+T0E,4834,48,Edmonton Zone,Edmonton Zone,101
+T0E,4835,48,North Zone,North Zone,1318
+T0G,4834,48,Edmonton Zone,Edmonton Zone,121
+T0G,4835,48,North Zone,North Zone,6587
+T0H,4835,48,North Zone,North Zone,5276
+T0J,4831,48,South Zone,South Zone,3986
+T0J,4832,48,Calgary Zone,Calgary Zone,5702
+T0J,4833,48,Central Zone,Central Zone,6126
+T0K,4831,48,South Zone,South Zone,184
+T0L,4831,48,South Zone,South Zone,684
+T0L,4832,48,Calgary Zone,Calgary Zone,6084
+T0M,4832,48,Calgary Zone,Calgary Zone,20
+T0M,4833,48,Central Zone,Central Zone,6807
+T0P,4835,48,North Zone,North Zone,568
+T1A,4831,48,South Zone,South Zone,24497
+T1B,4831,48,South Zone,South Zone,32329
+T1C,4831,48,South Zone,South Zone,9243
+T1G,4831,48,South Zone,South Zone,8799
+T1H,4831,48,South Zone,South Zone,26513
+T1J,4831,48,South Zone,South Zone,20218
+T1K,4831,48,South Zone,South Zone,46815
+T1L,4832,48,Calgary Zone,Calgary Zone,285
+T1M,4831,48,South Zone,South Zone,8031
+T1P,4832,48,Calgary Zone,Calgary Zone,13723
+T1R,4831,48,South Zone,South Zone,14861
+T1S,4832,48,Calgary Zone,Calgary Zone,34649
+T1V,4832,48,Calgary Zone,Calgary Zone,13771
+T1W,4832,48,Calgary Zone,Calgary Zone,14272
+T1X,4832,48,Calgary Zone,Calgary Zone,22412
+T1Y,4832,48,Calgary Zone,Calgary Zone,55460
+T1Z,4832,48,Calgary Zone,Calgary Zone,1076
+T2A,4832,48,Calgary Zone,Calgary Zone,59785
+T2B,4832,48,Calgary Zone,Calgary Zone,22546
+T2C,4832,48,Calgary Zone,Calgary Zone,20235
+T2E,4832,48,Calgary Zone,Calgary Zone,34605
+T2G,4832,48,Calgary Zone,Calgary Zone,14061
+T2H,4832,48,Calgary Zone,Calgary Zone,9353
+T2J,4832,48,Calgary Zone,Calgary Zone,43668
+T2K,4832,48,Calgary Zone,Calgary Zone,34514
+T2L,4832,48,Calgary Zone,Calgary Zone,14500
+T2M,4832,48,Calgary Zone,Calgary Zone,18638
+T2N,4832,48,Calgary Zone,Calgary Zone,26394
+T2P,4832,48,Calgary Zone,Calgary Zone,12470
+T2R,4832,48,Calgary Zone,Calgary Zone,13528
+T2S,4832,48,Calgary Zone,Calgary Zone,14496
+T2T,4832,48,Calgary Zone,Calgary Zone,29219
+T2V,4832,48,Calgary Zone,Calgary Zone,33150
+T2W,4832,48,Calgary Zone,Calgary Zone,42299
+T2X,4832,48,Calgary Zone,Calgary Zone,43612
+T2Y,4832,48,Calgary Zone,Calgary Zone,61066
+T2Z,4832,48,Calgary Zone,Calgary Zone,61491
+T3A,4832,48,Calgary Zone,Calgary Zone,52340
+T3B,4832,48,Calgary Zone,Calgary Zone,37249
+T3C,4832,48,Calgary Zone,Calgary Zone,23222
+T3E,4832,48,Calgary Zone,Calgary Zone,41336
+T3G,4832,48,Calgary Zone,Calgary Zone,58925
+T3H,4832,48,Calgary Zone,Calgary Zone,69941
+T3J,4832,48,Calgary Zone,Calgary Zone,77447
+T3K,4832,48,Calgary Zone,Calgary Zone,83134
+T3L,4832,48,Calgary Zone,Calgary Zone,29562
+T3M,4832,48,Calgary Zone,Calgary Zone,40162
+T3N,4832,48,Calgary Zone,Calgary Zone,10893
+T3P,4832,48,Calgary Zone,Calgary Zone,10171
+T3R,4832,48,Calgary Zone,Calgary Zone,23849
+T3S,4832,48,Calgary Zone,Calgary Zone,292
+T3Z,4832,48,Calgary Zone,Calgary Zone,11585
+T4A,4832,48,Calgary Zone,Calgary Zone,16302
+T4B,4832,48,Calgary Zone,Calgary Zone,52111
+T4C,4832,48,Calgary Zone,Calgary Zone,28892
+T4E,4833,48,Central Zone,Central Zone,4472
+T4G,4833,48,Central Zone,Central Zone,11663
+T4H,4833,48,Central Zone,Central Zone,9125
+T4J,4833,48,Central Zone,Central Zone,7169
+T4L,4833,48,Central Zone,Central Zone,13138
+T4M,4833,48,Central Zone,Central Zone,4650
+T4N,4833,48,Central Zone,Central Zone,30836
+T4P,4833,48,Central Zone,Central Zone,32408
+T4R,4833,48,Central Zone,Central Zone,35940
+T4S,4833,48,Central Zone,Central Zone,17459
+T4T,4833,48,Central Zone,Central Zone,6485
+T4V,4833,48,Central Zone,Central Zone,18720
+T4X,4834,48,Edmonton Zone,Edmonton Zone,19026
+T5A,4834,48,Edmonton Zone,Edmonton Zone,34498
+T5B,4834,48,Edmonton Zone,Edmonton Zone,14318
+T5C,4834,48,Edmonton Zone,Edmonton Zone,16193
+T5E,4834,48,Edmonton Zone,Edmonton Zone,32394
+T5G,4834,48,Edmonton Zone,Edmonton Zone,12719
+T5H,4834,48,Edmonton Zone,Edmonton Zone,26234
+T5J,4834,48,Edmonton Zone,Edmonton Zone,4871
+T5K,4834,48,Edmonton Zone,Edmonton Zone,23370
+T5L,4834,48,Edmonton Zone,Edmonton Zone,16941
+T5M,4834,48,Edmonton Zone,Edmonton Zone,15208
+T5N,4834,48,Edmonton Zone,Edmonton Zone,14755
+T5P,4834,48,Edmonton Zone,Edmonton Zone,20875
+T5R,4834,48,Edmonton Zone,Edmonton Zone,25969
+T5S,4834,48,Edmonton Zone,Edmonton Zone,3077
+T5T,4834,48,Edmonton Zone,Edmonton Zone,69015
+T5V,4834,48,Edmonton Zone,Edmonton Zone,1073
+T5W,4834,48,Edmonton Zone,Edmonton Zone,20849
+T5X,4834,48,Edmonton Zone,Edmonton Zone,42322
+T5Y,4834,48,Edmonton Zone,Edmonton Zone,46458
+T5Z,4834,48,Edmonton Zone,Edmonton Zone,28327
+T6A,4834,48,Edmonton Zone,Edmonton Zone,14633
+T6B,4834,48,Edmonton Zone,Edmonton Zone,9475
+T6C,4834,48,Edmonton Zone,Edmonton Zone,20109
+T6E,4834,48,Edmonton Zone,Edmonton Zone,22590
+T6G,4834,48,Edmonton Zone,Edmonton Zone,12718
+T6H,4834,48,Edmonton Zone,Edmonton Zone,29646
+T6J,4834,48,Edmonton Zone,Edmonton Zone,46814
+T6K,4834,48,Edmonton Zone,Edmonton Zone,29825
+T6L,4834,48,Edmonton Zone,Edmonton Zone,51502
+T6M,4834,48,Edmonton Zone,Edmonton Zone,28491
+T6N,4834,48,Edmonton Zone,Edmonton Zone,5
+T6P,4834,48,Edmonton Zone,Edmonton Zone,3028
+T6R,4834,48,Edmonton Zone,Edmonton Zone,45207
+T6S,4834,48,Edmonton Zone,Edmonton Zone,239
+T6T,4834,48,Edmonton Zone,Edmonton Zone,32336
+T6V,4834,48,Edmonton Zone,Edmonton Zone,19973
+T6W,4834,48,Edmonton Zone,Edmonton Zone,50722
+T6X,4834,48,Edmonton Zone,Edmonton Zone,38988
+T7A,4833,48,Central Zone,Central Zone,7450
+T7E,4835,48,North Zone,North Zone,13195
+T7N,4835,48,North Zone,North Zone,4642
+T7P,4835,48,North Zone,North Zone,5233
+T7S,4835,48,North Zone,North Zone,10013
+T7V,4835,48,North Zone,North Zone,9886
+T7X,4834,48,Edmonton Zone,Edmonton Zone,35822
+T7Y,4834,48,Edmonton Zone,Edmonton Zone,3127
+T7Z,4834,48,Edmonton Zone,Edmonton Zone,18817
+T8A,4834,48,Edmonton Zone,Edmonton Zone,42741
+T8B,4834,48,Edmonton Zone,Edmonton Zone,4364
+T8C,4834,48,Edmonton Zone,Edmonton Zone,2521
+T8E,4834,48,Edmonton Zone,Edmonton Zone,4369
+T8G,4833,48,Central Zone,Central Zone,
+T8G,4834,48,Edmonton Zone,Edmonton Zone,2709
+T8H,4834,48,Edmonton Zone,Edmonton Zone,28629
+T8L,4833,48,Central Zone,Central Zone,25
+T8L,4834,48,Edmonton Zone,Edmonton Zone,24821
+T8N,4834,48,Edmonton Zone,Edmonton Zone,64615
+T8R,4834,48,Edmonton Zone,Edmonton Zone,10577
+T8S,4835,48,North Zone,North Zone,6596
+T8T,4834,48,Edmonton Zone,Edmonton Zone,1987
+T8V,4835,48,North Zone,North Zone,33164
+T8W,4835,48,North Zone,North Zone,20461
+T8X,4835,48,North Zone,North Zone,16728
+T9A,4833,48,Central Zone,Central Zone,12365
+T9C,4833,48,Central Zone,Central Zone,5540
+T9E,4834,48,Edmonton Zone,Edmonton Zone,30045
+T9G,4834,48,Edmonton Zone,Edmonton Zone,7307
+T9H,4835,48,North Zone,North Zone,25891
+T9J,4835,48,North Zone,North Zone,3630
+T9K,4835,48,North Zone,North Zone,39704
+T9M,4835,48,North Zone,North Zone,13131
+T9N,4835,48,North Zone,North Zone,5120
+T9S,4835,48,North Zone,North Zone,3612
+T9V,4833,48,Central Zone,Central Zone,19625
+T9W,4833,48,Central Zone,Central Zone,6265
+T9X,4833,48,Central Zone,Central Zone,4079
+V0A,592,59,Interior Health,Interior Health,7350
+V0B,592,59,Interior Health,Interior Health,21870
+V0C,594,59,Northern Health,Northern Health,1798
+V0E,592,59,Interior Health,Interior Health,43742
+V0E,594,59,Northern Health,Northern Health,43
+V0G,592,59,Interior Health,Interior Health,9053
+V0H,592,59,Interior Health,Interior Health,42868
+V0J,594,59,Northern Health,Northern Health,21989
+V0K,591,59,Fraser Health,Fraser Health,161
+V0K,592,59,Interior Health,Interior Health,8504
+V0K,594,59,Northern Health,Northern Health,280
+V0M,591,59,Fraser Health,Fraser Health,8030
+V0N,593,59,Vancouver Island Health,Vancouver Island Health,5035
+V0N,595,59,Vancouver Coastal Health,Vancouver Coastal Health,46875
+V0P,593,59,Vancouver Island Health,Vancouver Island Health,663
+V0R,593,59,Vancouver Island Health,Vancouver Island Health,41775
+V0T,594,59,Northern Health,Northern Health,51
+V0V,594,59,Northern Health,Northern Health,33
+V0X,591,59,Fraser Health,Fraser Health,7513
+V0X,592,59,Interior Health,Interior Health,4080
+V1A,592,59,Interior Health,Interior Health,8545
+V1B,592,59,Interior Health,Interior Health,19635
+V1C,592,59,Interior Health,Interior Health,24635
+V1E,592,59,Interior Health,Interior Health,19486
+V1G,594,59,Northern Health,Northern Health,14306
+V1H,592,59,Interior Health,Interior Health,12523
+V1J,594,59,Northern Health,Northern Health,20175
+V1K,592,59,Interior Health,Interior Health,6540
+V1L,592,59,Interior Health,Interior Health,17614
+V1M,591,59,Fraser Health,Fraser Health,29319
+V1N,592,59,Interior Health,Interior Health,12853
+V1P,592,59,Interior Health,Interior Health,8262
+V1R,592,59,Interior Health,Interior Health,9879
+V1S,592,59,Interior Health,Interior Health,11380
+V1T,592,59,Interior Health,Interior Health,27833
+V1V,592,59,Interior Health,Interior Health,20056
+V1W,592,59,Interior Health,Interior Health,35671
+V1X,592,59,Interior Health,Interior Health,34138
+V1Y,592,59,Interior Health,Interior Health,32746
+V1Z,592,59,Interior Health,Interior Health,13880
+V2A,592,59,Interior Health,Interior Health,36568
+V2B,592,59,Interior Health,Interior Health,39266
+V2C,592,59,Interior Health,Interior Health,23861
+V2E,592,59,Interior Health,Interior Health,13511
+V2G,592,59,Interior Health,Interior Health,18134
+V2G,594,59,Northern Health,Northern Health,0
+V2H,592,59,Interior Health,Interior Health,6583
+V2J,594,59,Northern Health,Northern Health,22214
+V2K,594,59,Northern Health,Northern Health,21017
+V2L,594,59,Northern Health,Northern Health,9654
+V2M,594,59,Northern Health,Northern Health,23307
+V2N,594,59,Northern Health,Northern Health,32257
+V2P,591,59,Fraser Health,Fraser Health,36137
+V2R,591,59,Fraser Health,Fraser Health,47304
+V2S,591,59,Fraser Health,Fraser Health,49354
+V2T,591,59,Fraser Health,Fraser Health,55567
+V2V,591,59,Fraser Health,Fraser Health,34455
+V2W,591,59,Fraser Health,Fraser Health,17534
+V2X,591,59,Fraser Health,Fraser Health,49359
+V2Y,591,59,Fraser Health,Fraser Health,35435
+V2Z,591,59,Fraser Health,Fraser Health,15286
+V3A,591,59,Fraser Health,Fraser Health,42327
+V3B,591,59,Fraser Health,Fraser Health,57757
+V3C,591,59,Fraser Health,Fraser Health,38536
+V3E,591,59,Fraser Health,Fraser Health,37402
+V3G,591,59,Fraser Health,Fraser Health,23515
+V3H,591,59,Fraser Health,Fraser Health,37618
+V3J,591,59,Fraser Health,Fraser Health,41737
+V3K,591,59,Fraser Health,Fraser Health,29697
+V3L,591,59,Fraser Health,Fraser Health,26174
+V3M,591,59,Fraser Health,Fraser Health,43779
+V3N,591,59,Fraser Health,Fraser Health,40893
+V3N,595,59,Vancouver Coastal Health,Vancouver Coastal Health,
+V3R,591,59,Fraser Health,Fraser Health,56386
+V3S,591,59,Fraser Health,Fraser Health,93475
+V3T,591,59,Fraser Health,Fraser Health,37573
+V3V,591,59,Fraser Health,Fraser Health,47172
+V3W,591,59,Fraser Health,Fraser Health,97099
+V3X,591,59,Fraser Health,Fraser Health,29052
+V3Y,591,59,Fraser Health,Fraser Health,18034
+V3Z,591,59,Fraser Health,Fraser Health,29454
+V4A,591,59,Fraser Health,Fraser Health,36295
+V4B,591,59,Fraser Health,Fraser Health,19916
+V4C,591,59,Fraser Health,Fraser Health,44516
+V4E,591,59,Fraser Health,Fraser Health,11501
+V4G,591,59,Fraser Health,Fraser Health,94
+V4K,591,59,Fraser Health,Fraser Health,24202
+V4L,591,59,Fraser Health,Fraser Health,7510
+V4M,591,59,Fraser Health,Fraser Health,15128
+V4N,591,59,Fraser Health,Fraser Health,79044
+V4P,591,59,Fraser Health,Fraser Health,12321
+V4R,591,59,Fraser Health,Fraser Health,15311
+V4S,591,59,Fraser Health,Fraser Health,6454
+V4T,592,59,Interior Health,Interior Health,26766
+V4V,592,59,Interior Health,Interior Health,14457
+V4W,591,59,Fraser Health,Fraser Health,18814
+V4X,591,59,Fraser Health,Fraser Health,12370
+V4Z,591,59,Fraser Health,Fraser Health,4669
+V5A,591,59,Fraser Health,Fraser Health,24127
+V5B,591,59,Fraser Health,Fraser Health,20760
+V5C,591,59,Fraser Health,Fraser Health,30248
+V5E,591,59,Fraser Health,Fraser Health,24568
+V5G,591,59,Fraser Health,Fraser Health,19015
+V5H,591,59,Fraser Health,Fraser Health,39091
+V5J,591,59,Fraser Health,Fraser Health,20249
+V5J,595,59,Vancouver Coastal Health,Vancouver Coastal Health,
+V5K,591,59,Fraser Health,Fraser Health,782
+V5K,595,59,Vancouver Coastal Health,Vancouver Coastal Health,23113
+V5L,595,59,Vancouver Coastal Health,Vancouver Coastal Health,20234
+V5M,591,59,Fraser Health,Fraser Health,489
+V5M,595,59,Vancouver Coastal Health,Vancouver Coastal Health,22202
+V5N,595,59,Vancouver Coastal Health,Vancouver Coastal Health,34120
+V5P,595,59,Vancouver Coastal Health,Vancouver Coastal Health,32323
+V5R,591,59,Fraser Health,Fraser Health,929
+V5R,595,59,Vancouver Coastal Health,Vancouver Coastal Health,44840
+V5S,591,59,Fraser Health,Fraser Health,190
+V5S,595,59,Vancouver Coastal Health,Vancouver Coastal Health,29437
+V5T,595,59,Vancouver Coastal Health,Vancouver Coastal Health,24247
+V5V,595,59,Vancouver Coastal Health,Vancouver Coastal Health,24546
+V5W,595,59,Vancouver Coastal Health,Vancouver Coastal Health,18976
+V5X,595,59,Vancouver Coastal Health,Vancouver Coastal Health,28814
+V5Y,595,59,Vancouver Coastal Health,Vancouver Coastal Health,16740
+V5Z,595,59,Vancouver Coastal Health,Vancouver Coastal Health,22899
+V6A,595,59,Vancouver Coastal Health,Vancouver Coastal Health,17953
+V6B,595,59,Vancouver Coastal Health,Vancouver Coastal Health,31322
+V6C,595,59,Vancouver Coastal Health,Vancouver Coastal Health,2457
+V6E,595,59,Vancouver Coastal Health,Vancouver Coastal Health,27512
+V6G,595,59,Vancouver Coastal Health,Vancouver Coastal Health,25590
+V6H,595,59,Vancouver Coastal Health,Vancouver Coastal Health,17108
+V6J,595,59,Vancouver Coastal Health,Vancouver Coastal Health,23039
+V6K,595,59,Vancouver Coastal Health,Vancouver Coastal Health,25546
+V6L,595,59,Vancouver Coastal Health,Vancouver Coastal Health,10785
+V6M,595,59,Vancouver Coastal Health,Vancouver Coastal Health,15593
+V6N,595,59,Vancouver Coastal Health,Vancouver Coastal Health,13318
+V6P,595,59,Vancouver Coastal Health,Vancouver Coastal Health,31439
+V6R,595,59,Vancouver Coastal Health,Vancouver Coastal Health,18935
+V6S,595,59,Vancouver Coastal Health,Vancouver Coastal Health,13095
+V6T,595,59,Vancouver Coastal Health,Vancouver Coastal Health,12530
+V6V,591,59,Fraser Health,Fraser Health,
+V6V,595,59,Vancouver Coastal Health,Vancouver Coastal Health,11203
+V6W,591,59,Fraser Health,Fraser Health,
+V6W,595,59,Vancouver Coastal Health,Vancouver Coastal Health,1797
+V6X,595,59,Vancouver Coastal Health,Vancouver Coastal Health,33952
+V6Y,595,59,Vancouver Coastal Health,Vancouver Coastal Health,44876
+V6Z,595,59,Vancouver Coastal Health,Vancouver Coastal Health,15577
+V7A,591,59,Fraser Health,Fraser Health,
+V7A,595,59,Vancouver Coastal Health,Vancouver Coastal Health,25463
+V7B,595,59,Vancouver Coastal Health,Vancouver Coastal Health,814
+V7C,595,59,Vancouver Coastal Health,Vancouver Coastal Health,39872
+V7E,591,59,Fraser Health,Fraser Health,
+V7E,595,59,Vancouver Coastal Health,Vancouver Coastal Health,38781
+V7G,595,59,Vancouver Coastal Health,Vancouver Coastal Health,10895
+V7H,595,59,Vancouver Coastal Health,Vancouver Coastal Health,13856
+V7J,591,59,Fraser Health,Fraser Health,
+V7J,595,59,Vancouver Coastal Health,Vancouver Coastal Health,16144
+V7K,595,59,Vancouver Coastal Health,Vancouver Coastal Health,12872
+V7L,595,59,Vancouver Coastal Health,Vancouver Coastal Health,25757
+V7M,595,59,Vancouver Coastal Health,Vancouver Coastal Health,20965
+V7N,595,59,Vancouver Coastal Health,Vancouver Coastal Health,14101
+V7P,595,59,Vancouver Coastal Health,Vancouver Coastal Health,12969
+V7R,595,59,Vancouver Coastal Health,Vancouver Coastal Health,14739
+V7S,595,59,Vancouver Coastal Health,Vancouver Coastal Health,10183
+V7T,595,59,Vancouver Coastal Health,Vancouver Coastal Health,8537
+V7V,595,59,Vancouver Coastal Health,Vancouver Coastal Health,14655
+V7W,595,59,Vancouver Coastal Health,Vancouver Coastal Health,8842
+V7X,595,59,Vancouver Coastal Health,Vancouver Coastal Health,0
+V7Y,595,59,Vancouver Coastal Health,Vancouver Coastal Health,0
+V8A,595,59,Vancouver Coastal Health,Vancouver Coastal Health,18053
+V8B,595,59,Vancouver Coastal Health,Vancouver Coastal Health,10797
+V8C,594,59,Northern Health,Northern Health,8036
+V8G,594,59,Northern Health,Northern Health,18984
+V8J,594,59,Northern Health,Northern Health,12205
+V8K,593,59,Vancouver Island Health,Vancouver Island Health,10557
+V8L,593,59,Vancouver Island Health,Vancouver Island Health,23410
+V8M,593,59,Vancouver Island Health,Vancouver Island Health,16069
+V8N,593,59,Vancouver Island Health,Vancouver Island Health,24622
+V8P,593,59,Vancouver Island Health,Vancouver Island Health,19197
+V8R,593,59,Vancouver Island Health,Vancouver Island Health,23427
+V8S,593,59,Vancouver Island Health,Vancouver Island Health,17788
+V8T,593,59,Vancouver Island Health,Vancouver Island Health,19179
+V8V,593,59,Vancouver Island Health,Vancouver Island Health,25145
+V8W,593,59,Vancouver Island Health,Vancouver Island Health,5614
+V8X,593,59,Vancouver Island Health,Vancouver Island Health,22904
+V8Y,593,59,Vancouver Island Health,Vancouver Island Health,9815
+V8Z,593,59,Vancouver Island Health,Vancouver Island Health,31350
+V9A,593,59,Vancouver Island Health,Vancouver Island Health,37935
+V9B,593,59,Vancouver Island Health,Vancouver Island Health,43473
+V9C,593,59,Vancouver Island Health,Vancouver Island Health,22567
+V9E,593,59,Vancouver Island Health,Vancouver Island Health,5734
+V9G,593,59,Vancouver Island Health,Vancouver Island Health,12366
+V9H,593,59,Vancouver Island Health,Vancouver Island Health,9224
+V9J,593,59,Vancouver Island Health,Vancouver Island Health,8757
+V9K,593,59,Vancouver Island Health,Vancouver Island Health,15881
+V9L,593,59,Vancouver Island Health,Vancouver Island Health,35364
+V9M,593,59,Vancouver Island Health,Vancouver Island Health,17453
+V9N,593,59,Vancouver Island Health,Vancouver Island Health,29576
+V9P,593,59,Vancouver Island Health,Vancouver Island Health,24434
+V9R,593,59,Vancouver Island Health,Vancouver Island Health,28376
+V9S,593,59,Vancouver Island Health,Vancouver Island Health,16532
+V9T,593,59,Vancouver Island Health,Vancouver Island Health,32699
+V9V,593,59,Vancouver Island Health,Vancouver Island Health,11149
+V9W,593,59,Vancouver Island Health,Vancouver Island Health,28384
+V9X,593,59,Vancouver Island Health,Vancouver Island Health,10323
+V9Y,593,59,Vancouver Island Health,Vancouver Island Health,25001
+V9Z,593,59,Vancouver Island Health,Vancouver Island Health,17446
+X0A,6201,62,Nunavut,Nunavut,360
+X0E,6101,61,Northwest Territories,Territoires du Nord-Ouest,3526
+X1A,6101,61,Northwest Territories,Territoires du Nord-Ouest,19241
+Y0A,6001,60,Yukon,Yukon,37
+Y0B,6001,60,Yukon,Yukon,10
+Y1A,6001,60,Yukon,Yukon,24772

@@ -32,6 +32,8 @@ services:
       - "5433:5433"
     depends_on:
       - pg
+    volumes:
+      - ./data/csv:/CSV # this needs to match the dockerfile's WORK/COPY pair
   web:
     build: ./app
     command: python manage.py runserver 0.0.0.0:8000
