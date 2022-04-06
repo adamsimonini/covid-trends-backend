@@ -107,10 +107,9 @@ This is the backend part of a fullstack application. Ideally this application wi
 
 10. Due to Docker bind mounting specified in the docker-compose.yml, there is no need to remake Docker images or restart the server during development. Changes to API endpoints and routing within ./app should be reflected automatically.
 
-11. Give issues with docker-compose and the PostgreSQL container, we're asking developers to switch between two methods of initializing the database within docker-compose.yml. (Please see troubleshooting below for further details). Because of this, we should not track changes to the docker-compose.yml. Please run this command from the root directory of your repo
-
+11. You may also want to create a superuser in Django, if you need admin access to the backend via localhost:8000/admin. To do so, run the following commands: 
 ```
- git update-index --assume-unchanged docker-compose.yml
+docker compose exec web python manage.py createsuperuser
 ```
 
 ## **Testing**
