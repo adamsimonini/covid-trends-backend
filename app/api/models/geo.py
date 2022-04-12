@@ -70,8 +70,11 @@ class HealthRegion(models.Model):
     hr_uid = models.PositiveSmallIntegerField(blank=False)
     name_en = models.CharField(max_length=150, blank=False)
     name_fr = models.CharField(max_length=150, blank=False)
-    website_en = models.CharField(max_length=300, blank=False)
-    website_fr = models.CharField(max_length=300, blank=False)
+    pop = models.PositiveBigIntegerField(blank=False)
+    website_en = models.CharField(max_length=300, blank=True)
+    website_fr = models.CharField(max_length=300, blank=True)
+    en_prov_vaccine_site = models.CharField(max_length=300, blank=True)
+    fr_prov_vaccine_site = models.CharField(max_length=300, blank=True)
     fk_province = models.ForeignKey(
         Province,
         on_delete=models.CASCADE

@@ -121,6 +121,7 @@
 			"hr_uid": 4835,
 			"name_en": "North",
 			"name_fr": "Nord",
+			"pop" : 15,
 			"website_en": "https://www.albertahealthservices.ca/zones/north-zone.aspx",
 			"website_fr": "https://www.albertahealthservices.ca/zones/north-zone.aspx",
 			"fk_province": 1
@@ -134,6 +135,7 @@
 			"hr_uid": 591,
 			"name_en": "Fraser",
 			"name_fr": "fraser",
+			"pop" : 15,
 			"website_en": "https://www.fraserhealth.ca/health-topics-a-to-z/coronavirus#.XqeSQWhKg2w",
 			"website_fr": "https://www.fraserhealth.ca/health-topics-a-to-z/coronavirus#.XqeSQWhKg2w",
 			"fk_province": 4
@@ -147,6 +149,7 @@
 			"hr_uid": 3551,
 			"name_en": "Ottawa",
 			"name_fr": "Ottawa",
+			"pop" : 15,
 			"website_en": "http://www.ottawapublichealth.ca/en/index.aspx",
 			"website_fr": "https://www.santepubliqueottawa.ca/fr/index.aspx",
 			"fk_province": 2
@@ -160,6 +163,7 @@
 			"hr_uid": 6001,
 			"name_en": "Yukon",
 			"name_fr": "Yukon",
+			"pop" : 15,
 			"website_en": "https://yukon.ca/en/COVIDâ€'19-information",
 			"website_fr": "https://yukon.ca/fr/COVIDâ€'19-information",
 			"fk_province": 3
@@ -173,6 +177,7 @@
 			"hr_uid": 1011,
 			"name_en": "Eastern",
 			"name_fr": "Eastern",
+			"pop" : 15,
 			"website_en": "https://www.gov.nl.ca/COVIDâ€'19/",
 			"website_fr": "https://www.gov.nl.ca/COVIDâ€'19/fr/ressources/",
 			"fk_province": 5
