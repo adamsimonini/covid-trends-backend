@@ -1,0 +1,15 @@
+id,geo_code,alpha_code,name_en,name_fr,fk_region_id
+10,10,NL,Newfoundland and Labrador,Terre-Neuve-et-Labrador,1
+11,11,PE,Prince Edward Island,Ile-du-Prince-Edouard,1
+12,12,NS,Nova Scotia,Nouvelle-Ecosse,1
+13,13,NB,New Brunswick,Nouveau-Brunswick,1
+24,24,QC,Quebec,Quebec,2
+35,35,ON,Ontario,Ontario,3
+46,46,MB,Manitoba,Manitoba,4
+47,47,SK,Saskatchewan,Saskatchewan,4
+48,48,AB,Alberta,Alberta,4
+59,59,BC,British Columbia,Colombie-Britannique,5
+60,60,YT,Yukon,Yukon,6
+61,61,NT,Northwest Territories,Territoires du Nord-Ouest,6
+62,62,NU,Nunavut,Nunavut,6
+99,99,CA,Canada,Canada,99
