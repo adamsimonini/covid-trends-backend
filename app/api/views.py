@@ -1,7 +1,9 @@
+from this import d
 from typing import List
 from ninja import NinjaAPI
 from api.models import *
 from .schemas import *
+from .functions.CRUD import *
 
 # Pagination not used for now although easy to implement basic functionality
 # from ninja.pagination import paginate, PageNumberPagination
@@ -14,17 +16,13 @@ api = NinjaAPI()
 @api.get('/country/', response=List[CountrySchema], 
     tags=['Countries'], summary='Get Countries', description='Gets information on all countrys')
 def get_Countries(request):
-    return Country.objects.all()
+    return APIFunctions(Country, CountrySchema).get_all()
 
 
 @api.get('/country/{name}', response={200: CountrySchema, 404: NotFoundSchema}, 
     tags=['Countries'], summary='Get a Country', description='Gets information on one single Country')
 def get_Country(request, name: str):
-    try:
-        data = Country.objects.get(name=name)
-        return 200, data
-    except Country.DoesNotExist as e:
-        return 404, {'message': 'Could not find Country'}
+    return APIFunctions(Country, CountrySchema, search_input=name).get_one()
 
 
 @api.post('/country/', response={201: CountrySchema}, 
@@ -37,8 +35,7 @@ def post_Country(request, data: CountrySchema):
     
     *other fields are optional*
     """
-    data = Country.objects.create(**Country.dict())
-    return data
+    return APIFunctions(Country, CountrySchema).post(data)
 
 
 @api.put('/country/{name}', response={200: CountrySchema, 404: NotFoundSchema}, 
@@ -51,25 +48,13 @@ def put_Country(request, name: str, data: CountrySchema):
     
     *other fields are optional*
     """
-    try:
-        data = Country.objects.get(name=name)
-        for attribute, value in data.dict().items():
-            setattr(data, attribute, value)
-        data.save()
-        return 200, data
-    except Country.DoesNotExist as e:
-        return 404, {'message': 'Could not find Country'}
+    return APIFunctions(Country, CountrySchema, search_input=name).put(data)
 
 
 @api.delete('/country/{name}', response={200: None, 404: NotFoundSchema},
     tags=['Countries'], summary='Deletes a Country', description='Allows you to delete a Country')
 def delete_Country(request, name: str, data: CountrySchema):
-    try:
-        data = Country.objects.get(name=name)
-        data.delete()
-        return 200
-    except Country.DoesNotExist as e:
-        return 404, {'message': 'Could not find Country'}
+    return APIFunctions(Country, CountrySchema, search_input=name).delete(data)
 
 
 ##############################################################################
@@ -78,17 +63,13 @@ def delete_Country(request, name: str, data: CountrySchema):
 @api.get('/region/', response=List[RegionSchema], 
     tags=['Regions'], summary='Get Regions', description='Gets information on all regions')
 def get_Regions(request):
-    return Region.objects.all()
+    return APIFunctions(Region, RegionSchema).get_all()
 
 
 @api.get('/region/{name_en}', response={200: RegionSchema, 404: NotFoundSchema}, 
     tags=['Regions'], summary='Get a Region', description='Gets information on one single Region')
 def get_Region(request, name_en: str):
-    try:
-        data = Region.objects.get(name_en=name_en)
-        return 200, data
-    except Region.DoesNotExist as e:
-        return 404, {'message': 'Could not find Region'}
+    return APIFunctions(Region, RegionSchema, search_input=name_en).get_one()
 
 
 @api.post('/region/', response={201: RegionSchema}, 
@@ -101,8 +82,7 @@ def post_Region(request, data: RegionSchema):
     
     *other fields are optional*
     """
-    data = Region.objects.create(**Region.dict())
-    return data
+    return APIFunctions(Region, RegionSchema).post(data)
 
 
 @api.put('/region/{name_en}', response={200: RegionSchema, 404: NotFoundSchema}, 
@@ -115,25 +95,13 @@ def put_Region(request, name_en: str, data: RegionSchema):
     
     *other fields are optional*
     """
-    try:
-        data = Region.objects.get(name_en=name_en)
-        for attribute, value in data.dict().items():
-            setattr(data, attribute, value)
-        data.save()
-        return 200, data
-    except Region.DoesNotExist as e:
-        return 404, {'message': 'Could not find Region'}
+    return APIFunctions(Region, RegionSchema, search_input=name_en).put(data)
 
 
 @api.delete('/region/{name_en}', response={200: None, 404: NotFoundSchema},
     tags=['Regions'], summary='Deletes a Region', description='Allows you to delete a Region')
 def delete_Region(request, name_en: str, data: RegionSchema):
-    try:
-        data = Region.objects.get(name_en=name_en)
-        data.delete()
-        return 200
-    except Region.DoesNotExist as e:
-        return 404, {'message': 'Could not find Region'}
+    return APIFunctions(Region, RegionSchema, search_input=name_en).delete(data)
 
 
 ##############################################################################
@@ -142,17 +110,13 @@ def delete_Region(request, name_en: str, data: RegionSchema):
 @api.get('/province/', response=List[ProvinceSchema], 
     tags=['Provinces'], summary='Get Provinces', description='Gets information on all provinces')
 def get_Provinces(request):
-    return Province.objects.all()
+    return APIFunctions(Province, ProvinceSchema).get_all()
 
 
 @api.get('/Province/{alpha_code}', response={200: ProvinceSchema, 404: NotFoundSchema}, 
     tags=['Provinces'], summary='Get a Province', description='Gets information on one single Province')
 def get_Province(request, alpha_code: str):
-    try:
-        data = Province.objects.get(alpha_code=alpha_code)
-        return 200, data
-    except Province.DoesNotExist as e:
-        return 404, {'message': 'Could not find Province'}
+    return APIFunctions(Province, ProvinceSchema, search_input=alpha_code).get_one()
 
 
 @api.post('/Province/', response={201: ProvinceSchema}, 
@@ -168,8 +132,7 @@ def post_Province(request, data: ProvinceSchema):
     
     *other fields are optional*
     """
-    data = Province.objects.create(**Province.dict())
-    return data
+    return APIFunctions(Province, ProvinceSchema).post(data)
 
 
 @api.put('/Province/{alpha_code}', response={200: ProvinceSchema, 404: NotFoundSchema}, 
@@ -185,25 +148,13 @@ def put_Province(request, alpha_code: str, data: ProvinceSchema):
     
     *other fields are optional*
     """
-    try:
-        data = Province.objects.get(alpha_code=alpha_code)
-        for attribute, value in data.dict().items():
-            setattr(data, attribute, value)
-        data.save()
-        return 200, data
-    except Province.DoesNotExist as e:
-        return 404, {'message': 'Could not find Province'}
+    return APIFunctions(Province, ProvinceSchema, search_input=alpha_code).put(data)
 
 
 @api.delete('/Province/{alpha_code}', response={200: None, 404: NotFoundSchema},
     tags=['Provinces'], summary='Deletes a Province', description='Allows you to delete a Province')
 def delete_Province(request, alpha_code: str, data: ProvinceSchema):
-    try:
-        data = Province.objects.get(alpha_code=alpha_code)
-        data.delete()
-        return 200
-    except Province.DoesNotExist as e:
-        return 404, {'message': 'Could not find Province'}
+    return APIFunctions(Province, ProvinceSchema, search_input=alpha_code).delete(data)
 
 ##############################################################################
 # Health Region
@@ -211,17 +162,13 @@ def delete_Province(request, alpha_code: str, data: ProvinceSchema):
 @api.get('/health_region/', response=List[HealthRegionSchema], 
     tags=['HealthRegions'], summary='Get health regions', description='Gets information on all health regions')
 def get_HealthRegions(request):
-    return HealthRegion.objects.all()
+    return APIFunctions(HealthRegion, HealthRegionSchema).get_all()
 
 
 @api.get('/health_region/{hr_uid}', response={200: HealthRegionSchema, 404: NotFoundSchema}, 
     tags=['HealthRegions'], summary='Get a health region', description='Gets information on one single health region')
 def get_HealthRegion(request, hr_uid: int):
-    try:
-        data = HealthRegion.objects.get(hr_uid=hr_uid)
-        return 200, data
-    except HealthRegion.DoesNotExist as e:
-        return 404, {'message': 'Could not find health region'}
+    return APIFunctions(HealthRegion, HealthRegionSchema, search_input=hr_uid).get_one()
 
 
 @api.post('/health_region/', response={201: HealthRegionSchema}, 
@@ -238,8 +185,7 @@ def post_HealthRegion(request, data: HealthRegionSchema):
     
     *other fields are optional*
     """
-    data = HealthRegion.objects.create(**HealthRegion.dict())
-    return data
+    return APIFunctions(HealthRegion, HealthRegionSchema).post(data)
 
 
 @api.put('/health_region/{hr_uid}', response={200: HealthRegionSchema, 404: NotFoundSchema}, 
@@ -256,25 +202,13 @@ def put_HealthRegion(request, hr_uid: int, data: HealthRegionSchema):
     
     *other fields are optional*
     """
-    try:
-        data = HealthRegion.objects.get(hr_uid=hr_uid)
-        for attribute, value in data.dict().items():
-            setattr(data, attribute, value)
-        data.save()
-        return 200, data
-    except HealthRegion.DoesNotExist as e:
-        return 404, {'message': 'Could not find health region'}
+    return APIFunctions(HealthRegion, HealthRegionSchema, search_input=hr_uid).put(data)
 
 
 @api.delete('/health_region/{hr_uid}', response={200: None, 404: NotFoundSchema},
     tags=['HealthRegions'], summary='Deletes a HealthRegion', description='Allows you to delete a health region')
 def delete_HealthRegion(request, hr_uid: int, data: HealthRegionSchema):
-    try:
-        data = HealthRegion.objects.get(hr_uid=hr_uid)
-        data.delete()
-        return 200
-    except HealthRegion.DoesNotExist as e:
-        return 404, {'message': 'Could not find HealthRegion'}
+    return APIFunctions(HealthRegion, HealthRegionSchema, search_input=hr_uid).delete(data)
 
 
 ##############################################################################
@@ -283,17 +217,13 @@ def delete_HealthRegion(request, hr_uid: int, data: HealthRegionSchema):
 @api.get('/forward_sortation_area/', response=List[ForwardSortationAreaSchema], 
     tags=['ForwardSortationAreas'], summary='Get forward sortation areas', description='Gets information on all forward sortation areas')
 def get_ForwardSortationAreas(request):
-    return ForwardSortationArea.objects.all()
+    return APIFunctions(ForwardSortationArea, ForwardSortationAreaSchema).get_all()
 
 
 @api.get('/forward_sortation_area/{code}', response={200: ForwardSortationAreaSchema, 404: NotFoundSchema}, 
     tags=['ForwardSortationAreas'], summary='Get a forward sortation area', description='Gets information on one single forward sortation area')
 def get_ForwardSortationArea(request, code: str):
-    try:
-        data = ForwardSortationArea.objects.get(code=code)
-        return 200, data
-    except ForwardSortationArea.DoesNotExist as e:
-        return 404, {'message': 'Could not find forward sortation area'}
+    return APIFunctions(ForwardSortationArea, ForwardSortationAreaSchema, search_input=code).get_one()
 
 
 @api.post('/forward_sortation_area/', response={201: ForwardSortationAreaSchema}, 
@@ -306,8 +236,7 @@ def post_ForwardSortationArea(request, data: ForwardSortationAreaSchema):
     
     *other fields are optional*
     """
-    data = ForwardSortationArea.objects.create(**ForwardSortationArea.dict())
-    return data
+    return APIFunctions(ForwardSortationArea, ForwardSortationAreaSchema).post(data)
 
 
 @api.put('/forward_sortation_area/{code}', response={200: ForwardSortationAreaSchema, 404: NotFoundSchema}, 
@@ -320,25 +249,13 @@ def put_ForwardSortationArea(request, code: str, data: ForwardSortationAreaSchem
     
     *other fields are optional*
     """
-    try:
-        data = ForwardSortationArea.objects.get(code=code)
-        for attribute, value in data.dict().items():
-            setattr(data, attribute, value)
-        data.save()
-        return 200, data
-    except ForwardSortationArea.DoesNotExist as e:
-        return 404, {'message': 'Could not find forward sortation area'}
+    return APIFunctions(ForwardSortationArea, ForwardSortationAreaSchema, search_input=code).put(data)
 
 
 @api.delete('/forward_sortation_area/{code}', response={200: None, 404: NotFoundSchema},
     tags=['ForwardSortationAreas'], summary='Deletes a forward sortation area', description='Allows you to delete a forward sortation area')
 def delete_ForwardSortationArea(request, code: str, data: ForwardSortationAreaSchema):
-    try:
-        data = ForwardSortationArea.objects.get(code=code)
-        data.delete()
-        return 200
-    except ForwardSortationArea.DoesNotExist as e:
-        return 404, {'message': 'Could not find forward sortation area'}
+    return APIFunctions(ForwardSortationArea, ForwardSortationAreaSchema, search_input=code).delete(data)
 
 
 ##############################################################################
@@ -347,17 +264,13 @@ def delete_ForwardSortationArea(request, code: str, data: ForwardSortationAreaSc
 @api.get('/weather_station/', response=List[WeatherStationSchema], 
     tags=['WeatherStations'], summary='Get weather stations', description='Gets information on all weather stations')
 def get_WeatherStations(request):
-    return WeatherStation.objects.all()
+    return APIFunctions(WeatherStation, WeatherStationSchema).get_all()
 
 
 @api.get('/weather_station/{code}', response={200: WeatherStationSchema, 404: NotFoundSchema}, 
     tags=['WeatherStations'], summary='Get a weather station', description='Gets information on one single weather station')
 def get_WeatherStation(request, code: int):
-    try:
-        data = WeatherStation.objects.get(code=code)
-        return 200, data
-    except WeatherStation.DoesNotExist as e:
-        return 404, {'message': 'Could not find WeatherStation'}
+    return APIFunctions(WeatherStation, WeatherStationSchema, search_input=code).get_one()
 
 
 @api.post('/weather_station/', response={201: WeatherStationSchema}, 
@@ -370,8 +283,7 @@ def post_WeatherStation(request, data: WeatherStationSchema):
     
     *other fields are optional*
     """
-    data = WeatherStation.objects.create(**WeatherStation.dict())
-    return data
+    return APIFunctions(WeatherStation, WeatherStationSchema).post(data)
 
 
 @api.put('/weather_station/{code}', response={200: WeatherStationSchema, 404: NotFoundSchema}, 
@@ -384,25 +296,13 @@ def put_WeatherStation(request, code: int, data: WeatherStationSchema):
     
     *other fields are optional*
     """
-    try:
-        data = WeatherStation.objects.get(code=code)
-        for attribute, value in data.dict().items():
-            setattr(data, attribute, value)
-        data.save()
-        return 200, data
-    except WeatherStation.DoesNotExist as e:
-        return 404, {'message': 'Could not find weather station'}
+    return APIFunctions(WeatherStation, WeatherStationSchema, search_input=code).put(data)
 
 
 @api.delete('/weather_station/{code}', response={200: None, 404: NotFoundSchema},
     tags=['WeatherStations'], summary='Deletes a weather station', description='Allows you to delete a weather station')
 def delete_WeatherStation(request, code: int, data: WeatherStationSchema):
-    try:
-        data = WeatherStation.objects.get(code=code)
-        data.delete()
-        return 200
-    except WeatherStation.DoesNotExist as e:
-        return 404, {'message': 'Could not find weather station'}
+    return APIFunctions(WeatherStation, WeatherStationSchema, search_input=code).delete(data)
 
 
 ##############################################################################
@@ -411,17 +311,13 @@ def delete_WeatherStation(request, code: int, data: WeatherStationSchema):
 @api.get('/disease/', response=List[DiseaseSchema], 
     tags=['Diseases'], summary='Get Diseases', description='Gets information on all diseases')
 def get_diseases(request):
-    return Disease.objects.all()
+    return APIFunctions(Disease, DiseaseSchema).get_all()
 
 
 @api.get('/disease/{name}', response={200: DiseaseSchema, 404: NotFoundSchema}, 
     tags=['Diseases'], summary='Get a Disease', description='Gets information on one single disease')
 def get_disease(request, name: str):
-    try:
-        data = Disease.objects.get(name=name)
-        return 200, data
-    except Disease.DoesNotExist as e:
-        return 404, {'message': 'Could not find disease'}
+    return APIFunctions(Disease, DiseaseSchema, search_input=name).get_one()
 
 
 @api.post('/disease/', response={201: DiseaseSchema}, 
@@ -436,8 +332,7 @@ def post_disease(request, data: DiseaseSchema):
     
     *other fields are optional*
     """
-    data = Disease.objects.create(**disease.dict())
-    return data
+    return APIFunctions(Disease, DiseaseSchema).post(data)
 
 
 @api.put('/disease/{name}', response={200: DiseaseSchema, 404: NotFoundSchema}, 
@@ -450,25 +345,13 @@ def put_disease(request, name: str, data: DiseaseSchema):
     
     *other fields are optional*
     """
-    try:
-        data = Disease.objects.get(name=name)
-        for attribute, value in data.dict().items():
-            setattr(data, attribute, value)
-        data.save()
-        return 200, data
-    except Disease.DoesNotExist as e:
-        return 404, {'message': 'Could not find disease'}
+    return APIFunctions(Disease, DiseaseSchema, search_input=name).put(data)
 
 
 @api.delete('/disease/{name}', response={200: None, 404: NotFoundSchema},
     tags=['Diseases'], summary='Deletes a Disease', description='Allows you to delete a disease')
 def delete_disease(request, name: str, data: DiseaseSchema):
-    try:
-        data = Disease.objects.get(name=name)
-        data.delete()
-        return 200
-    except Disease.DoesNotExist as e:
-        return 404, {'message': 'Could not find disease'}
+    return APIFunctions(Disease, DiseaseSchema, search_input=name).delete(data)
 
 
 ##############################################################################
@@ -477,17 +360,13 @@ def delete_disease(request, name: str, data: DiseaseSchema):
 @api.get('/vaccination/', response=List[VaccinationSchema], 
     tags=['Vaccinations'], summary='Get vaccinations', description='Gets information on all vaccinations')
 def get_Vaccinations(request):
-    return Vaccination.objects.all()
+    return APIFunctions(Vaccination, VaccinationSchema).get_all()
 
 
 @api.get('/vaccination/{vaccination_name}', response={200: VaccinationSchema, 404: NotFoundSchema}, 
     tags=['Vaccinations'], summary='Get a vaccination', description='Gets information on one single vaccination')
 def get_Vaccination(request, vaccination_name: str):
-    try:
-        data = Vaccination.objects.get(vaccination_name=vaccination_name)
-        return 200, data
-    except Vaccination.DoesNotExist as e:
-        return 404, {'message': 'Could not find vaccination'}
+    return APIFunctions(Vaccination, VaccinationSchema, search_input=vaccination_name).get_one()
 
 
 @api.post('/vaccination/', response={201: VaccinationSchema}, 
@@ -500,8 +379,7 @@ def post_Vaccination(request, data: VaccinationSchema):
     
     *other fields are optional*
     """
-    data = Vaccination.objects.create(**Vaccination.dict())
-    return data
+    return APIFunctions(Vaccination, VaccinationSchema).post(data)
 
 
 @api.put('/vaccination/{vaccination_name}', response={200: VaccinationSchema, 404: NotFoundSchema}, 
@@ -514,22 +392,10 @@ def put_Vaccination(request, vaccination_name: str, data: VaccinationSchema):
     
     *other fields are optional*
     """
-    try:
-        data = Vaccination.objects.get(vaccination_name=vaccination_name)
-        for attribute, value in data.dict().items():
-            setattr(data, attribute, value)
-        data.save()
-        return 200, data
-    except Vaccination.DoesNotExist as e:
-        return 404, {'message': 'Could not find vaccination'}
+    return APIFunctions(Vaccination, VaccinationSchema, search_input=vaccination_name).put(data)
 
 
 @api.delete('/vaccination/{vaccination_name}', response={200: None, 404: NotFoundSchema},
     tags=['Vaccinations'], summary='Deletes a vaccination', description='Allows you to delete a vaccination')
 def delete_Vaccination(request, vaccination_name: str, data: VaccinationSchema):
-    try:
-        data = Vaccination.objects.get(vaccination_name=vaccination_name)
-        data.delete()
-        return 200
-    except Vaccination.DoesNotExist as e:
-        return 404, {'message': 'Could not find vaccination'}
+    return APIFunctions(Vaccination, VaccinationSchema, search_input=vaccination_name).delete(data)
