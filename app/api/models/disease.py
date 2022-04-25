@@ -16,12 +16,12 @@ class Disease(models.Model):
 
 class Vaccination(models.Model):
     vaccination_name = models.CharField(max_length=150, blank=False)
-    treats_disease = models.ForeignKey(
+    efficacy_rate = models.PositiveSmallIntegerField(blank=True)
+    percent_pop_vaccinated = models.PositiveSmallIntegerField(blank=True)
+    fk_disease = models.ForeignKey(
         Disease,
         on_delete=models.CASCADE
     )
-    efficacy_rate = models.PositiveSmallIntegerField(blank=True)
-    percent_pop_vaccinated = models.PositiveSmallIntegerField(blank=True)
-
+    
     def __str__(self):
         return self.vaccination_name

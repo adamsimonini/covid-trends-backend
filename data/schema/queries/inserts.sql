@@ -7,12 +7,13 @@ values
 (4,'Prairies','Prairies'),
 (5,'British Columbia','Colombie-Britannique'),
 (6,'Territories','Territoires'),
-(99, 'Canada', 'Canada')
-;
+(99, 'Canada', 'Canada');
+
 select * from api_region;
 
 insert into api_province (id, geo_code, alpha_code, name_en, name_fr, fk_region_id) 
-values (10,10,'NL','Newfoundland and Labrador','Terre-Neuve-et-Labrador',1),
+values 
+(10,10,'NL','Newfoundland and Labrador','Terre-Neuve-et-Labrador',1),
 (11,11,'PE','Prince Edward Island','Ile-du-Prince-Edouard',1),
 (12,12,'NS','Nova Scotia','Nouvelle-Ecosse',1),
 (13,13,'NB','New Brunswick','Nouveau-Brunswick',1),
@@ -25,14 +26,13 @@ values (10,10,'NL','Newfoundland and Labrador','Terre-Neuve-et-Labrador',1),
 (60,60,'YT','Yukon','Yukon',6),
 (61,61,'NT','Northwest Territories','Territoires du Nord-Ouest',6),
 (62,62,'NU','Nunavut','Nunavut',6),
-(99,99,'CA','Canada','Canada',99)
-;
+(99,99,'CA','Canada','Canada',99);
+
 select * from api_province;
 
 insert into api_healthregion 
 (id,hr_uid,name_en,name_fr,pop,website_en,website_fr,en_prov_vaccine_site,fr_prov_vaccine_site,fk_province_id)
 values
-
 (1,1,'Canada','Canada',37589262,'https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html','https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html',99
 ),(2,99,'Repatriated','Repatriated',99999,'https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html','https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html',99
 ),(89,471,'Far North','Far North',37286,'https://www.saskhealthauthority.ca/','https://www.saskhealthauthority.ca/','https://www.saskatchewan.ca/government/health-care-administration-and-provider-resources/treatment-procedures-and-guidelines/emerging-public-health-issues/2019-novel-coronavirus/covid-19-vaccine/vaccine-booking','https://www.saskatchewan.ca/bonjour/health-and-healthy-living/2019-novel-coronavirus/covid19-vaccine/vaccine-booking',47
@@ -130,3 +130,13 @@ values
 );
 
 select * from api_healthregion;
+
+insert into api_disease (id, code, name, classification, subclassification)
+values
+(1,123,Covid,'Diseases and physical health conditions', 'Cardiovascular diseases')
+(2,951,Influenza,'Diseases and physical health conditions', 'Cardiovascular diseases');
+
+insert into api_disease
+(vaccination_name, efficacy_rate, percent_pop_vaccinated, fk_disease)
+values 
+('Pfizer',95,80,1),('Moderna',90,70,1),('Afluria Tetra',65,12,2),('Trivalent (3-strain)',71,23,2) ;
