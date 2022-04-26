@@ -24,7 +24,7 @@ DiseaseSchema = create_schema(Disease,
     fields=['code', 'name', 'classification', 'subclassification'])
 
 VaccinationSchema = create_schema(Vaccination, 
-    fields=['vaccination_name', 'treats_disease', 'efficacy_rate', 'percent_pop_vaccinated'])
+    fields=['vaccination_name', 'efficacy_rate', 'percent_pop_vaccinated', 'fk_disease'])
 
 class NotFoundSchema(Schema):
     message: str

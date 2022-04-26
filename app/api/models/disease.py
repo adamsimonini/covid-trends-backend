@@ -1,4 +1,5 @@
 from django.db import models
+from api.models import * 
 
 
 class Disease(models.Model):
@@ -25,3 +26,41 @@ class Vaccination(models.Model):
     
     def __str__(self):
         return self.vaccination_name
+
+
+
+# class HRVaccination(models.Model):
+#     hr_uid = models.PositiveSmallIntegerField(blank=False)
+#     vaccine_coverage = models.FloatField(blank=True,null = True)
+#     date_reported = models.DateField(blank= True, null = True )
+#     today_date = models.DateField(blank= True, null = True )
+#     fk_disease = models.ForeignKey(
+#         Disease,
+#         on_delete=models.CASCADE
+#     )
+#     fk_healthregion = models.ForeignKey(
+#         HealthRegion,
+#         on_delete=models.CASCADE
+#     )
+    
+#     def __str__(self):
+#         return self.hr_uid
+
+
+
+# class Fluwatchers(models.Model):
+#     hr_uid = models.PositiveSmallIntegerField(blank=False)
+#     confirmed_positive = models.IntegerField(blank=True,null = True)
+#     participants = models.PositiveIntegerField(blank=True,null = True)
+#     weekof = models.DateField(blank= True, null = True )   
+#     fk_disease = models.ForeignKey(
+#         Disease,
+#         on_delete=models.CASCADE
+#     )
+#     fk_healthregion = models.ForeignKey(
+#         HealthRegion,
+#         on_delete=models.CASCADE
+#     )
+    
+#     def __str__(self):
+#         return self.hr_uid

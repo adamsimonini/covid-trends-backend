@@ -375,7 +375,7 @@ def post_Vaccination(request, data: VaccinationSchema):
     """
     Please ensure the following fields are present and not blank:
     - **vaccination_name**
-    - **treats_disease**
+    - **fk_disease**
     
     *other fields are optional*
     """
@@ -388,7 +388,7 @@ def put_Vaccination(request, vaccination_name: str, data: VaccinationSchema):
     """
     Please ensure the following fields are present and not blank:
     - **vaccination_name**
-    - **treats_disease**
+    - **fk_disease**
     
     *other fields are optional*
     """
