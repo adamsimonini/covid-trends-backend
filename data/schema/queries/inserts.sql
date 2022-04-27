@@ -131,13 +131,13 @@ values
 
 
 
-insert into api_disease (id, code, name, classification, subclassification)
+insert into api_disease (id, name, classification, subclassification)
 values
-(1,123,Covid,'Diseases and physical health conditions', 'Cardiovascular diseases')
-(2,951,Influenza,'Diseases and physical health conditions', 'Cardiovascular diseases');
+(1,'Covid','Diseases and physical health conditions', 'Cardiovascular diseases'),
+(2,'Influenza','Diseases and physical health conditions', 'Cardiovascular diseases');
 
-insert into api_disease
-(vaccination_name, efficacy_rate, percent_pop_vaccinated, fk_disease)
+insert into api_vaccination
+(name, efficacy_rate, percent_pop_vaccinated, fk_disease_id)
 values 
 ('Pfizer',95,80,1),('Moderna',90,70,1),('Afluria Tetra',65,12,2),('Trivalent (3-strain)',71,23,2) ;
 
@@ -164,14 +164,14 @@ values
 (3565,81.16,'2022-03-30','2022-03-31',1,65),(3566,81.2,'2022-03-30','2022-03-31',1,66),(3568,80.01,'2022-03-30','2022-03-31',1,67),
 (3570,81.53,'2022-03-30','2022-03-31',1,68),(3575,76.17,'2022-03-30','2022-03-31',1,60),(3595,82.56,'2022-03-30','2022-03-31',1,64),
 (4601,85.84,'2022-03-29','2022-03-31',1,17),(4602,76.92,'2022-03-29','2022-03-31',1,15),(4603,77.35,'2022-03-29','2022-03-31',1,13),
-(4604,75.97,'2022-03-29','2022-03-31',1,14),(4605,63.21,'2022-03-29','2022-03-31',1,16),(4831,70.66,''2022-03-23'','2022-03-31',1,7),
-(4832,79.05,'2022-03-23','2022-03-31',1,3),(4833,65.75,'2022-03-23','2022-03-31',1,4),(4834,77.44,''2022-03-23'','2022-03-31',1,5),
+(4604,75.97,'2022-03-29','2022-03-31',1,14),(4605,63.21,'2022-03-29','2022-03-31',1,16),(4831,70.66,'2022-03-23','2022-03-31',1,7),
+(4832,79.05,'2022-03-23','2022-03-31',1,3),(4833,65.75,'2022-03-23','2022-03-31',1,4),(4834,77.44,'2022-03-23','2022-03-31',1,5),
 (4835,66.07,'2022-03-23','2022-03-31',1,6);
 
 insert into api_HRVaccination (hr_uid,vaccine_coverage,date_reported,today_date,fk_disease_id,fk_healthregion_id)
 values 
 (591,26.59,'2022-01-30','2022-01-31',2,8),(3562,24.71,'2022-01-30','2022-01-31',2,62),(4604,25.97,'2022-01-29','2022-01-31',2,14),
-(2414,23.88,'2022-03-29','2022-03-31',2,77),(4835,26.07,'2022-03-23','2022-03-31',2,6)
+(2414,23.88,'2022-03-29','2022-03-31',2,77),(4835,26.07,'2022-03-23','2022-03-31',2,6);
 
 insert into api_fluwatcher (hr_uid,confirmed_positive,participants,weekof,fk_disease_id,fk_healthregion_id)
 values 
@@ -211,5 +211,8 @@ select * from api_region;
 select * from api_province;
 select * from api_healthregion;
 select * from api_disease;
+select * from api_vaccination;
 select * from api_hrvaccination;
-select * fom api_fluwatcher;
+select * from api_fluwatcher;
+select * from api_forwardsortationarea;
+
