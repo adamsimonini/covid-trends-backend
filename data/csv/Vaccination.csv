@@ -1,0 +1,5 @@
+id,name,efficacy_rate,percent_pop_vaccinated,fk_disease
+1,Pfizer,95,80,1
+2,Moderna,90,70,1
+3,Afluria Tetra,65,12,2
+4,Trivalent (3-strain),71,23,2

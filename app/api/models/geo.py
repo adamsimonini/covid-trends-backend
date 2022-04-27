@@ -33,13 +33,6 @@ class GeoChoiceSelection():
         return ValueError('Unrecognized choice subject')
 
 
-class Country(models.Model):
-    code = models.PositiveSmallIntegerField(blank=False)
-    name = models.CharField(max_length=150, blank=False)
-
-    def __str__(self):
-        return self.name
-
 
 class Region(models.Model):
     name_en = models.CharField(max_length=150, blank=False)
@@ -87,15 +80,21 @@ class HealthRegion(models.Model):
 
 class ForwardSortationArea(models.Model):
     code = models.CharField(max_length=3, blank=False)  # first 3 digits of a postal code
-
-    # The below is not always true since we cannot directly correlate HR and FSA since neither is the true parent or child of another
-    # Therefore, we will need to simply connect FSA and HR both to Province seperately
-    # health_regions = ArrayField(models.PositiveSmallIntegerField(blank=False))  # an fsa can contain multiple health regions (i.e., 1, 2, or even 3)
-
+    eng_name= models.CharField(max_length=150, blank=False)
+    fre_name= models.CharField(max_length=150, blank=False)  
+    estimated_pop = models.IntegerField(blank=True)
+    fk_healthregion = models.ForeignKey(
+        HealthRegion,
+        on_delete=models.CASCADE
+    )   
     fk_province = models.ForeignKey(
         Province,
         on_delete=models.CASCADE
     )
+    # The below is not always true since we cannot directly correlate HR and FSA since neither is the true parent or child of another
+    # Therefore, we will need to simply connect FSA and HR both to Province seperately
+    # health_regions = ArrayField(models.PositiveSmallIntegerField(blank=False))  # an fsa can contain multiple health regions (i.e., 1, 2, or even 3)
+
     disease = models.ManyToManyField('Disease', blank=True)
 
     def __str__(self):
@@ -103,8 +102,9 @@ class ForwardSortationArea(models.Model):
 
 
 class WeatherStation(models.Model):
-    code = models.PositiveSmallIntegerField(blank=False)
-    fk_health_region = models.ForeignKey(
+    cgndb_id = models.CharField (max_length=5, blank=False)
+    hr_uid = models.PositiveSmallIntegerField(blank=False)
+    fk_healthregion = models.ForeignKey(
         HealthRegion,
         on_delete=models.CASCADE
     )

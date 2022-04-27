@@ -11,53 +11,6 @@ from .functions.CRUD import *
 api = NinjaAPI()
 
 ##############################################################################
-# Country
-##############################################################################
-@api.get('/country/', response=List[CountrySchema], 
-    tags=['Countries'], summary='Get Countries', description='Gets information on all countrys')
-def get_Countries(request):
-    return APIFunctions(Country, CountrySchema).get_all()
-
-
-@api.get('/country/{name}', response={200: CountrySchema, 404: NotFoundSchema}, 
-    tags=['Countries'], summary='Get a Country', description='Gets information on one single Country')
-def get_Country(request, name: str):
-    return APIFunctions(Country, CountrySchema, search_input=name).get_one()
-
-
-@api.post('/country/', response={201: CountrySchema}, 
-    tags=['Countries'], summary='Post a Country')
-def post_Country(request, data: CountrySchema):
-    """
-    Please ensure the following fields are present and not blank:
-    - **code**
-    - **name**
-    
-    *other fields are optional*
-    """
-    return APIFunctions(Country, CountrySchema).post(data)
-
-
-@api.put('/country/{name}', response={200: CountrySchema, 404: NotFoundSchema}, 
-    tags=['Countries'], summary='Update a Country')
-def put_Country(request, name: str, data: CountrySchema):
-    """
-    Please ensure the following fields are present and not blank:
-    - **code**
-    - **name**
-    
-    *other fields are optional*
-    """
-    return APIFunctions(Country, CountrySchema, search_input=name).put(data)
-
-
-@api.delete('/country/{name}', response={200: None, 404: NotFoundSchema},
-    tags=['Countries'], summary='Deletes a Country', description='Allows you to delete a Country')
-def delete_Country(request, name: str, data: CountrySchema):
-    return APIFunctions(Country, CountrySchema, search_input=name).delete(data)
-
-
-##############################################################################
 # Region
 ##############################################################################
 @api.get('/region/', response=List[RegionSchema], 
@@ -375,7 +328,7 @@ def post_Vaccination(request, data: VaccinationSchema):
     """
     Please ensure the following fields are present and not blank:
     - **vaccination_name**
-    - **treats_disease**
+    - **fk_disease**
     
     *other fields are optional*
     """
@@ -388,7 +341,7 @@ def put_Vaccination(request, vaccination_name: str, data: VaccinationSchema):
     """
     Please ensure the following fields are present and not blank:
     - **vaccination_name**
-    - **treats_disease**
+    - **fk_disease**
     
     *other fields are optional*
     """
