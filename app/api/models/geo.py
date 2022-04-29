@@ -53,7 +53,7 @@ class Province(models.Model):
         Region,
         on_delete=models.CASCADE
     )
-    disease = models.ManyToManyField('Disease', blank=True)
+   
 
     def __str__(self):
         return self.name_en
@@ -72,7 +72,7 @@ class HealthRegion(models.Model):
         Province,
         on_delete=models.CASCADE
     )
-    disease = models.ManyToManyField('Disease', blank=True)
+
 
     def __str__(self):
         return self.hr_uid
@@ -95,7 +95,7 @@ class ForwardSortationArea(models.Model):
     # Therefore, we will need to simply connect FSA and HR both to Province seperately
     # health_regions = ArrayField(models.PositiveSmallIntegerField(blank=False))  # an fsa can contain multiple health regions (i.e., 1, 2, or even 3)
 
-    disease = models.ManyToManyField('Disease', blank=True)
+ 
 
     def __str__(self):
         return self.code

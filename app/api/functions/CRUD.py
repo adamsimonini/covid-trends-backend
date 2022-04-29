@@ -1,10 +1,12 @@
 from statistics import mode
 from typing import List
 from api.models import *
+
 from ninja import Schema
 from ..schemas import *
 
 class APIFunctions():
+    #TODO : fix error message to reflect erorr dedicated to each table. 
     ERROR_REPLY = {'message': 'info does not exist'}
 
     # Initializes the class and defines the type hints
@@ -17,9 +19,8 @@ class APIFunctions():
     def get_search_variable(self):
         info = []
 
-        if self.model == Country:
-            info = self.model.objects.get(name=self.search_input)
-        elif self.model == Disease:
+     
+        if self.model == disease:
             info = self.model.objects.get(name=self.search_input)
         elif self.model == Region:
             info = self.model.objects.get(name_en=self.search_input)
@@ -33,6 +34,10 @@ class APIFunctions():
             info = self.model.objects.get(code=self.search_input)
         elif self.model == Vaccination:
             info = self.model.objects.get(vaccination_name=self.search_input)
+        elif self.model == HRVaccination:
+            info = self.model.objects.get(hr_uid=self.search_input)
+        elif self.model == Fluwatcher:
+            info = self.model.objects.get(hr_uid=self.search_input)
         
         # Error handling
         if info != []:
