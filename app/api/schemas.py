@@ -25,10 +25,10 @@ VaccinationSchema = create_schema(Vaccination,
     fields=['name', 'efficacy_rate', 'percent_pop_vaccinated', 'fk_disease'])
 
 HRVaccinationSchema = create_schema(HRVaccination, 
-    fields=['hr_uid', 'vaccine_coverage', 'date_reported','today_date' ,'fk_disease','fk_healthregion'])  
+    fields=['hr_uid', 'vaccine_coverage', 'date_reported','today_date' ,'fk_disease','fk_healthregion'])
 
 FluwatcherSchema = create_schema(Fluwatcher, 
-    fields=['hr_uid', 'confirmed_positive', 'participants', 'weekof','fk_disease','fk_healthregion']) 
+    fields=['hr_uid', 'confirmed_positive', 'participants', 'weekof','fk_disease','fk_healthregion'])
 
 class NotFoundSchema(Schema):
     message: str
