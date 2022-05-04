@@ -16,6 +16,7 @@ LEFT JOIN region r
 ON hp.fk_region_id = r.id;
 
 -- join 
+
 select hr_uid, health_region.name_en, health_region.name_fr, geo_code, alpha_code, province.name_en, province.name_fr from health_region
 inner join province on fk_province_id=province.id
 where health_region.name_en::text like '%Ot%'

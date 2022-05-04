@@ -1,4 +1,4 @@
-hr_uid,id,"VLOOKUP(E2,$A$2:$B$95,2,FALSE"
+hr_uid,id,"VLOOKUP(E2,$A$2:$B$95,2,FALSE)
 1,1,
 99,2,
 471,89,

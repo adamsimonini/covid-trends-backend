@@ -7,7 +7,7 @@ values
 (4,'Prairies','Prairies'),
 (5,'British Columbia','Colombie-Britannique'),
 (6,'Territories','Territoires'),
-(99, 'Canada', 'Canada');
+(77, 'Canada', 'Canada');
 
 
 
@@ -26,15 +26,15 @@ values
 (60,60,'YT','Yukon','Yukon',6),
 (61,61,'NT','Northwest Territories','Territoires du Nord-Ouest',6),
 (62,62,'NU','Nunavut','Nunavut',6),
-(99,99,'CA','Canada','Canada',99);
+(88,88,'CA','Canada','Canada',77);
 
 
 
 insert into api_healthregion 
 (id,hr_uid,name_en,name_fr,pop,website_en,website_fr,en_prov_vaccine_site,fr_prov_vaccine_site,fk_province_id)
 values
-(1,1,'Canada','Canada',37589262,'https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html','https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html',99
-),(2,99,'Repatriated','Repatriated',99999,'https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html','https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html',99
+(1,1,'Canada','Canada',37589262,'https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html','https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html',88
+),(2,99,'Repatriated','Repatriated',99999,'https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html','https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html','https://sante-infobase.canada.ca/covid-19/resume-epidemiologique-cas-covid-19.html',88
 ),(89,471,'Far North','Far North',37286,'https://www.saskhealthauthority.ca/','https://www.saskhealthauthority.ca/','https://www.saskatchewan.ca/government/health-care-administration-and-provider-resources/treatment-procedures-and-guidelines/emerging-public-health-issues/2019-novel-coronavirus/covid-19-vaccine/vaccine-booking','https://www.saskatchewan.ca/bonjour/health-and-healthy-living/2019-novel-coronavirus/covid19-vaccine/vaccine-booking',47
 ),(90,472,'North','North',196053,'https://www.saskhealthauthority.ca/','https://www.saskhealthauthority.ca/','https://www.saskatchewan.ca/government/health-care-administration-and-provider-resources/treatment-procedures-and-guidelines/emerging-public-health-issues/2019-novel-coronavirus/covid-19-vaccine/vaccine-booking','https://www.saskatchewan.ca/bonjour/health-and-healthy-living/2019-novel-coronavirus/covid19-vaccine/vaccine-booking',47
 ),(88,473,'Central','Central',98824,'https://www.saskhealthauthority.ca/','https://www.saskhealthauthority.ca/','https://www.saskatchewan.ca/government/health-care-administration-and-provider-resources/treatment-procedures-and-guidelines/emerging-public-health-issues/2019-novel-coronavirus/covid-19-vaccine/vaccine-booking','https://www.saskatchewan.ca/bonjour/health-and-healthy-living/2019-novel-coronavirus/covid19-vaccine/vaccine-booking',47
@@ -202,8 +202,8 @@ values
 
 insert into api_fluwatcher (hr_uid,confirmed_positive,participants,weekof,fk_disease_id,fk_healthregion_id)
 values 
-(471,3,104,'2022-02-13',1,89),(3562,57,2086,'2022-02-13',1,62), (4604,2,45,'2022-02-13',1,14),
-(2414,11,313,'2022-02-13',1,77), (4835,13,456,'2022-02-13',1,6);
+(471,3,104,'2022-02-13',2,89),(3562,57,2086,'2022-02-13',2,62), (4604,2,45,'2022-02-13',2,14),
+(2414,11,313,'2022-02-13',2,77), (4835,13,456,'2022-02-13',2,6);
 
 --  select statements for each table ---
 
@@ -216,3 +216,17 @@ select * from api_hrvaccination;
 select * from api_fluwatcher;
 select * from api_forwardsortationarea;
 
+-- 
+-- 
+select api_province.id, geo_code, alpha_code, api_province.name_en, api_province.name_fr, api_region.name_en from api_province
+left join api_region on api_province.fk_region_id=api_region.id;
+
+-- 
+-- 
+select hr_uid, api_healthregion.name_en, api_healthregion.name_fr, geo_code, alpha_code, api_province.name_en, api_province.name_fr 
+from api_healthregion
+inner join api_province on fk_province_id=api_province.id
+where api_healthregion.name_en::text like '%Ot%'
+or api_healthregion.name_fr::text like '%Ot%'
+or api_province.name_en::text like '%Ot%' or api_province.name_fr::text like '%Ot%'
+or alpha_code::text like '%Ot%' or geo_code::text like '%Ot%' ;

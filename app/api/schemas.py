@@ -2,20 +2,21 @@ from ninja import Schema
 from ninja.orm import create_schema
 from api.models import *
 
+
 RegionSchema = create_schema(Region, 
     fields=['name_en', 'name_fr'])
 
 ProvinceSchema = create_schema(Province, 
-    fields=['geo_code', 'alpha_code', 'name_en', 'name_fr', 'fk_region', 'disease'])
+    fields=['geo_code', 'alpha_code', 'name_en', 'name_fr', 'fk_region' ])
 
 ForwardSortationAreaSchema = create_schema(ForwardSortationArea, 
-    fields=['code', 'eng_name', 'fre_name', 'estimated_pop', 'fk_healthregion','fk_province', 'disease'])
+    fields=['code', 'eng_name', 'fre_name', 'estimated_pop', 'fk_healthregion','fk_province'])
 
 WeatherStationSchema = create_schema(WeatherStation, 
     fields=['cgndb_id','hr_uid', 'fk_healthregion'])
 
 HealthRegionSchema = create_schema(HealthRegion, 
-    fields=['hr_uid', 'name_en', 'name_fr', 'website_en', 'website_fr', 'fk_province', 'disease'])
+    fields=['hr_uid', 'name_en', 'name_fr', 'website_en', 'website_fr', 'fk_province'])
 
 DiseaseSchema = create_schema(Disease, 
     fields=['name', 'classification', 'subclassification'])

@@ -18,17 +18,6 @@ ALTER DATABASE public_health_trends OWNER TO postgres;
 \connect public_health_trends;
 
 
-
-insert into api_region (id,name_en,name_fr)
-values
-(1,'Atlantic','Atlantique'),
-(2,'Quebec','Quebec'),
-(3,'Ontario','Ontario'),
-(4,'Prairies','Prairies'),
-(5,'British Columbia','Colombie-Britannique'),
-(6,'Territories','Territoires'),
-(99, 'Canada', 'Canada');
-
 -- SET statement_timeout = 0;
 -- SET lock_timeout = 0;
 -- SET idle_in_transaction_session_timeout = 0;
