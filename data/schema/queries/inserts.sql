@@ -216,3 +216,17 @@ select * from api_hrvaccination;
 select * from api_fluwatcher;
 select * from api_forwardsortationarea;
 
+-- 
+-- 
+select api_province.id, geo_code, alpha_code, api_province.name_en, api_province.name_fr, api_region.name_en from api_province
+left join api_region on api_province.fk_region_id=api_region.id;
+
+-- 
+-- 
+select hr_uid, api_healthregion.name_en, api_healthregion.name_fr, geo_code, alpha_code, api_province.name_en, api_province.name_fr 
+from api_healthregion
+inner join api_province on fk_province_id=api_province.id
+where api_healthregion.name_en::text like '%Ot%'
+or api_healthregion.name_fr::text like '%Ot%'
+or api_province.name_en::text like '%Ot%' or api_province.name_fr::text like '%Ot%'
+or alpha_code::text like '%Ot%' or geo_code::text like '%Ot%' ;
