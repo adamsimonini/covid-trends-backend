@@ -4,7 +4,9 @@ from ninja import NinjaAPI
 from api.models import *
 from .schemas import *
 from .functions.CRUD import *
-from django.http import JsonResponse
+from django.http import JsonResponse  # dev only
+from django.shortcuts import render  # dev only
+from django.template import loader # dev only
 
 # TODO : Create more details on errors
 # TODO : Find out why the first record is not showing
@@ -23,12 +25,13 @@ api = NinjaAPI()
 # Jane Jones
 
 # DJANGO ORM "select_related": https://www.youtube.com/watch?v=TzgZBg7oXNA
+# https://docs.djangoproject.com/en/4.0/ref/models/querysets/
 
 
-@api.get('/apples/',
-         tags=['Apples'], summary='Get apples',
+@api.get('/hr_province_one/',
+         tags=['hr-prov-1'], summary='Get hr-prov',
          description='Health regions are defined by provincial ministries of health. This Function gets information on all health regions')
-def get_Apples(request):
+def get_hr_province_one(request):
     # data = HealthRegion.objects.select_related('fk_province').all().values_list("name_en", "pop", "en_prov_vaccine_site", "forwardsortationarea, weatherstation, fluwatcher")
     # data = HealthRegion.objects.select_related("fk_province").get(id=1).values_list("name_en", "pop", "fk_province")
     # for hr in data:
@@ -37,7 +40,7 @@ def get_Apples(request):
     hr_plus_prov = HealthRegion.objects.select_related("fk_province").all()
 
     for hr in hr_plus_prov:
-        print(hr.name_en, hr.fk_province.name_en)
+        print(hr.name_en, hr.fk_province.name_en, hr.fk_province.alpha_code)
 
     hr_plus_prov_list = list(hr_plus_prov.values())
 
@@ -46,9 +49,18 @@ def get_Apples(request):
     # return JsonResponse({"test": "hello"})
     # return JsonResponse({"response": list(data)})
 
-##############################################################################
-# Region
-##############################################################################
+
+@api.get('/hr_province_two/{disease}/{hr_id}',
+         tags=['hr-prov-2'], summary='Get info on a specific dieases and hr',
+         description='Health regions are defined by provincial ministries of health. This Function gets information on all health regions')
+def get_hr_province_two(request, disease: str, hr_id):
+    hr_querty_set = HealthRegion.objects.select_related("vaccine_coverage", "confirmed_positive", "participants").filter(hr_uid=hr_id)
+    for hr in hr_querty_set:
+        print(hr.name_en, hr.vaccine_coverage)
+    return "hello"
+    ##############################################################################
+    # Region
+    ##############################################################################
 
 
 @api.get('/region/', response=List[RegionSchema],
@@ -473,7 +485,7 @@ def delete_HRVaccination(request, hr_uid: str, data: HRVaccinationSchema):
 @api.get('/fluwatcher/', response=List[FluwatcherSchema],
          tags=['Fluwatcher'], summary='Get fluwatcher',
          description='Gets information on all fluwatcher')
-def get_Fluwatcher(request):
+def get_Fluwatchers(request):
     return APIFunctions(Fluwatcher, FluwatcherSchema).get_all()
 
 
@@ -514,3 +526,8 @@ def put_Fluwatcher(request, hr_uid: str, data: FluwatcherSchema):
             tags=['Fluwatcher'], summary='Deletes a Fluwatcher', description='Allows you to delete a Fluwatcher')
 def delete_Fluwatcher(request, hr_uid: str, data: FluwatcherSchema):
     return APIFunctions(Fluwatcher, FluwatcherSchema, search_input=hr_uid).delete(data)
+
+
+def sql_testing(request):
+    querySet = HealthRegion.objects.all()
+    return render(request, 'sql_testing.html', {'data': querySet})
