@@ -23,7 +23,7 @@ from api import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', api.urls),
-    path('sql_testing', views.sql_testing, name="sql_testing"),
+    path('sql_testing/<int:hr_uid>', views.sql_testing, name="sql_testing"),
     path('__debug__/', include('debug_toolbar.urls'))  # turn off for production
 ]
 

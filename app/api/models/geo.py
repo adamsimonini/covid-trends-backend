@@ -53,8 +53,8 @@ class Province(models.Model):
         on_delete=models.CASCADE
     )
 
-    def __str__(self):
-        return self.name_en
+    # def __str__(self):
+    #     return self.name_en
 
 
 class HealthRegion(models.Model):
@@ -71,8 +71,8 @@ class HealthRegion(models.Model):
         on_delete=models.CASCADE
     )
 
-    def __str__(self):
-        return str(self.hr_uid)
+    # def __str__(self):
+    #     return str(self.hr_uid)
 
 
 class ForwardSortationArea(models.Model):

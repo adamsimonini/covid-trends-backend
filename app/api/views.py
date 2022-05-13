@@ -6,7 +6,7 @@ from .schemas import *
 from .functions.CRUD import *
 from django.http import JsonResponse  # dev only
 from django.shortcuts import render  # dev only
-from django.template import loader # dev only
+from django.template import loader  # dev only
 
 # TODO : Create more details on errors
 # TODO : Find out why the first record is not showing
@@ -25,7 +25,74 @@ api = NinjaAPI()
 # Jane Jones
 
 # DJANGO ORM "select_related": https://www.youtube.com/watch?v=TzgZBg7oXNA
-# https://docs.djangoproject.com/en/4.0/ref/models/querysets/
+
+# making queries: https://docs.djangoproject.com/en/4.0/topics/db/queries/
+# query sets: https://docs.djangoproject.com/en/4.0/ref/models/querysets/
+
+
+@api.get('/health_region_full/{hr_uid}', tags=['healthregion'], summary='Get all healthregion data for COVID-10',
+         description='Returns the province, health region, fluwatchers, and hrVaccination data')
+def single_health_region_COVID_19(request, hr_uid: int):
+
+    data = {}
+
+    # create a QuerySet targetting the appropriate health region
+    healthRegionQS = HealthRegion.objects.get(hr_uid=hr_uid)
+
+    # executive various QuerySets to get the health region, fluwatcher, and hr_vax data for that health region
+    healthRegionDict = HealthRegion.objects.values("hr_uid", "name_en", "name_fr").get(hr_uid=hr_uid)
+    fluwatcherDict = healthRegionQS.fluwatcher_set.values("confirmed_positive", "participants", "weekof").get()
+    hrVaccinationDict = healthRegionQS.hrvaccination_set.values("vaccine_coverage", "date_reported", "today_date").get()
+
+    # create a new QuerySet for province and execute it, to get the appropriate province back
+    provinceDict = Province.objects.filter(healthregion__hr_uid=hr_uid).values().get()
+
+    # place all returned diectionries from querying the database into the data dictionry
+    data["health_region"] = healthRegionDict
+    data["fluwatcher"] = fluwatcherDict
+    data["hr_vaccination"] = hrVaccinationDict
+    data["province"] = provinceDict
+
+    # return data dictionary as the JSON response
+    return data
+
+
+def sql_testing(request, hr_uid: int):
+    # qs3 = list(HealthRegion.objects.select_related("fk_province").all())
+    # https://docs.djangoproject.com/en/dev/topics/db/queries/#following-relationships-backward
+
+    # Values(): https://docs.djangoproject.com/en/4.0/ref/models/querysets/#values
+    # Get(): https://docs.djangoproject.com/en/4.0/topics/db/queries/#retrieving-a-single-object-with-get
+    healthRegionQS = HealthRegion.objects.get(hr_uid=hr_uid)
+    healthRegionDict = HealthRegion.objects.values("hr_uid", "name_en", "name_fr").get(hr_uid=hr_uid)
+    # get() is empty because the QS identifies only one record, else get would need parameters like above
+    fluwatcherDict = healthRegionQS.fluwatcher_set.values("confirmed_positive", "participants", "weekof").get()
+    hrVaccinationDict = healthRegionQS.hrvaccination_set.values("vaccine_coverage", "date_reported", "today_date").get()
+
+    print(healthRegionDict)
+    print(fluwatcherDict)
+    print(hrVaccinationDict)
+
+    # print(hr_id_2.name_en)
+    # print(hr_id_2.fk_province)
+    # for a querySet (HealthRegion.objects.get(id=2)), if it's related to given model (Fluwatcher), return the records for that model matching the querySet
+    # fluwatcher_for_hr_3 = list(healthRegionQS.fluwatcher_set.all())  # returns fluwatcher data for the fluwatcher record with fk_healthregion_id of 3
+    # hr_vaccination_for_hr_3 = list(healthRegionQS.hrvaccination_set.all())  # returns hrvaccination data for the hrvaccination record with fk_healthregion_id of 3
+
+    # now that we have the health region, we can get the province joined to that health region
+    # prov_for_hr = healthRegionQS.fk_province
+    # print(prov_for_hr)
+
+    # fluwatcherHR = HealthRegion.objects.select_related("fk_healthregion")
+    # vaccineHR = HRVaccination.objects.select_related("fk_healthregion")
+    q1 = Fluwatcher.objects.values('id', 'hr_uid', 'confirmed_positive', 'participants', 'weekof', 'fk_disease_id', 'fk_healthregion_id').all()
+    context = {
+        "data": healthRegionQS
+    }
+    # q3 = querySet.filter(hr_uid=1012)
+    # q4 = querySet.filter(hr_uid=1013)
+    return render(request, "sql_testing.html", context)
+    # qs2 = list(Fluwatcher.objects.all())
 
 
 @api.get('/hr_province_one/',
@@ -526,8 +593,3 @@ def put_Fluwatcher(request, hr_uid: str, data: FluwatcherSchema):
             tags=['Fluwatcher'], summary='Deletes a Fluwatcher', description='Allows you to delete a Fluwatcher')
 def delete_Fluwatcher(request, hr_uid: str, data: FluwatcherSchema):
     return APIFunctions(Fluwatcher, FluwatcherSchema, search_input=hr_uid).delete(data)
-
-
-def sql_testing(request):
-    querySet = HealthRegion.objects.all()
-    return render(request, 'sql_testing.html', {'data': querySet})
