@@ -30,7 +30,7 @@ api = NinjaAPI()
 # query sets: https://docs.djangoproject.com/en/4.0/ref/models/querysets/
 
 
-@api.get('/health_region_full/{hr_uid}', tags=['healthregion'], summary='Get all healthregion data for COVID-10',
+@api.get('/health_region_full/{hr_uid}', tags=['healthregion'], summary='Get all healthregion data for COVID-19',
          description='Returns the province, health region, fluwatchers, and hrVaccination data')
 def single_health_region_COVID_19(request, hr_uid: int):
 
@@ -45,7 +45,7 @@ def single_health_region_COVID_19(request, hr_uid: int):
     hrVaccinationDict = healthRegionQS.hrvaccination_set.values("vaccine_coverage", "date_reported", "today_date").get()
 
     # create a new QuerySet for province and execute it, to get the appropriate province back
-    provinceDict = Province.objects.filter(healthregion__hr_uid=hr_uid).values().get()
+    provinceDict = Province.objects.filter(healthregion__hr_uid=hr_uid).values("geo_code", "alpha_code", "name_en", "name_fr").get()
 
     # place all returned diectionries from querying the database into the data dictionry
     data["health_region"] = healthRegionDict
